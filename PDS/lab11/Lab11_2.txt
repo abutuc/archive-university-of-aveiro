@@ -1,0 +1,12 @@
+Selecionámos as classes java.io.InputStream, java.io.OutputStream
+e java.io.Reader.
+
+No java.io.InputStream temos o método abstrato chamado read() que é chamado pelo método não
+abstrato implementados na própria classe read(byte[] b, int off, int len) que por sua vez é chamado pelo método
+não abstrato read(byte[] b). Os métodos não abstrados mencionados são os template methods da classe.
+
+No java.io.OutputStream temos o método abstrado chamado write() que à semelhança do read() do java.io.InputStream
+é invocado por métodos não abstratos dentro da própria classe abstrata.
+
+No java.io.Reader à semelhança das duas classes temos o método abstrado chamado read(char buf[], int offset, int count)
+que à semelhança dos anteriores é invocado por métodos não abstratos dentro da própria classe que representam os template methods.

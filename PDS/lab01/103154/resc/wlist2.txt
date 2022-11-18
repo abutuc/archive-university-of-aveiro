@@ -1,0 +1,4 @@
+leonard;howard;penny
+amy theory rajesh sheldon
+science;physics;comicbook,ocd,scientist
+pasadena,bigbang,wolowitz,space,nebraska,caltech,stuart

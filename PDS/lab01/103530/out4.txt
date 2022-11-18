@@ -1,0 +1,20 @@
+programming    	        11	        11,1                      Up
+java           	         4	         5,2                 UpRight
+words          	         5	         1,2                   Right
+lines          	         5	         1,7                   Right
+civil          	         5	         5,7                      Up
+test           	         4	         2,6                DownLeft
+stack          	         5	         5,8                 UpRight
+
+G W O R D S L I N E S K 
+N . . . A T I . . . C . 
+I . . V E . V . . A . . 
+M . A S . . I . T . . . 
+M J T . . . C S . . . . 
+A . . . . . . . . . . . 
+R . . . . . . . . . . . 
+G . . . . . . . . . . . 
+O . . . . . . . . . . . 
+R . . . . . . . . . . . 
+P . . . . . . . . . . . 
+. . . . . . . . . . . . 

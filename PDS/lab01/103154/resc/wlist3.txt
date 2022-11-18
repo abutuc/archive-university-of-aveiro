@@ -1,0 +1,3 @@
+cow;goat;pig;buffalo;chicken;sheep;lamb;goose;turkey
+duck;horse;cattle;llama;bison;hen;calf;rooster;bull;foal;dog;geese;fish;
+deer;birds;bees

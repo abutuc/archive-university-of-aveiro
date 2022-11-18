@@ -1,0 +1,34 @@
+leonard        	7	1,6  	Right     
+howard         	6	10,4 	Right     
+penny          	5	8,11 	Down      
+amy            	3	6,10 	UpLeft    
+theory         	6	9,1  	Down      
+rajesh         	6	8,1  	Up        
+sheldon        	7	6,3  	Down      
+science        	7	1,5  	Down      
+physics        	7	2,4  	Down      
+comicbook      	9	2,12 	Down      
+ocd            	3	3,12 	Up        
+scientist      	9	5,2  	Down      
+pasadena       	8	3,10 	Down      
+bigbang        	7	6,7  	Down      
+wolowitz       	8	10,6 	Up        
+space          	5	3,11 	Left      
+nebraska       	8	13,8 	Up        
+caltech        	7	2,5  	Right     
+stuart         	6	14,7 	Left      
+
+. . . . S L E O N A R D . . 
+. . . P C A L T E C H C . . 
+H . . H I Z E C A P S O . . 
+S . . Y E T . Y . A . M . . 
+E S . S N I . . M S . I . . 
+J C S I C W B A . A . C . . 
+A I H C E O I K . D . B . . 
+R E E S . L G S . E P O . . 
+T N L . . O B A . N E O . . 
+H T D H O W A R D A N K . . 
+E I O . . . N B . . N . . . 
+O S N . . . G E . . Y . . . 
+R T . . . . . N . . . . . . 
+Y T R A U T S . . . . . . . 

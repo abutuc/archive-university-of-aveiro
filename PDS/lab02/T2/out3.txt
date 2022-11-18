@@ -1,0 +1,50 @@
+representative       14    22,20    Left 
+embarrassment        13    24,26    Left 
+responsibility       14    21,7     UpRight 
+contradiction        13    7,10     DownRight 
+identification       14    24,6     Up 
+comprehensive        13    11,18    DownRight 
+constitutional       14    3,7      Down 
+supplementary        13    17,26    UpLeft 
+extraterrestrial     16    27,5     Right 
+superintendent       14    15,3     Up 
+rehabilitation       14    1,29     Down 
+conservation         12    19,1     Up 
+institution          11    6,30     Down 
+constituency         12    11,10    DownRight 
+established          11    30,1     Right 
+sensitivity          11    1,11     Right 
+expenditure          11    28,4     Right 
+performance          11    25,5     Up 
+responsible          11    20,4     Up 
+
+. . . . . . . . . . S E N S I T I V I T Y . . . . . . . R .
+. . T . . . . . . . . . . . . . . . . . . . . . . . . . E .
+. . N . . . C . . . . . . . . . . . . . . . . . . . . . H .
+. . E . . . O . . . . . . . . . . . . . . . . . . . . . A .
+. . D . . . N . . . . . . Y . . . . . . . . . . . . . . B .
+. . N . . . S . . . . . . . R . . . . . . . . . . . . . I I
+. . E . . . T . . C . . . . . A . . . . . . . . . . . . L N
+N . T . . . I . . . O . . . . . T . . Y . . . . . . . . I S
+O . N . . . T . . . . N . . . . . N T . . . . . . . . . T T
+I . I E . . U . . . . . T . . . . I E . . . . . . . . . A I
+T . R L . N T . . C . . . R . . L C . M . . . . . . . . T T
+A . E B . O I . . . O . . . A I . . O . E . . . . . . . I U
+V . P I . I O . . . . N . . B D . . . M . L . . . . . . O T
+R . U S . T N . . . . . S I . . I . . . P . P . . . . . N I
+E . S N E A A . . . . . S T . . . C . . . R . P . . . . . O
+S . . O C C L . . . . N . . I . . . T . . . E . U . . . . N
+N . . P N I . . . . O . . . . T . . . I . . . H . S . . . .
+O . . S A F . . . P . . . . . . U . . . O . . . E . . . . .
+C . . E M I . . S . . . . . . . . E . . . N . . . N . . . .
+. . . R R T . E . . . . . . . . . . N . . . . . . . S . . .
+. . . . O N R . . . . . . . . . . . . C . . . . . . . I . .
+. . . . F E E V I T A T N E S E R P E R Y . . . . . . . V .
+. . . . R D . . . . . . . . . . . . . . . . . . . . . . . E
+. . . . E I . . . . . . . T N E M S S A R R A B M E . . . .
+. . . . P . . . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+. . . . E X T R A T E R R E S T R I A L . . . . . . . . . .
+. . . E X P E N D I T U R E . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+E S T A B L I S H E D . . . . . . . . . . . . . . . . . . .

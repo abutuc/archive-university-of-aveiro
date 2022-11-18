@@ -1,0 +1,31 @@
+margarita       9    1,16   Left
+alema           5    3,12   Right
+tropical        8    5,9    Right
+louisiana       9    5,16   Down
+europa          6    6,2    Down
+barbecue        8    8,19   Up
+cheeseham       9    11,4   DownRight
+camponesa       9    12,12  UpLeft
+suprema         7    17,14  UpRight
+havaiana        8    20,8   Right
+
+ . . . . . . . A T I R A G R A M . . E .
+ . . . . . . . . . . . . . . . . . . U .
+ . . . . . . . . . . . A L E M A . . C .
+ . . . A . . . . . . . . . . . . . . E .
+ . . . . S . . . T R O P I C A L . . B .
+ . E . . . E . . . . . . . . . O . . R .
+ . U . . . . N . . . . . . . . U . . A .
+ . R . . . . . O . . . . . . . I . . B .
+ . O . . . . . . P . . . . . . S . . . .
+ . P . . . . . . . M . . . . . I . . . .
+ . A . C . . . . . . A . . . . A . . . A
+ . . . . H . . . . . . C . . . N . . M .
+ . . . . . E . . . . . . . . . A . E . .
+ . . . . . . E . . . . . . . . . R . . .
+ . . . . . . . S . . . . . . . P . . . .
+ . . . . . . . . E . . . . . U . . . . .
+ . . . . . . . . . H . . . S . . . . . .
+ . . . . . . . . . . A . . . . . . . . .
+ . . . . . . . . . . . M . . . . . . . .
+ . . . . . . . H A V A I A N A . . . . .

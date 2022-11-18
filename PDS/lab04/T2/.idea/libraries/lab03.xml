@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="lab03">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/JogoDoGalo.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lab03.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,7 @@
+Flag nomenclature
+
+flag value -> meaning
+
+1 -> new bid
+2 -> update of Product's TimeOfAuction
+3 -> changed Product's state

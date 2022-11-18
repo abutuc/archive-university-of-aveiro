@@ -1,0 +1,40 @@
+cow            	         3	        12,7                   Right
+goat           	         4	        10,5                      Up
+pig            	         3	        13,1                 UpRight
+buffalo        	         7	         3,2               DownRight
+chicken        	         7	        14,3                   Right
+sheep          	         5	         9,10                 UpLeft
+lamb           	         4	        10,7                DownLeft
+goose          	         5	         9,3                   Right
+turkey         	         6	         2,7                    Down
+duck           	         4	         4,4                 UpRight
+horse          	         5	         5,12                 UpLeft
+cattle         	         6	        13,11                   Left
+llama          	         5	         6,12                 UpLeft
+bison          	         5	        12,12                     Up
+hen            	         3	         7,11                   Down
+calf           	         4	         7,1                   Right
+rooster        	         7	        14,2                 UpRight
+bull           	         4	         6,4                  UpLeft
+foal           	         4	        11,4                DownLeft
+dog            	         3	         9,1                    Down
+geese          	         5	         3,8               DownRight
+fish           	         4	        12,6                 UpRight
+deer           	         4	         4,12                     Up
+birds          	         5	         2,1                   Right
+bees           	         4	         6,10                   Down
+
+. . . . . . K E . . . R . . 
+B I R D S C T A S . . E . . 
+L B . . U . U G M R . E . . 
+. L U D . . R . E A O D . . 
+. . U F . P K . . E L H . . 
+. . . B F . E . . B S L . . 
+C A L F T A Y E . E H E . . 
+. . . . A . L R H E E N . . 
+D . G O O S E O H S N O . . 
+O . . . G T L S . . . S . . 
+G . G F S A I . . . . I . . 
+. I O O M F C O W . . B . . 
+P A O B . E L T T A C . . . 
+L R C H I C K E N . . . . . 

@@ -1,0 +1,24 @@
+viseu                5     15,13    Up 
+SPORTing             8     1,15     Down 
+laptop               6     8,13     Left 
+patterns             8     1,4      Right 
+Software             8     12,1     UpRight 
+file                 4     3,1      DownRight 
+nasa                 4     7,15     UpLeft 
+dESign               6     10,11    DownLeft 
+
+. . . P A T T E R N S . . . S
+. . . . . . . . . . . . . . P
+F . . . . . . . . . . . . . O
+. I . . . . . . . . . A . . R
+. . L . . . . E . . . . S . T
+. . . E . . R . . . . . . A I
+. . . . . A . . . . . . . . N
+. . . . W . . P O T P A L . G
+. . . T . . . . . . . . . . .
+. . F . . . . . . . D . . . .
+. O . . . . . . . E . . U . .
+S . . . . . . . S . . . E . .
+. . . . . . . I . . . . S . .
+. . . . . . G . . . . . I . .
+. . . . . N . . . . . . V . .

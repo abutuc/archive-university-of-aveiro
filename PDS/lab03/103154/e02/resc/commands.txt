@@ -1,0 +1,13 @@
+I resc/flight1.txt
+M TP1920
+C TP1920:3
+R TP1920 T 5
+R TP1920 E 1
+M TP1920
+I resc/flight2.txt
+M TP1930
+F TESTE 5x3 20x5
+R TESTE E 3
+R TESTE T 6
+M TESTE
+Q

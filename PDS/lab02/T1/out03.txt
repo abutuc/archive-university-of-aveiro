@@ -1,0 +1,17 @@
+elm             3    1,7    Right
+gangster        8    2,10   Left
+parish          6    6,4    Right
+hawk            4    6,10   UpLeft
+elm             3    7,7    DownRight
+why             3    9,4    Left
+
+ . . . . . . E L M .
+ . . R E T S G N A G
+ . . . . . . K . . .
+ . . . . . . . W . .
+ . . . . . . . . A .
+ . . . P A R I S H H
+ . . . . . . E . . .
+ . . . . . . . L . .
+ . Y H W . . . . M .
+ . . . . . . . . . .
