@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head>
+    <title>KO Weather Test</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet" type="text/css"> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <select data-bind="options: cities,
+            optionsText: 'name',
+            value: chosenCity,
+            event: {change: CitySelected}" class="form-control"></select>
+        <table class="table table-striped" data-bind="with: selectedCity">
+            <tr><td class="col-xs-2">City Name:</td>
+                <td class="col-xs-10" id="cityName" data-bind="text: name"></td></tr> 
+            <tr><td class="col-xs-2">Coordinates:</td><td class="col-xs-10" data-bind="text: '(' + coord['lon'] + '; ' + coord['lat'] + ')'"></td></tr> 
+            <tr><td class="col-xs-2">weather:</td><td class="col-xs-10" data-bind="text: weather[0]['description']"></td></tr> 
+            <tr><td class="col-xs-2">temp:</td><td class="col-xs-10" data-bind="text: main['temp']"></td></tr>
+            <tr><td class="col-xs-2">pressure:</td><td class="col-xs-10" data-bind="text: main['pressure']"></td></tr> 
+            <tr><td class="col-xs-2">Dados recolhidos</td>
+            <td class="col-xs-10" ><pre data-bind="text: JSON.stringify($parent.selectedCity())"></pre></td> 
+            </tr>
+        </table>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script> <!-- https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js -->
+    <script>
+        $(document).ready(function() {
+            function CitiesViewModel(){
+                var self = this
+                this.cities = [
+                    {name: "Aveiro", value:"Aveiro, PT"},
+                    {name: "Porto", value:"Porto, PT"},
+                    {name: "Paris", value:"Paris, FR"},
+                    {name: "London", value:"London, UK"},
+                    {name: "New York", value:"New York, USA"}
+                ];
+                this.chosenCity = ko.observable();
+                this.selectedCity = ko.observable();
+
+                this.CitySelected = function(){
+                $.ajax({
+                    url: "http://api.openweathermap.org/data/2.5/weather", 
+                    data: {
+                        q: self.chosenCity().value,
+                        APPID: 'b2b1df463182c3cca5276e9d3267cc95' 
+                    },
+                    success: function (data) {
+                        self.selectedCity(data)
+                    },
+                    error: function () {
+                        $('table').addClass('d-none');
+                        alert('Erro!');
+                    }
+                });     
+                }
+                
+            }
+            ko.applyBindings(new CitiesViewModel());
+        });
+    </script>
+</body>
+</html>

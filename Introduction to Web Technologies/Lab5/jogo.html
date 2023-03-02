@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jogo</title>
+    <script>
+
+        function scramble() {
+
+            var div_blue = document.getElementById('azul');
+            var div_red = document.getElementById('vermelho');
+            var div_green = document.getElementById('verde');
+            var div_yellow = document.getElementById('amarelo');
+            var maximo = 600
+            
+            div_blue.style.left = ((Math.round(Math.random() * maximo)).toString() + "px");
+            div_blue.style.top = ((Math.round(Math.random() * maximo)).toString() + "px");
+            
+            div_red.style.left = ((Math.round(Math.random() * maximo)).toString() + "px");
+            div_red.style.top = ((Math.round(Math.random() * maximo)).toString() + "px");
+
+            div_green.style.left = ((Math.round(Math.random() * maximo)).toString() + "px");
+            div_green.style.top = ((Math.round(Math.random() * maximo)).toString() + "px");
+
+            div_yellow.style.left = ((Math.round(Math.random() * maximo)).toString() + "px");
+            div_yellow.style.top = ((Math.round(Math.random() * maximo)).toString() + "px");
+
+        }
+
+        function setCurrentDiv() {
+
+            var div_blue = document.getElementById('azul');
+            var div_red = document.getElementById('vermelho');
+            var div_green = document.getElementById('verde');
+            var div_yellow = document.getElementById('amarelo');
+
+            var cor 
+
+            var x = event.clientX, y = event.clientY,
+                elementMouseIsOver = document.elementFromPoint(x, y)
+
+            if (elementMouseIsOver == div_blue) {
+                cor = "azul!";
+            }
+
+            if (elementMouseIsOver == div_red) {
+                cor = "vermelho!";
+            }
+
+            if (elementMouseIsOver == div_green) {
+                cor = "verde!";
+            }
+
+            if (elementMouseIsOver == div_yellow) {
+                cor = "amarelo!";
+            }
+    
+            document.getElementById("currentInfo").innerHTML = "Ola eu sou o " + cor + " Top: " + elementMouseIsOver.offsetTop + "px" + " " + "Left: " + elementMouseIsOver.offsetLeft + "px";
+
+        }
+
+        function clearSelected() {
+            document.getElementById("currentInfo").innerHTML = ""
+        }
+    </script>
+
+    <style>
+        #azul{
+         background-color: blue;
+         width: 75px;
+         height: 75px;
+         position: absolute;
+         top: 300px;
+         left: 230px;
+        }
+
+        #vermelho{
+         background-color: red;
+         width: 75px;
+         height: 75px;
+         position: absolute;
+         top: 400px;
+         left: 300px;
+        }
+
+        #verde{
+         background-color: green;
+         width: 75px;
+         height: 75px;
+         position: absolute;
+         top: 500px;
+         left: 100px;
+        }
+
+        #amarelo{
+         background-color: yellow;
+         width: 75px;
+         height: 75px;
+         position: absolute;
+         top: 255px;
+         left: 500px;
+        }
+
+        .container{
+            width: 1000;
+            height: 800;
+            position: absolute;
+            top: 150px;
+            left: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>O meu jogo!</h1>
+
+    <button onclick="scramble()">Baralhar</button>
+    <span id="currentInfo"></span>
+    <div class="container">
+    <div id="azul" onmouseover="setCurrentDiv()" onmouseout="clearSelected()"></div>
+    <div id="vermelho" onmouseover="setCurrentDiv()" onmouseout="clearSelected()"></div>
+    <div id="verde" onmouseover="setCurrentDiv()" onmouseout="clearSelected()"></div>
+    <div id="amarelo" onmouseover="setCurrentDiv()" onmouseout="clearSelected()"></div>    
+    </div>
+    
+
+</body>
+</html>

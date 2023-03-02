@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lampada</title>
+    <script>
+        function liga() {
+            document.getElementById("image").src ='lampada_ligada.jpg';
+            console.log("Liga");
+        }
+
+        function desliga() {
+            document.getElementById("image").src = 'lampada_desligada.jpg';
+            console.log("Desliga");
+        }
+    </script>
+</head>
+
+<body>
+    <h1> Liga e desliga a lampada.</h1>
+
+    <img id="image" src='lampada_ligada.jpg' alt="lampada ligada">
+
+    <button onclick="liga()">Liga</button>
+    <button onclick="desliga()">Desliga</button>
+</body>
+</html> 

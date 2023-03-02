@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <title>jQuery Weather Test</title>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="vendor/fontawesome5.15.1/css/all.min.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="container">
+            <p>City Name:</p>
+            <select id="citySelector" class="form-control">
+                <option value="">Select a city name</option>
+                <option value="Aveiro, PT">Aveiro</option>
+                <option value="Porto, PT">Porto</option>
+                <option value="Paris, FR">Paris</option>
+                <option value="London, UK">Londres</option>
+                <option value="New York, USA">Nova Iorque</option>
+            </select>
+            <table class="table table-striped table-sm d-none mt-3  table-bordered">
+                <thead>
+                    <tr class="d-flex">
+                        <th class="col-3">Coluna</th>
+                        <th class="col-9">Valor</th>
+                    </tr>
+                </thead>
+                <tr class="d-flex">
+                    <td class="col-3">City Name:</td>
+                    <td class="col-9" id="cityName"></td>
+                </tr>
+                <tr class="d-flex">
+                    <td class="col-3">Coordinates:</td>
+                    <td class="col-9" id="coordinates"></td>
+                </tr>
+                <tr class="d-flex">
+                    <td class="col-3">Weather:</td>
+                    <td class="col-9" id="weather"></td>
+                </tr>
+                <tr class="d-flex">
+                    <td class="col-3">Temperature:</td>
+                    <td class="col-9" id="temp"></td>
+                </tr>
+                <tr class="d-flex">
+                    <td class="col-3">Pressure:</td>
+                    <td class="col-9" id="pressure"></td>
+                </tr>
+                <tr class="d-flex">
+                    <td class="col-3">AllData: </td>
+                    <td class="col-9 small">
+                        <pre id="allData"></pre>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script>
+            // consts
+            const api_url = "http://api.openweathermap.org/data/2.5/weather";
+            const api_key = "b2b1df463182c3cca5276e9d3267cc95";
+            // when the user selects a city
+            $("#citySelector").change(function () {
+                // get the city's name
+                let city = $("#citySelector").val();
+                // call the open weaather api
+                $.ajax({
+                    url: api_url,
+                    data: {
+                        q: city,
+                        APPID: api_key
+                    },
+                    // if the call is succeeded
+                    success: function (data) {
+                        // DEDUG
+                        console.log("DEBUG:\n", data);
+                        // if the data object contains the name of the city -> all good
+                        if (data.name) {
+                            // show table
+                            $('table').removeClass('d-none');
+                            // fill the table
+                            $("#cityName").html(data.name + ' / ' + data.sys.country);
+                            $("#coordinates").html('Lon (º): ' + data.coord.lon + ' | Lat (º): ' +
+                                data.coord.lat);
+                            $("#weather").html(data.weather[0].description);
+                            $("#temp").html(data.main.temp.toString() +
+                                'ºK <i class=\"fas fa-arrow-right\"></i> ' +
+                                (data.main.temp - 273.15).toFixed(2) + 'ºC');
+                            $("#pressure").html(data.main.pressure);
+                            $("#allData").html(JSON.stringify(data));
+                        }
+                        // if the data object doesn't contain the name of the city -> city not found -> hide table
+                        else {
+                            $('table').addClass('d-none');
+                            alert(data.message);
+                        }
+                    },
+                    // if there is an error with the request -> hide table + error message
+                    error: function () {
+                        $('table').addClass('d-none');
+                        alert('Erro!');
+                    }
+                });
+            });
+        </script>
+    </body>
+
+</html>

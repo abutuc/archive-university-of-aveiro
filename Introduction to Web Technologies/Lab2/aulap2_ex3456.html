@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8' />
+        <title>ITW2020 - Aula 2 Ex.3456</title>
+        <style>
+            body, input, select, textarea { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+            input[type=submit], input[type=reset] { padding: 0.375rem 0.75rem; font-size: 1rem;}
+            select, input[type=text], input[type=password] { font-size: 1rem; border: 1px solid #ced4da; border-radius: 0.25rem; width: 100%; } fieldset { border: 1px solid #ced4da; border-radius: 0.25rem; }
+            textarea { width: 100%; font-size: 1rem; border: 1px solid #ced4da; border-radius: 0.25rem; }
+            dt {float: left; clear: left; width: 120px;}
+            dd {margin: 0 0 0 130px;}
+        </style>
+    </head>
+    <body >
+        <div style="margin: auto; width: 80%">
+            <h1>Informação pessoal</h1>
+            <form name="PersonData" action="http://192.168.160.36/FormEcho.aspx" method="post"> <input type="hidden" name="FormName" value="UserForm" />
+                <fieldset>
+                    <legend>Informação pessoal</legend>
+                    <dl>
+                        <dt><label for="curso">Curso:</label> </dt>
+                        <dd>
+                            <select name="curso" id="curso" name="curso">
+                            <option value="1" selected="selected">Licenciatura em Engenharia Informática</option>
+                            <option value="2">Mestrado Integrado em Engenharia de Computadores e Telemática</option>
+                            <option value="3">Mestrado Integrado em Engenharia Eletrónica e Telecomunicações</option>
+                            <option value="4">Outro</option>
+                            </select>
+                        </dd>
+                        
+                        <dt><label for="nome">Nome:</label> </dt>
+                        <dd>
+                        <input type="text" name="FirstName" value="" placeholder="Nome" id="nome" />
+                        </dd>
+
+                        <dt><label for="sobrenome">Sobrenome:</label></dt>
+                        <dd>
+                        <input type="text" name="LastName" placeholder="Sobrenome" id="sobrenome"/>
+                        </dd>
+
+                        <dt><label for="palavra-passe">Palavra-Passe:</label></dt>
+                        <dd>
+                        <input type="password" name="Password" placeholder="Digite a palavra passe" id="palavra-passe" />
+                    </dd>
+
+                </dl>
+                </fieldset>
+
+                <fieldset>
+                    <legend><label for="comments">Comentários</label></legend>
+                    <textarea name="Comments" rows="4" cols="80" placeholder="Insira os seus comentários" id="comments"></textarea>
+
+
+                </fieldset>
+                <div style="float: left; width: 50%;">
+                <fieldset>
+                    <legend>Meios de transporte</legend>
+                    <input type="checkbox" name="vehicle" value="Bicicleta" id="bicicleta"><label for="bicicleta"> Bicicleta</label><br /> 
+                    <input type="checkbox" name="vehicle" value="Carro" id="carro"><label for="carro"> Carro</label><br />
+                    <input type="checkbox" name="vehicle" value="Comboio" id="comboio"><label for="comboio"> Comboio</label>
+                </fieldset>
+                </div>
+                <div style="float: left; width: 50%;">
+                <fieldset>
+                    <legend>Cor preferida</legend>
+                    <input type="radio" name="color" value="Azul" id="azul"><label for="azul"> Azul</label><br />
+                    <input type="radio" name="color" value="Verde" id="verde"><label for="verde"> Verde</label><br />
+                    <input type="radio" name="color" value="Vermelho" id="vermelho"><label for="vermelho"> Vermelho</label><br />
+                    <input type="radio" name="color" value="Outra" id="outra"><label for="outra"> Outra</label>
+                </fieldset>
+                </div>
+                
+                <div style="margin: auto; text-align: center; padding: 200px;">
+                <input name="Button" type="Submit" />
+                <input type="reset" name="resetBtn" value="Limpar" />
+                </div>
+            </form>
+        </div> 
+    </body>
+</html>

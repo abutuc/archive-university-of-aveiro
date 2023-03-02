@@ -1,0 +1,84 @@
+.menutop {
+    width: 90%;
+    height: 5vh;
+    margin-left: 5%;
+    position: sticky;
+    top: 0.0px;
+    bottom: 0px;
+
+    }
+
+.banner {
+    width: 100%;
+    height: 50vh;
+    border-color: black;
+    border-width: 1px;
+    background-image: url('hd-avengers-png-10203.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+.container {
+    width: 90%;
+    min-height: 90px;
+    overflow: hidden;
+    margin-left: 5%;
+    
+}
+
+.content {
+    width: 70%;
+    float: left;
+
+    }
+
+.advertising {
+    width: 30%;
+    float: left;
+    background-color: grey;
+    }
+
+.footer {
+    width: 90%;
+    height: 3vh;
+    margin-left: 5%; clear: left;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    vertical-align: text-bottom;
+    background-color: white;
+    vertical-align: center;
+    color: gray
+    }
+
+
+body { margin:0; }
+
+ul {
+    list-style-type: none;
+    margin: 0; padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li {
+    float: left;
+    border-right: 1px solid #bbb; 
+}
+
+li:last-child {
+    border-right: none;
+    float: right;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.active { background-color: #5CAF50; }
+
+li a:hover:not(.active) { background-color: #444; } li a.active:hover { color: #444; }

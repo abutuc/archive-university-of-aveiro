@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora Básica</title>
+    <script>
+        function calcula(){
+            var x = parseFloat(document.getElementById("op1").value);
+            var y = parseFloat(document.getElementById("op2").value);
+            var operation = document.getElementById("operation").value;
+            var res
+            switch (operation) {
+                case "plus":
+                    res = x + y;
+                    break;
+                
+                case "minus":
+                    res = x - y;
+                    break;
+                
+                case "multiply":
+                    res = x * y;
+                    break;
+                
+                case "divide":
+                    if (y == 0) {
+                       alert("ERRO. Não se pode dividir por zero.")
+                       res = "Indefinido"
+                       break; 
+                    }
+                    res = x / y;
+                    break;
+                
+                case "remainder":
+                    res = x % y;
+                    break;
+                
+                case "factorial":
+                    var i;
+                    res = 1
+                    for (i=1; i< (x+1); i++){
+                        res = res * i
+                    }
+                    break;
+            }
+
+            document.getElementById("re").value = res;
+        }
+    </script>
+</head>
+
+<body>
+    <input id="op1" value="" />
+
+    <select name="operation" id="operation">
+        <option value="plus">Soma</option>
+        <option value="minus">Subtração</option>
+        <option value="multiply">Multiplicação</option>
+        <option value="divide">Divisão</option>
+        <option value="remainder">Resto da Divisão</option>
+        <option value="factorial">Factorial</option>
+      </select>
+
+    <input id="op2" value="" />
+    <input id="re" value="" /><br />
+    <button onclick="calcula()">Calcular</button>
+</body>
+</html>
