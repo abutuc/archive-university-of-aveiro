@@ -1,0 +1,77 @@
+SubscribeMessage
+
+JSON && PICKLE
+{
+    "command": "subscribe", 
+    "topic": ..topic..
+}
+
+XML
+<msg>
+    <command>"subscribe"</command>
+    <topic>..topic..</topic>
+</msg>
+
+-------------------------------------------------
+
+PublishMessage
+
+JSON && PICKLE
+{
+    "command": "publish", 
+    "topic": ..topic..,
+    "data": ..data..
+}
+
+XML
+<msg>
+    <command>"publish"</command>
+    <topic>..topic..</topic>
+    <data>..data..</data>
+</msg>
+
+-------------------------------------------------
+
+ListRequestMessage
+
+JSON && PICKLE
+{
+    "command": "list_request"
+}
+
+XML
+<msg>
+    <command>"list_request"</command>
+</msg>
+
+-------------------------------------------------
+
+ListReplyMessage
+
+JSON && PICKLE
+{
+    "command": "list_reply",
+    "topics": ..[t1,..,tN]..
+}
+
+XML
+<msg>
+    <command>"list_reply"</command>
+    <topics>..[t1,..,tN]..</topics>
+</msg>
+
+-------------------------------------------------
+
+CancelMessage
+
+JSON && PICKLE
+{
+    "command": "cancel",
+    "topic": ..topic..
+}
+
+XML
+<msg>
+    <command>"cancel"</command>
+    <topic>..topic..</topic>
+</msg>
