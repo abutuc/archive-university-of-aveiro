@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h2>{{ title }}</h2>
+<h3>{{ message }}</h3>
+<p> {{ additional_info }}</p>
+
+    {% if publisher %}
+        {% if publisher.name %}
+            <p>Name : {{ publisher.name }}</p>
+        {% endif %}
+        {% if publisher.city %}
+            <p>City : {{ publisher.city }}</p>
+        {% endif %}
+        {% if publisher.country %}
+            <p>Country : {{ publisher.country }}</p>
+        {% endif %}
+        {% if publisher.website %}
+            <p>Website: {{ publisher.website }}</p>
+        {% endif %}
+
+    {% endif %}
+{% endblock %}

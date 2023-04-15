@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h2>{{ title }}</h2>
+<h3>{{ message }}</h3>
+<p> {{ additional_info }}</p>
+
+    {% if book %}
+        {% if book.title %}
+            <p>Title : {{ book.title }}</p>
+        {% endif %}
+        {% if book.date %}
+            <p>Date : {{ book.date }}</p>
+        {% endif %}
+        {% if book.authors.all %}
+            <p>Authors :</p>
+            {% for author in book.authors.all %}
+                <li> {{ author.name }} </li>
+            {% endfor %}
+        {% endif %}
+        {% if book.publisher %}
+            <p></p>
+            <p>Publisher : {{ book.publisher }}</p>
+        {% endif %}
+
+    {% endif %}
+{% endblock %}

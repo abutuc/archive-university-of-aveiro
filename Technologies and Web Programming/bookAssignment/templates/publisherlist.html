@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h2>{{ title }}</h2>
+<h3>{{ message }}</h3>
+<p> {{ additional_info }}</p>
+
+    {% for p in publisher_list %}
+        <li><a href="{{ p.publisher_url }}">{{ p.publisher_name }}</a> [<a href="{{ p.books_url }}">Books</a>]</li>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h2>{{ title }}</h2>
+<h3>{{ message }}</h3>
+<p> {{ additional_info }}</p>
+
+    {% if author %}
+        {% if author.name %}
+            <p>Name : {{ author.name }}</p>
+        {% endif %}
+        {% if author.email %}
+            <p>Email : {{ author.email }}</p>
+        {% endif %}
+
+    {% endif %}
+{% endblock %}
