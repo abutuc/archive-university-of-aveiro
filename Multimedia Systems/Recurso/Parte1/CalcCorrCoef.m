@@ -1,0 +1,19 @@
+function c = CalcCorrCoef(x,y, Ta)
+    N = length(x);
+    T = Ta*N;
+    x2 = x.^2;
+    y2 = y.^2;
+    x2y2 = x2.*y2;
+    area1 = x2y2 * Ta;
+    integral1 = sum(area1);
+    Rxy = 1/T * integral1;
+    x2x2 = x2.*x2;
+    area2 = x2x2 * Ta;
+    integral2 = sum(area2);
+    Rxx = 1/T * integral2;
+    y2y2 = y2.*y2;
+    area3 = y2y2 * Ta;
+    integral3 = sum(area3);
+    Ryy = 1/T * integral3;
+    c = Rxy/(sqrt(Rxx, Ryy));
+end

@@ -1,0 +1,43 @@
+A   14%     2   rid    1
+B   64%     1   rid    00
+C   5%      5   rid    0110
+D   10%     3   rid    010
+E   7%      4 rid      0111
+12% 12%       rid
+22%             rid
+A entropia é dado pelo:
+somatoria de 1 até k de pk * log2(pk) = 1.63bps
+
+O código Huffman é construído de baixo para cima.
+São sempre selecionados dois símbolos ou um símbolo e um conjunto de símbolos.
+Metemos os valores mais baixos para a esquerda e o mais altos para a direita.
+é sempre 0  1, 0 -> esquerda    0 -> direita
+            
+                100%
+        36%                B  
+    A         22%     
+    
+            D     12%    
+
+                 C   E
+
+B = 1
+A = 00
+D = 010
+C = 0110
+E = 0111
+
+
+c) Qual seria o número médio de bits por símbolo que esperaria obter 
+numa mensagem composta por 1000 símbolos deste alfabeto.
+
+Mensagem 1000 símbolos
+Símbolo | Número   | Bits
+A          140      280
+B           640     640
+C           50      200
+D           100     300
+E           70      280
+Total               1700 bits
+
+1.7 bps em comparação com a entropia,está bastante próxima.       

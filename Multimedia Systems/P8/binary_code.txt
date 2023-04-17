@@ -1,0 +1,23 @@
+Simbs   Freq    Código Binário      Código 4
+Q       40.2    0000                0         
+W       12.8    0001                110
+S       13.5    0010                10
+D       8.2     0011                11110
+X       5.3     0100                1111110
+C       6.3     0101                111110
+Z       8.9     0110                1110
+V       4.6     0111                11111110
+R       0.3     1000                111111110
+
+N BITS          1216                901
+Código Ambíguo: Uma sequência de bits pode representar mais do que uma sequência de símbolos 
+Código Instantâneo: 
+
+Símbolos ordenados por frequência: QSWZDCXVR
+
+
+Árvore Binária Ex.5
+
+Exercício 7 -> Código Huffman
+
+                                        
