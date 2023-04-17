@@ -1,0 +1,17 @@
+clear;
+close all;
+clc;
+
+%% a)
+% 90 notas de 5€, 9 notas de 50€, 1 nota de 100€
+% Espaço de Amostragem consiste no espaço de amostragem {n1, n2, ... n100}
+% A probabilidade elementar é 1/100;
+Aamost = 1:10
+%% b)
+% Acontecimento A: Retirar nota 5€; 
+% Acontecimento B: Retirar nota 50€ 
+% Acontecimento C: Retirar nota 100€
+% Total de Notas: 90+9+1=100 notas.
+% P(A) = 90/100 = 9/10;
+% P(B) = 9/100;
+% P(C) = 1/100;

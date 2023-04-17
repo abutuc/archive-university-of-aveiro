@@ -1,0 +1,22 @@
+v1 = {'ABC', 'DEF', 'GH'}
+v2 = {'DEF', 'GH', 'XY'}
+
+J = 2/4 = 1/2;  (similiaridade de jaccard)
+
+Criar vetor pequeno, que são só números.
+10 | 9 | 20 | 21 | 24 <- assinatura (vetor pequeno fixo que representa a sua informação)
+
+Obtemos mais elementos da "assinatura" ao aplicar mais hash functions.
+
+v1 -> aplicar hash function -> ficamos com o mínimo
+
+
+a aplicação das funções hash são permutações.
+
+na matriz de assinaturas só temos que ver quantos números são iguais (2 colunas 2)
+
+só guardamos as assinaturas.
+
+o k normalmente é da ordem das centenas
+
+ 

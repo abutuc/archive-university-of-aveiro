@@ -1,0 +1,13 @@
+Em concreto o que temos de fazer hm?
+
+Temos que desenvolver 3 funções:
+1. Inicializar                      FN  
+2. Inserir                          FP
+3. Verificar/membro                 FP = f(k)
+
+HashTable -> mapa, key/data.
+
+Bloom Filters: não guardamos valor nenhum, só guardamos 0 e 1 para ver se a chave
+existe ou não, 0-> Não existe;   1-> Existe;
+
+Se existir um zero retorno então a chave não existe.

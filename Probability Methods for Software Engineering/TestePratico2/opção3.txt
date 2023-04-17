@@ -1,0 +1,10 @@
+Nesta opção a aplicação deve pedir a inserção de uma string: "Write a string:" e depois
+apresentar os nomes completos de utilizadores mais similares à string introduzida (um por linha), para alem do nome, cada linha deve apresentar a estimativa da distância de Jaccard
+entre a String introduzida e cada nome completo.
+A lista apreseentada deve ter no máximo 7 nomes, ordenados por ordem crescente de distância de Jaccard
+e deve apresentar apenas nomes cuja distância de Jaccard seja menor ou igual a 0.8. Se não houver nenhum nome nestas condições
+com base na utilização de um filtro de Bloom, deve aparecer uma mensagen a indicar se a string inroduzida pode corresponder exatamente a um dos nomes dos utilizadores.
+
+Tamanhos de shingle entre 3 e 6 caracteres (vamos meter 4)
+
+Temos que implementar um filtro de Bloom.

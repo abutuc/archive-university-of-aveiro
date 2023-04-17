@@ -1,0 +1,6 @@
+Nesta opção: "Interest from most similar user", a aplicação deve listar os interesses do utilizador 
+mais "similar" ao utilizador atual e, após isso, lista os não partilhados pelo utilizador atual, como sugestões de novos interesses. 
+A aplicação deve determinal qual de todos os outros utilizadores é mais similar ao utilizador atualem termos da lista de idades dos seus amigos.
+Vamos usar 100 funções de dispersão.
+
+Neste caso não são os filmes os que vamos avaliar, mas sim as idades dos amigos.

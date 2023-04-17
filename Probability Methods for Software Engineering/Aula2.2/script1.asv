@@ -1,0 +1,22 @@
+clear;
+close all;
+clc;
+
+%% a)
+
+x = 1:6; % Valores Possiveis
+X = ones(size(x))/6;
+figure(1)
+stem(x,X)
+axis([0 7 -0.01 0.2])
+xlabel("x")
+ylabel()
+%% b
+figure(2)
+x = 0:1:7;
+acumul = zeros(size(x));
+acumul(1) = 0;
+for f=2:1:length(acumul)
+    acumul(f) = acumul(f-1) + X(f);
+end
+stairs(x,acumul);
