@@ -1,0 +1,23 @@
+
+ [json]
+----------------------------------------------------------------------------------------------
+               {"id": 5, "configuracoes": ["480p"], "estado": "estragada", "local": "Jardim"}
+                 {"id": 10, "configuracoes": ["720p"], "estado": "ligada", "local": "Portão"}
+  {"id": 16, "configuracoes": ["1080p", "60fps"], "estado": "desligada", "local": "Gabinete"}
+             {"id": 13, "configuracoes": ["1080p"], "estado": "estragada", "local": "Portão"}
+    {"id": 11, "configuracoes": ["1080p", "30fps"], "estado": "desligada", "local": "Portão"}
+        {"id": 1, "configuracoes": ["1080p", "60fps"], "estado": "ligada", "local": "Jardim"}
+                   {"id": 8, "configuracoes": ["1080p"], "estado": "ligada", "local": "Hall"}
+         {"id": 2, "configuracoes": ["30fps", "720p"], "estado": "ligada", "local": "Jardim"}
+    {"id": 4, "configuracoes": ["1080p", "60fps"], "estado": "manutenção", "local": "Jardim"}
+            {"id": 18, "configuracoes": ["480p"], "estado": "estragada", "local": "Gabinete"}
+       {"id": 15, "configuracoes": ["30fps", "720p"], "estado": "ligada", "local": "Gabinte"}
+          {"id": 7, "configuracoes": ["1080p", "30fps"], "estado": "ligada", "local": "Hall"}
+          {"id": 6, "configuracoes": ["1080p", "60fps"], "estado": "ligada", "local": "Hall"}
+      {"id": 9, "configuracoes": ["1080p", "60fps"], "estado": "manutenção", "local": "Hall"}
+     {"id": 14, "configuracoes": ["1080p", "60fps"], "estado": "ligada", "local": "Gabinete"}
+ {"id": 17, "configuracoes": ["1080p", "60fps"], "estado": "manutenção", "local": "Gabinete"}
+    {"id": 12, "configuracoes": ["1080p", "60fps"], "estado": "estragada", "local": "Portão"}
+     {"id": 3, "configuracoes": ["1080p", "60fps"], "estado": "desligada", "local": "Jardim"}
+
+(18 rows)

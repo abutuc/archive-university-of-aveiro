@@ -1,0 +1,15 @@
+
+ [0;1;35m[json][0m
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+                    [0;1;33m{"user_id": 5, "email": "qsc@egy.pt", "name": "Queen Safira", "registered_on": "2017-03-03 03:03:19.000Z", "username": "cleopatra"}[0m
+             [0;1;33m{"user_id": 10, "email": "neyney@tiktok.ch", "name": "Neymar Junior", "registered_on": "2022-01-01 00:00:00.000Z", "username": "Ney10mar"}[0m
+ [0;1;33m{"user_id": 1, "email": "steve.griffen@american.us", "name": "Steve Griffin", "registered_on": "2022-02-11 14:20:49.000Z", "username": "steve4videos"}[0m
+               [0;1;33m{"user_id": 8, "email": "siuuuu@mundo.com", "name": "Cristiano Ronaldo", "registered_on": "2009-07-07 07:07:07.000Z", "username": "CR7"}[0m
+       [0;1;33m{"user_id": 2, "email": "mariJuanPab@email.me", "name": "Juan Pablito", "registered_on": "2021-12-21 10:58:20.000Z", "username": "mariachi1234"}[0m
+                 [0;1;33m{"user_id": 4, "email": "american.dad@cia.us", "name": "Stan Smith", "registered_on": "2021-05-14 12:12:12.000Z", "username": "smith"}[0m
+            [0;1;33m{"user_id": 7, "email": "youtube@youtube.com", "name": "Felix Pewdiepie", "registered_on": "2022-11-17 04:20:10.000Z", "username": "pewds"}[0m
+    [0;1;33m{"user_id": 6, "email": "valiosa.como.pedra@safira.pt", "name": "Sir Kazzio", "registered_on": "2022-11-07 00:00:00.000Z", "username": "sirkazzio"}[0m
+         [0;1;33m{"user_id": 9, "email": "maraloverdona@argentina.com", "name": "Lionel Messi", "registered_on": "2008-10-10 10:10:10.000Z", "username": "L10"}[0m
+ [0;1;33m{"user_id": 3, "email": "youknownothingjonsnow@got.uk", "name": "Jon Snow", "registered_on": "2008-08-05 16:20:49.000Z", "username": "WinterIsComing"}[0m
+
+(10 rows)

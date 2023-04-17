@@ -1,0 +1,124 @@
+// NMEC: 103530
+
+#1
+match (director:Person)-[:DIRECTED]->(m)<-[:ACTED_IN]-(director) 
+return director.name as actor_name, m.title
+
+#2
+match (p:Person)-[:ACTED_IN]->(m:Movie) where m.released > 2005 
+return distinct p.name
+
+#3
+match (a)-[r]->(b) with a, count(r) as relations, b 
+where relations > 1 
+return a, relations, b
+
+#4
+match (p1:Person)-[:REVIEWED]->(m:Movie)<-[:REVIEWED]-(p2:Person) 
+where id(p1) < id(p2) 
+return p1.name, p2.name, m.title
+
+#5
+match (p1:Person)-[:ACTED_IN]->(m:Movie)<-[:ACTED_IN]-(p2:Person) 
+with p1, count(m) as movies, p2 
+where movies > 1 and id(p1) > id(p2) 
+return p1.name, p2.name, movies
+
+#6 // Average: 40.2
+match (p:Person)-[:ACTED_IN]->(m:Movie {title: "Apollo 13"}) 
+with avg(m.released - p.born) as avg_age, m 
+return m.title, avg_age
+
+#7
+match (p:Person)-[:ACTED_IN]->(m:Movie) 
+with avg(m.released - p.born) as avg_age, m 
+return m.title, round(avg_age, 2) as avg_age 
+order by avg_age desc
+limit 10
+
+#8 // Stand By Me
+match (p:Person)-[acted:ACTED_IN]->(m:Movie) 
+with avg(m.released - p.born) as avg_age, m, collect(p) as people, collect(acted) as acted 
+return people, acted, m 
+order by avg_age asc 
+limit 1
+
+#9 // I used two matches instead of cartesian product and a upper-bounded shortestPath for the query to have more performance.
+match (john:Person {name:"John Cusack"})
+match (demi:Person {name: "Demi Moore"})
+return shortestPath((john)-[*..100]-(demi))
+
+#10 // 4
+match (keanu:Person {name:"Keanu Reeves"}) 
+match (tom:Person {name: "Tom Cruise"})
+return length(shortestPath((keanu)-[*..100]-(tom))) as len_shortest_path
+
+#11
+match (p1:Person)
+match (p2:Person) 
+where p1.name contains "Jim" and p2.name contains "Kevin"
+return length(shortestpath((p1)-[*..100]-(p2))) as path_length
+
+#12
+match (jim:Person {name: "Jim Cash"})
+match (p:Person) 
+where id(jim)>id(p) and length(shortestpath((jim)-[*..100]-(p))) = 2 
+return p.name
+
+#13 // 6
+match (p1:Person {name: "Kevin Bacon"})
+match (p2:Person) 
+where id(p1)>id(p2) 
+return length(shortestpath((p1)-[*..100]-(p2))) as path_length 
+order by path_length desc 
+limit 1
+
+#14 //10
+match (p1:Person)
+match (p2:Person) 
+where id(p1)>id(p2) 
+return length(shortestpath((p1)-[*..100]-(p2))) as path_length
+order by path_length desc
+limit 1
+
+#15
+match (p1:Person)
+match (p2:Person)
+where id(p1)>id(p2) 
+return length(shortestpath((p1)-[*..100]-(p2))) as path_length, count(length(shortestpath((p1)-[*..100]-(p2)))) as n 
+order by path_length
+
+#16
+match (p1:Person)
+match (p2:Person)
+where id(p1)>id(p2) and size(allShortestPaths((p1)-[:ACTED_IN*..100]-(p2)))<>0 
+return p1.name, p2.name, reduce(total_length = 0, path in allShortestPaths((p1)-[:ACTED_IN*..100]-(p2)) | total_length + length(path)) / size(allShortestPaths((p1)-[:ACTED_IN*..100]-(p2))) as avg_distance 
+order by avg_distance asc 
+limit 10
+
+#17
+match (p:Person)-[r:ACTED_IN]->(m:Movie) 
+where any(role in r.roles where role contains "Dr.") 
+return p.name, r.roles
+
+#18
+// Apresente o número de seguidores de Jessica Thompson que nunca co-atuaram com o mesmo. 
+match (jessica:Person {name: "Jessica Thompson"})-[:ACTED_IN]->(m:Movie)<-[:ACTED_IN]-(p1:Person) with count(*) as co_actors 
+match (p:Person)-[:FOLLOWS]->(jessica) with count(*) as followers, co_actors
+return followers - co_actors as followers
+
+#19
+// Apresente o top 10 dos atores mais velhos (usar o ano de 2022) ordenados pelo número de filmes em que atuaram
+match (p:Person)-[:ACTED_IN]->(:Movie) 
+with p, count(*) as acted, 2022-p.born as age 
+where age > 0 
+return age, acted, p.name 
+order by age desc, acted desc limit 10
+
+#20
+// Apresentar o top 10 dos filmes melhor cotados (rating arredondado às décimas) 
+match (reviewer:Person)-[review:REVIEWED]->(m:Movie) 
+with round(avg(review.rating),1) as avg_rating, m 
+return m.title, avg_rating 
+order by avg_rating desc 
+limit 10

@@ -1,0 +1,500 @@
+bookId,title,author,rating,num_pages,publish_date,publisher
+1,Harry Potter and the Half-Blood Prince (Harry Potter  #6),J.K. Rowling,4.57,652,2006-9-16,Scholastic Inc.
+2,Harry Potter and the Order of the Phoenix (Harry Potter  #5),J.K. Rowling,4.49,870,2004-9-1,Scholastic Inc.
+4,Harry Potter and the Chamber of Secrets (Harry Potter  #2),J.K. Rowling,4.42,352,2003-11-1,Scholastic
+5,Harry Potter and the Prisoner of Azkaban (Harry Potter  #3),J.K. Rowling,4.56,435,2004-5-1,Scholastic Inc.
+8,Harry Potter Boxed Set  Books 1-5 (Harry Potter  #1-5),J.K. Rowling,4.78,2690,2004-9-13,Scholastic
+9,"Unauthorized Harry Potter Book Seven News: ""Half-Blood Prince"" Analysis and Speculation",W. Frederick Zimmerman,3.74,152,2005-4-26,Nimble Books
+10,Harry Potter Collection (Harry Potter  #1-6),J.K. Rowling,4.73,3342,2005-9-12,Scholastic
+12,The Ultimate Hitchhiker's Guide: Five Complete Novels and One Story (Hitchhiker's Guide to the Galaxy  #1-5),Douglas Adams,4.38,815,2005-11-1,Gramercy Books
+13,The Ultimate Hitchhiker's Guide to the Galaxy (Hitchhiker's Guide to the Galaxy  #1-5),Douglas Adams,4.38,815,2002-4-30,Del Rey Books
+14,The Hitchhiker's Guide to the Galaxy (Hitchhiker's Guide to the Galaxy  #1),Douglas Adams,4.22,215,2004-8-3,Crown
+16,The Hitchhiker's Guide to the Galaxy (Hitchhiker's Guide to the Galaxy  #1),Douglas Adams,4.22,6,2005-3-23,Random House Audio
+18,The Ultimate Hitchhiker's Guide (Hitchhiker's Guide to the Galaxy  #1-5),Douglas Adams,4.38,815,1996-1-17,Wings Books
+21,A Short History of Nearly Everything,Bill Bryson,4.21,544,2004-9-14,Broadway Books
+22,Bill Bryson's African Diary,Bill Bryson,3.44,55,2002-12-3,Broadway Books
+23,Bryson's Dictionary of Troublesome Words: A Writer's Guide to Getting It Right,Bill Bryson,3.87,256,2004-9-14,Broadway Books
+24,In a Sunburned Country,Bill Bryson,4.07,335,2001-5-15,Broadway Books
+25,I'm a Stranger Here Myself: Notes on Returning to America After Twenty Years Away,Bill Bryson,3.90,304,2000-6-28,Broadway Books
+26,The Lost Continent: Travels in Small Town America,Bill Bryson,3.83,299,1990-8-28,William Morrow Paperbacks
+27,Neither Here nor There: Travels in Europe,Bill Bryson,3.86,254,1993-3-28,William Morrow Paperbacks
+28,Notes from a Small Island,Bill Bryson,3.91,324,1997-5-28,William Morrow Paperbacks
+29,The Mother Tongue: English and How It Got That Way,Bill Bryson,3.93,270,1991-9-28,William Morrow Paperbacks
+30,J.R.R. Tolkien 4-Book Boxed Set: The Hobbit and The Lord of the Rings,J.R.R. Tolkien,4.59,1728,2012-9-25,Ballantine Books
+31,The Lord of the Rings (The Lord of the Rings  #1-3),J.R.R. Tolkien,4.50,1184,2004-10-21,Houghton Mifflin Harcourt
+34,The Fellowship of the Ring (The Lord of the Rings  #1),J.R.R. Tolkien,4.36,398,2003-9-5,Houghton Mifflin Harcourt
+35,The Lord of the Rings (The Lord of the Rings  #1-3),J.R.R. Tolkien,4.50,1216,2002-10-1,Houghton Mifflin Harcourt
+36,The Lord of the Rings: Weapons and Warfare,Chris   Smith,4.53,218,2003-11-5,Houghton Mifflin Harcourt
+37,The Lord of the Rings: Complete Visual Companion,Jude Fisher,4.50,224,2004-11-15,Houghton Mifflin Harcourt
+45,Agile Web Development with Rails: A Pragmatic Guide,Dave Thomas,3.84,558,2005-7-28,Pragmatic Bookshelf
+50,Hatchet (Brian's Saga  #1),Gary Paulsen,3.72,208,2000-4-1,Atheneum Books for Young Readers: Richard Jackson Books
+51,"Hatchet: A Guide for Using ""Hatchet"" in the Classroom",Donna Ickes,4.00,48,1994-8-28,Teacher Created Resources
+53,Guts: The True Stories behind Hatchet and the Brian Books,Gary Paulsen,3.88,144,2001-1-23,Delacorte Press
+54,Molly Hatchet - 5 of the Best,Molly Hatchet,4.33,56,2003-6-10,Cherry Lane Music Company
+55,Hatchet Jobs: Writings on Contemporary Fiction,Dale Peck,3.45,228,2005-11-1,The New Press
+57,A Changeling for All Seasons (Changeling Seasons #1),Angela Knight,3.76,304,2005-11-1,Changeling Press
+58,Changeling (Changeling  #1),Delia Sherman,3.60,256,2006-8-17,Viking Juvenile
+59,The Changeling Sea,Patricia A. McKillip,4.06,137,2003-4-14,Firebird
+61,The Changeling,Zilpha Keatley Snyder,4.17,228,2004-6-8,iUniverse
+63,The Changeling,Kate Horsley,3.55,339,2005-4-12,Shambhala
+66,The Changeling (Daughters of England  #15),Philippa Carr,3.98,369,1990-8-28,Ivy Books
+67,The Known World,Edward P. Jones,3.83,388,2006-8-29,Amistad
+68,The Known World,Edward P. Jones,3.83,14,2004-6-15,HarperAudio
+69,The Known World,Edward P. Jones,3.83,576,2004-6-15,Harper
+71,Traders  Guns & Money: Knowns and Unknowns in the Dazzling World of Derivatives,Satyajit Das,3.83,334,2006-5-15,FT Press
+72,Artesia: Adventures in the Known World,Mark Smylie,4.13,352,2005-12-14,Archaia
+74,The John McPhee Reader (John McPhee Reader  #1),John McPhee,4.42,416,1982-6-1,Farrar  Straus and Giroux
+75,Uncommon Carriers,John McPhee,3.95,248,2006-5-16,Farrar Straus Giroux
+76,Heirs of General Practice,John McPhee,4.17,128,1986-4-1,Farrar  Straus and Giroux
+77,The Control of Nature,John McPhee,4.24,288,1990-9-1,Farrar  Straus and Giroux
+78,Annals of the Former World,John McPhee,4.34,720,1999-1-6,Farrar  Straus and Giroux
+79,Coming Into the Country,John McPhee,4.22,448,1991-4-1,Farrar  Straus and Giroux
+80,La Place de la Concorde Suisse,John McPhee,3.92,160,1994-4-1,Farrar  Straus and Giroux
+81,Giving Good Weight,John McPhee,4.23,288,1994-4-1,Farrar  Straus and Giroux
+83,Rising from the Plains,John McPhee,4.23,208,1987-11-1,Farrar  Straus and Giroux
+85,The Heidi Chronicles,Wendy Wasserstein,3.75,81,2002-3-1,Dramatists Play Service
+86,The Heidi Chronicles: Uncommon Women and Others & Isn't It Romantic,Wendy Wasserstein,3.84,249,1991-7-2,Vintage
+89,Active Literacy Across the Curriculum: Strategies for Reading  Writing  Speaking  and Listening,Heidi Hayes Jacobs,3.94,138,2006-3-29,Routledge
+90,Simply Beautiful Beaded Jewelry,Heidi Boyd,3.77,128,2006-3-14,North Light Books
+91,Always Enough: God's Miraculous Provision Among the Poorest Children on Earth,Heidi Baker,4.46,192,2003-9-1,Chosen Books
+92,Mapping the Big Picture: Integrating Curriculum & Assessment K-12,Heidi Hayes Jacobs,3.68,108,1997-1-28,Association for Supervision & Curriculum Development
+93,Heidi (Heidi  #1-2),Johanna Spyri,3.99,352,2002-11-15,Kingfisher
+94,Getting Results with Curriculum Mapping,Heidi Hayes Jacobs,3.25,192,2004-11-15,ASCD
+96,There's Always Enough: The Miraculous Move of God in Mozambique,Rolland Baker,4.46,192,2003-4-28,Sovereign World
+98,What to Expect the First Year (What to Expect),Heidi Murkoff,3.89,832,2003-10-16,Workman Publishing Company
+99,The Player's Handbook: The Ultimate Guide on Dating and Relationships,Heidi Fleiss,3.82,123,2004-5-10,One Hour Entertainment
+100,Simply Beautiful Beading: 53 Quick and Easy Projects,Heidi Boyd,3.78,128,2004-8-19,North Light Books
+103,God Emperor of Dune (Dune Chronicles  #4),Frank Herbert,3.84,423,1987-6-15,Ace Books
+105,Chapterhouse: Dune (Dune Chronicles #6),Frank Herbert,3.91,436,1987-7-1,Ace Books
+106,Dune Messiah (Dune Chronicles #2),Frank Herbert,3.88,331,1987-7-15,Ace Books
+107,Dreamer of Dune: The Biography of Frank Herbert,Brian Herbert,4.01,592,2004-7-1,Tor Books
+109,Heretics of Dune (Dune Chronicles  #5),Frank Herbert,3.86,480,1984-4-16,Putnam
+110,The Road to Dune,Frank Herbert,3.88,426,2006-8-29,Tor Science Fiction
+117,Heretics of Dune (Dune Chronicles #5),Frank Herbert,3.86,471,1987-8-15,Ace Books
+119,The Lord of the Rings: The Art of the Fellowship of the Ring,Gary Russell,4.59,192,2002-6-12,Houghton Mifflin Harcourt
+122,The Power of One (The Power of One  #1),Bryce Courtenay,4.35,544,1996-9-29,Ballantine Books
+123,The Power of One (The Power of One  #1),Bryce Courtenay,4.35,291,2005-9-13,Delacorte Books for Young Readers
+129,The Power of One: One Person  One Rule  One Month,John C. Maxwell,4.28,256,2004-11-1,Thomas Nelson
+130,Power of an Hour: Business and Life Mastery in One Hour a Week,Dave Lakhani,3.34,205,2006-5-19,Wiley
+131,The Power of One: The Solo Play for Playwrights  Actors  and Directors,Louis E. Catron,3.67,240,2000-2-7,Heinemann Drama
+132,How to Buy  Sell & Profit on eBay: Kick-Start Your Home-Based Business in Just Thirty Days,Adam Ginsberg,3.48,336,2005-5-3,William Morrow Paperbacks
+133,eBay for Dummies,Marsha Collier,3.50,386,2006-10-30,Wiley
+135,What to Sell on ebay and Where to Get It: The Definitive Guide to Product Sourcing for eBay and Beyond,Chris Malta,3.62,260,2006-1-24,McGraw-Hill
+137,Starting an eBay Business for Dummies,Marsha Collier,3.55,384,2004-9-17,Wiley
+138,eBay: Top 100 Simplified Tips & Tricks,Julia Wilkinson,4.27,260,2006-6-6,Wiley
+139,ebay Timesaving Techniques for Dummies,Marsha Collier,3.39,391,2004-5-31,Wiley
+140,eBay Business All-in-One Desk Reference for Dummies,Marsha Collier,3.89,864,2005-4-25,Wiley
+141,Ruby Cookbook,Lucas Carlson,3.84,873,2006-7-29,O'Reilly Media
+142,Ruby Ann's Down Home Trailer Park Cookbook,Ruby Ann Boxcar,4.12,240,2005-5-3,Citadel
+144,Ruby Ann's Down Home Trailer Park BBQin' Cookbook,Ruby Ann Boxcar,4.08,206,2005-5-3,Citadel
+147,Rails Cookbook: Recipes for Rapid Web Development with Ruby,Rob Orsini,3.48,514,2007-1-1,O'Reilly Media
+151,Anna Karenina,Leo Tolstoy,4.05,838,2004-5-31,Penguin Classics
+152,Anna Karenina,Leo Tolstoy,4.05,960,2002-11-5,Signet
+153,Anna Karenina,Leo Tolstoy,4.05,837,2003-1-30,Penguin Books
+154,CliffsNotes on Tolstoy's Anna Karenina,Marianne Sturman,3.85,80,1965-11-26,Cliffs Notes
+155,Anna Karenina,Leo Tolstoy,4.05,803,2003-7-1,Barnes & Noble Classics
+156,Anna Karenina,Leo Tolstoy,4.05,752,2004-11-23,Dover Publications
+157,Anna Karenina,Leo Tolstoy,4.05,803,2004-8-26,Barnes & Noble
+159,Dinner with Anna Karenina,Gloria Goldreich,2.99,360,2006-1-28,Mira Books
+160,Tolstoy: Anna Karenina,Anthony Thorlby,4.19,128,1987-11-26,Cambridge University Press
+162,Untouchable,Mulk Raj Anand,3.71,160,1990-7-3,Penguin Books
+163,The Untouchable,John Banville,3.95,367,1998-6-30,Vintage
+164,The Untouchables,Eliot Ness,3.89,256,1996-2-1,Buccaneer Books
+165,Untouchables: My Family's Triumphant Journey Out of the Caste System in Modern India,Narendra Jadhav,3.82,320,2005-9-27,Scribner
+166,Dalit: The Black Untaouchables of India,V.T. Rajshekar,4.20,100,1995-1-28,Clarity Press
+168,Growing Up Untouchable in India: A Dalit Autobiography,Vasant Moon,3.65,224,2000-12-20,Rowman & Littlefield Publishers
+171,The Evidence-Based Social Work Skills Book,Barry R. Cournoyer,3.40,216,2003-9-22,Pearson
+177,"A Wrinkle in Time: A Guide for Using ""A Wrinkle in Time"" in the Classroom",John Carratello,4.00,48,1991-9-28,Teacher Created Resources
+180,Wrinkles in Time,George Smoot,4.01,360,1994-10-1,Harper Perennial
+181,A Wrinkle in Time: With Related Readings (A Wrinkle in Time Quintet #1),Madeleine L'Engle,4.00,250,2002-5-1,EMC/Paradigm Publishing
+182,Literature Circle Guide: A Wrinkle in Time,Tara MacCarthy,3.60,32,2002-1-1,Teaching Resources
+201,Una arruga en el tiempo – A Wrinkle in Time,Madeleine L'Engle,4.00,205,1984-6-1,Turtleback Books
+204,The Long Shadow (The Morland Dynasty  #6),Cynthia Harrod-Eagles,4.12,367,1994-6-1,Little  Brown Book Group
+205,A Long Shadow (Inspector Ian Rutledge  #8),Charles Todd,4.11,352,2006-1-3,William Morrow
+207,Long Way Round: Chasing Shadows Across the World,Ewan McGregor,3.94,320,2005-11-1,Atria Books
+208,A Shadow in Summer (Long Price Quartet  #1),Daniel Abraham,3.60,331,2006-3-7,Tor Books
+213,New Hope for the Dead (Hoke Mosely #2),Charles Willeford,3.90,244,2004-8-10,Vintage Crime/Black Lizard
+214,Sideswipe: A Hoke Moseley Novel,Charles Willeford,4.05,215,2005-3-8,Vintage Crime/Black Lizard
+216,Miami Blues (Hoke Moseley #1),Charles Willeford,3.94,191,2004-8-10,Vintage Crime/Black Lizard
+230,The Burnt Orange Heresy (Vintage Crime/Black Lizard),Charles Willeford,3.89,144,1990-10-3,Vintage
+231,I am Charlotte Simmons,Tom Wolfe,3.42,738,2005-8-30,Picador USA
+237,Poetry for Young People: Edward Lear,Edward Lear,3.91,48,2001-10-1,Sterling
+244,The Puffin Book of Nonsense Verse,Quentin Blake,4.02,287,1996-10-3,Puffin
+245,Henry Miller on Writing,Henry Miller,4.22,217,1964-2-1,New Directions Publishing
+247,Quiet Days in Clichy,Henry Miller,3.69,154,1994-1-13,Grove Press
+249,Tropic of Cancer,Henry Miller,3.68,318,1994-1-6,Grove Press
+250,Tropic of Capricorn,Henry Miller,3.78,348,1994-1-13,Grove Press
+251,Nexus (The Rosy Crucifixion  #3),Henry Miller,4.10,316,1994-1-13,Grove Press
+252,Sexus (The Rosy Crucifixion  #1),Henry Miller,3.98,506,1994-1-12,Grove Press
+253,The Air-Conditioned Nightmare,Henry Miller,3.83,292,1970-1-17,New Directions
+264,The Portrait of a Lady,Henry James,3.78,797,2003-9-30,Penguin Classics
+269,The Portrait of a Lady,Henry James,3.78,635,2004-1-16,Barnes  Noble Classics
+277,Writing,Marguerite Duras,3.75,91,1999-5-6,Brookline Books
+278,The War,Marguerite Duras,3.85,192,1994-8-1,The New Press
+280,The Ravishing of Lol Stein,Marguerite Duras,3.66,181,1986-3-12,Pantheon
+285,Love Letters,Kahlil Gibran,3.68,178,1999-7-1,One World (UK)
+288,Kahlil Gibran: His Life and World,Jean Gibran,4.21,464,1998-4-1,Interlink Publishing Group
+289,The Beloved: Reflections on the Path of the Heart,Kahlil Gibran,4.19,102,1998-1-1,Penguin Books
+290,Jesus the Son of Man,Kahlil Gibran,3.98,216,1995-2-21,Knopf
+291,The Broken Wings,Kahlil Gibran,3.92,132,2003-3-3,Citadel
+292,Sand and Foam,Kahlil Gibran,4.08,100,2011-6-14,Knopf
+295,Treasure Island,Robert Louis Stevenson,3.83,311,2001-9-15,Kingfisher
+296,Treasure Island,Robert Louis Stevenson,3.83,213,2004-10-1,Sterling Children's Books
+297,Treasure Island,Robert Louis Stevenson,3.83,245,2005-6-1,Simon & Schuster
+298,Treasure Island,Robert Louis Stevenson,3.83,64,2003-7-1,Atheneum Books for Young Readers
+299,Treasure Island,Robert Louis Stevenson,3.83,272,2002-9-3,Gramercy Books
+302,Treasure Island (Great Illustrated Classics),Deidre S. Laiken,4.05,232,2006-1-31,Abdo Publishing Company
+313,100 Years of Lynchings,Ralph Ginzburg,4.61,270,1996-11-22,Black Classic Press
+324,Cien años de soledad,Gabriel García Márquez,4.07,448,1990-1-1,French & European
+330,On Beyond Zebra!,Dr. Seuss,4.04,64,1955-9-12,Random House Books for Young Readers
+332,The Wedding Clause,Debbie Raleigh,3.60,256,2005-6-7,Zebra
+333,The Zebra Wall,Kevin Henkes,3.44,147,2005-2-15,Greenwillow Books
+337,El perfume: Historia de un asesino,Patrick Süskind,4.02,239,2002-6-1,Booket
+348,The Door Into Summer,Robert A. Heinlein,4.01,304,1997-6-17,Del Rey
+350,Stranger in a Strange Land,Robert A. Heinlein,3.92,528,1991-10-1,Ace
+354,To Sail Beyond the Sunset,Robert A. Heinlein,3.87,434,1988-6-1,Ace Books
+355,Job: A Comedy of Justice,Robert A. Heinlein,3.78,439,1985-10-12,Del Rey
+356,Time for the Stars (Heinlein's Juveniles  #10),Robert A. Heinlein,3.97,256,2006-8-8,Tor Books
+357,The Long Dark Tea-Time of the Soul (Dirk Gently  #2),Douglas Adams,4.06,307,1991-2-15,Pocket Books
+359,The Salmon of Doubt (Dirk Gently  #3),Douglas Adams,3.93,298,2005-4-26,Del Rey
+362,Wish You Were Here: The Official Biography of Douglas Adams,Nick  Webb,4.14,368,2005-12-27,Del Rey
+367,Douglas Adams's Starship Titanic,Terry Jones,3.60,256,1998-10-27,Ballantine Books
+377,Salmon of Doubt: Hitchhiking the Galaxy One Last Time,Douglas Adams,3.93,336,2003-7-1,Turtleback Books
+382,The Phantom Tollbooth: A Children's Play in Two Acts,Susan Nanus,4.13,72,2011-1-12,Samuel French  Inc.
+385,On Bullshit,Harry G. Frankfurt,3.57,67,2005-1-30,Princeton University Press
+386,Another Bullshit Night in Suck City,Nick Flynn,3.78,347,2005-9-12,W. W. Norton & Company
+394,Lincoln at Gettysburg: The Words That Remade America,Garry Wills,4.14,317,1993-6-12,Simon & Schuster
+397,The Gettysburg Address,Abraham Lincoln,4.53,32,1998-2-2,HMH Books for Young Readers
+399,Underworld,Don DeLillo,3.92,827,1998-7-9,Scribner
+400,Libra,Don DeLillo,3.99,480,1991-5-1,Penguin
+403,Americana,Don DeLillo,3.43,377,1989-7-6,Penguin Books
+404,Running Dog,Don DeLillo,3.43,256,1989-7-17,Vintage Contemporaries
+406,Cosmopolis,Don DeLillo,3.22,224,2004-4-6,Scribner
+407,Great Jones Street,Don DeLillo,3.48,272,1994-1-1,Penguin Books
+408,The Names,Don DeLillo,3.64,339,1989-7-17,Vintage
+409,Against the Day,Thomas Pynchon,4.13,1085,2006-11-21,Penguin Press
+410,V.,Thomas Pynchon,3.96,547,2005-7-5,Harper Perennial Modern Classics
+411,The Crying of Lot 49,Thomas Pynchon,3.69,152,1999-4-1,Harper Perennial
+412,Gravity's Rainbow,Thomas Pynchon,4.01,784,2000-1-1,Penguin Books
+413,Mason & Dixon,Thomas Pynchon,4.07,773,2004-1-3,Picador USA
+414,Vineland,Thomas Pynchon,3.69,385,1997-9-1,Penguin Classics
+415,Gravity's Rainbow,Thomas Pynchon,4.01,776,2006-10-31,Penguin Books
+416,Slow Learner: Early Stories,Thomas Pynchon,3.50,193,1985-4-30,Back Bay Books
+418,Been Down So Long It Looks Like Up To Me,Richard Fariña,3.80,352,1996-8-29,Penguin Classics
+420,The Year of Magical Thinking,Joan Didion,3.89,227,2005-10-4,Knopf Publishing Group
+421,The White Album,Joan Didion,4.17,222,1990-10-1,Farrar Straus Giroux
+422,A Book of Common Prayer,Joan Didion,3.80,272,1995-4-11,Vintage International
+423,Where I Was From,Joan Didion,3.86,240,2004-9-14,Vintage
+424,Slouching Towards Bethlehem,Joan Didion,4.21,238,1990-10-1,Farrar Straus Giroux
+425,Democracy,Joan Didion,3.81,234,1995-4-25,Vintage International
+426,We Tell Ourselves Stories in Order to Live: Collected Nonfiction,Joan Didion,4.50,1122,2006-10-17,Everyman's Library
+428,Play It As It Lays,Joan Didion,3.87,231,2005-11-15,Farrar  Straus and Giroux
+431,The New York Trilogy,Paul Auster,3.89,308,2006-3-28,Penguin Classics
+432,City of Glass (The New York Trilogy  #1),Paul Auster,3.79,203,1987-4-7,Penguin Books
+434,Ghosts (The New York Trilogy  #2),Paul Auster,3.64,96,1987-7-7,Penguin Books
+435,The Locked Room (The New York Trilogy  #3),Paul Auster,3.89,179,1986-11-1,Sun and Moon Press
+444,Pyramids of Montauk: Explorations in Consciousness,Peter Moon,3.89,256,1995-1-1,Sky Books (NY)
+446,The Brooklyn Follies,Paul Auster,3.84,306,2006-10-17,Picador
+447,Moon Palace,Paul Auster,3.94,320,1990-4-1,Penguin Books
+453,The Music of Chance,Paul Auster,3.90,217,1991-12-1,Penguin Books
+454,Travels in the Scriptorium,Paul Auster,3.23,145,2007-1-23,Henry Holt & Company
+456,Leviathan,Paul Auster,3.96,275,1993-9-1,Penguin Books
+463,The Red Notebook: True Stories,Paul Auster,3.77,104,2002-6-17,New Directions
+466,Timbuktu / Leviathan / Moon Palace,Paul Auster,4.38,1075,2002-11-7,Actes Sud
+475,Collapse: How Societies Choose to Fail or Succeed,Jared Diamond,3.93,608,2005-12-27,Penguin Books Ltd. (London)
+476,The Coming Economic Collapse: How You Can Thrive When Oil Costs $200 a Barrel,Stephen Leeb,3.40,211,2006-2-1,Business Plus
+477,Collapse of Complex Societies,Joseph A. Tainter,4.15,262,1990-3-29,Cambridge University Press
+478,Bowling Alone: The Collapse and Revival of American Community,Robert D. Putnam,3.80,544,2001-8-7,Simon  Schuster
+481,The Collapse of the Common Good: How America's Lawsuit Culture Undermines Our Freedom,Philip K. Howard,3.91,272,2002-1-29,Ballantine Books
+484,Reinventing the Enemy's Language: Contemporary Native Women's Writings of North America,Joy Harjo,4.39,576,1998-9-17,W. W. Norton  Company
+493,My Inventions,Nikola Tesla,4.01,88,2006-5-17,Filiquarian Publishing  LLC.
+494,Wizard: The Life and Times of Nikola Tesla: Biography of a Genius,Marc J.  Seifer,3.78,542,2001-2-1,Citadel
+497,Nikola Tesla: A Spark of Genius,Carol Dommermuth-Costa,3.93,144,1994-10-1,Lerner Publications
+498,Tesla Papers,Nikola Tesla,4.13,100,2000-12-1,Adventures Unlimited Press
+511,Boys of Summer,Julie Elizabeth Leto,3.77,249,2006-6-27,Harlequin Blaze
+515,Programming Ruby: The Pragmatic Programmers' Guide,Dave Thomas,4.03,828,2004-10-11,Pragmatic Bookshelf
+523,Golding's Lord of the Flies (Cliffs Notes),Maureen Kelly,3.95,112,2000-6-13,Cliffs Notes
+524,Lord of the Flies,William Golding,3.68,6,2005-10-11,Listening Library (Audio)
+531,A War Like No Other: How the Athenians & Spartans Fought the Peloponnesian War,Victor Davis Hanson,4.11,397,2006-9-12,Random House
+534,We Were Not Like Other People,Ephraim Sevela,4.14,216,1989-1-1,HarperCollins Publishers
+537,The Lovely Bones,Alice Sebold,3.81,328,2003-6-1,Picador
+538,The Lovely Bones,Alice Sebold,3.81,532,2004-4-1,Large Print Press
+539,Lovely in Her Bones (Elizabeth MacPherson  #2),Sharyn McCrumb,3.80,224,1990-5-13,Ballantine Books
+565,The Zen of CSS Design: Visual Enlightenment for the Web,Dave Shea,3.98,296,2005-2-17,Peachpit Press
+570,HTML  XHTML  and CSS (Visual Quickstart Guide),Elizabeth Castro,3.80,456,2006-8-1,Peachpit Press
+576,1000 Record Covers,Michael Ochs,3.85,575,2005-5-15,Taschen
+597,Killing Yourself to Live: 85% of a True Story,Chuck Klosterman,3.81,245,2006-6-13,Scribner
+599,Sex  Drugs  and Cocoa Puffs: A Low Culture Manifesto,Chuck Klosterman,3.73,272,2004-7-2,Scribner
+619,Vice (V  #8),Jane Feather,3.51,419,1996-5-2,Bantam
+629,Zen and the Art of Motorcycle Maintenance: An Inquiry Into Values (Phaedrus  #1),Robert M. Pirsig,3.77,540,2006-4-25,HarperTorch
+639,Once Upon a Cool Motorcycle Dude,Kevin O'Malley,4.08,32,2005-4-1,Walker & Company
+642,Guidebook to Zen and the Art of Motorcycle Maintenance,Ronald L. DiSanto,3.72,408,1990-11-19,William Morrow Paperbacks
+643,Motorcycle Basics Techbook,John Harold Haynes,3.85,222,2002-7-5,Haynes Manuals N. America  Inc.
+650,LOGO Lounge: 2 000 International Identities by Leading Designers,Catharine M. Fishel,3.93,191,2004-9-1,Rockport Publishers
+655,The Death of Ivan Ilych And Other Stories,Leo Tolstoy,4.11,304,2003-4-1,Signet Classics
+656,War and Peace,Leo Tolstoy,4.11,1392,1998-6-25,Oxford University Press
+658,The Kingdom of God Is Within You,Leo Tolstoy,4.13,352,2006-9-8,Dover Publications
+662,Atlas Shrugged,Ayn Rand,3.69,1168,1999-8-1,Plume
+663,For the New Intellectual: The Philosophy of Ayn Rand,Ayn Rand,3.68,224,1963-12-1,Signet Book
+664,The Fountainhead,Ayn Rand,3.87,752,2005-4-26,Dutton
+665,The Virtue of Selfishness: A New Concept of Egoism,Ayn Rand,3.51,176,1964-11-1,Signet
+667,Anthem,Ayn Rand,3.63,105,1999-12-1,NAL
+668,We the Living,Ayn Rand,3.91,464,1996-1-1,Signet
+669,Capitalism: The Unknown Ideal,Ayn Rand,3.88,340,1986-7-15,Signet
+670,Letters of Ayn Rand,Ayn Rand,3.96,681,1997-2-1,NAL
+672,Sailing for Dummies,J.J. Isler,3.95,416,2006-6-1,For Dummies
+675,Sailing from Byzantium: How a Lost Empire Shaped the World,Colin  Wells,3.88,368,2006-7-25,Delacorte Press
+676,Sailing Alone Around the Room: New and Selected Poems,Billy Collins,4.23,192,2002-9-17,Random House Trade Paperbacks
+678,The Greatest Sailing Stories Ever Told: Twenty-Seven Unforgettable Stories,Christopher Caswell,3.62,286,2004-4-1,Lyons Press
+681,"Natural Cures ""They"" Don't Want You to Know about",Kevin Trudeau,3.09,571,2004-1-1,Alliance Publishing
+685,The Natural,Bernard Malamud,3.63,231,2003-7-7,Farrar Straus Giroux
+698,Digging to America,Anne Tyler,3.55,277,2006-5-2,Alfred A. Knopf
+700,Rereading America: Cultural Contexts for Critical Thinking and Writing,Gary Colombo,3.77,826,2004-1-21,Bedford Books
+702,Modern Latin America,Thomas E. Skidmore,3.59,528,2004-10-7,Oxford University Press  USA
+703,The Plot Against America,Philip Roth,3.77,391,2005-9-27,Vintage International
+707,Naked Pictures of Famous People,Jon   Stewart,3.59,164,1999-9-22,Dey Street Books
+759,Collected Stories,Gabriel García Márquez,4.19,352,2008-5-13,Harper Perennial Modern Classics
+762,Crónica de una muerte anunciada,Gabriel García Márquez,3.97,118,2003-10-14,Vintage Espanol
+763,Cien años de soledad,Gabriel García Márquez,4.07,496,2006-2-7,Plaza y Janes
+764,Del amor y otros demonios,Gabriel García Márquez,3.98,176,2006-2-7,Plaza y Janes
+765,Living to Tell the Tale,Gabriel García Márquez,3.99,533,2004-10-12,Vintage
+766,Memoria de mis putas tristes,Gabriel García Márquez,3.60,112,2004-10-19,Vintage Espanol
+771,The Elegant Universe: Superstrings  Hidden Dimensions  and the Quest for the Ultimate Theory,Brian Greene,4.07,425,2004-9-2,Vintage Books USA
+775,Pure and Simple: The Extraordinary Teachings of a Thai Buddhist Laywoman,Upasika Kee Nanayon,4.29,288,2005-5-15,Wisdom Publications
+787,The Mini Rough Guide to London,Rob Humphreys,3.75,363,2006-4-1,Rough Guides
+793,Best of London (Lonely Planet Best Of),Lonely Planet,3.83,128,2004-9-1,Lonely Planet
+797,Lonely Planet Londres,Lonely Planet,4.03,480,2006-5-1,Geoplaneta
+799,Out to Eat London 2002 (Lonely Planet Out to Eat),Lonely Planet,0.00,295,2001-9-1,Lonely Planet
+815,Three Nights in August: Strategy  Heartbreak  and Joy Inside the Mind of a Manager,H.G. Bissinger,3.88,287,2006-4-4,Mariner Books
+816,Cryptonomicon,Neal Stephenson,4.25,1139,2002-11-1,Avon
+821,Le Réseau Kinakuta (Cryptonomicon  #2),Neal Stephenson,4.10,418,2001-3-31,Payot
+822,The Confusion (The Baroque Cycle  #2),Neal Stephenson,4.26,815,2005-6-14,William Morrow Paperbacks
+823,Quicksilver (The Baroque Cycle  #1),Neal Stephenson,3.93,927,2004-9-21,HarperCollins Perennial
+824,The Cobweb,Neal Stephenson,3.61,448,2005-5-31,Spectra Books
+826,The Big U,Neal Stephenson,3.25,308,2001-2-6,William Morrow Paperbacks
+827,The Diamond Age: Or  A Young Lady's Illustrated Primer,Neal Stephenson,4.19,499,2000-5-2,Spectra
+828,Interface,Neal Stephenson,3.68,640,2005-5-31,Spectra
+829,Odalisque (The Baroque Cycle  Vol. 1  Book 3),Neal Stephenson,4.20,464,2006-3-28,HarperTorch
+830,Snow Crash,Neal Stephenson,4.03,438,2000-8-2,Bantam Books
+834,Harrington on Hold 'em: Expert Strategy for No-Limit Tournaments  Volume II: The Endgame,Dan Harrington,4.16,450,2005-6-1,Two Plus Two Publishing LLC
+835,Harrington on Hold 'em: Expert Strategy for No-Limit Tournaments  Volume I: Strategic Play,Dan Harrington,4.24,381,2004-12-1,Two Plus Two Publishing LLC
+840,The Design of Everyday Things,Donald A. Norman,4.17,240,2002-9-19,Basic Books
+841,Emotional Design: Why We Love (or Hate) Everyday Things,Donald A. Norman,3.95,272,2005-5-11,Basic Books
+842,The Psychology of Everyday Things,Donald A. Norman,4.17,257,1988-6-13,Basic Books
+848,No Price Too High: A Pentecostal Preacher Becomes Catholic - The Inspirational Story of Alex Jones as Told to Diane Hanson,Alex C. Jones,4.27,259,2006-4-30,Ignatius Press
+864,The Alchemist,Paulo Coelho,3.86,192,2006-5-2,HarperOne
+865,The Alchemist,Paulo Coelho,3.86,197,1993-5-1,HarperCollins
+866,Fullmetal Alchemist  Vol. 9 (Fullmetal Alchemist  #9),Hiromu Arakawa,4.57,192,2006-9-19,VIZ Media LLC
+868,Fullmetal Alchemist  Vol. 3 (Fullmetal Alchemist  #3),Hiromu Arakawa,4.56,192,2005-9-13,VIZ Media LLC
+869,Fullmetal Alchemist  Vol. 8 (Fullmetal Alchemist  #8),Hiromu Arakawa,4.57,192,2006-7-18,VIZ Media LLC
+870,Fullmetal Alchemist  Vol. 1 (Fullmetal Alchemist  #1),Hiromu Arakawa,4.50,192,2005-5-3,VIZ Media LLC
+871,Fullmetal Alchemist  Vol. 4 (Fullmetal Alchemist  #4),Hiromu Arakawa,4.55,200,2005-11-8,VIZ Media LLC
+872,The Illustrated Alchemist: A Fable about Following Your Dream,Paulo Coelho,3.86,198,1998-11-1,HarperCollins Publishers
+873,Fullmetal Alchemist  Vol. 2 (Fullmetal Alchemist  #2),Hiromu Arakawa,4.52,192,2005-7-5,VIZ Media LLC
+880,Pompeii,Robert   Harris,3.82,274,2005-11-8,Random House Trade Paperbacks
+888,The Last Days of Pompeii,Edward Bulwer-Lytton,3.60,360,2002-12-3,Borgo Press
+890,Of Mice and Men,John Steinbeck,3.87,103,2002-1-8,Penguin Books
+900,The Game: Penetrating the Secret Society of Pickup Artists,Neil Strauss,3.74,464,2005-9-6,It Books
+902,The Westing Game,Ellen Raskin,4.02,182,2004-4-12,Puffin
+903,The Egypt Game,Zilpha Keatley Snyder,3.83,215,2009-7-7,Turtleback Books
+929,Memoirs of a Geisha,Arthur Golden,4.11,503,2005-11-22,Vintage Books USA
+930,Memoirs of a Geisha,Arthur Golden,4.11,434,2005-11-15,Random House Large Print Publishing
+931,Memoirs of a Geisha,Arthur Golden,4.11,497,2005-12-1,Vintage
+932,Memoirs of a Geisha: A Portrait of the Film,David        James,4.08,144,2005-10-20,Newmarket Press
+933,Memoirs of a Geisha,Arthur Golden,4.11,497,1998-6-4,Vintage
+935,Geisha of Gion,Mineko Iwasaki,3.93,334,2003-5-6,Pocket Books
+941,Love As A Foreign Language #5,J. Torres,3.44,58,2006-2-1,Oni Press
+944,Jungle Love,Margaret Johnson,3.41,95,2002-8-1,Cambridge University Press
+955,The 5 Love Languages / The 5 Love Languages Journal,Gary Chapman,4.70,0,2005-1-1,Moody Publishers
+960,Angels & Demons (Robert Langdon  #1),Dan Brown,3.89,736,2006-4-1,Pocket Books
+965,Ángeles y demonios (Robert Langdon  #1),Dan Brown,3.89,508,2005-12-1,Umbriel
+966,Angeles & Demonios,Dan Brown,3.89,18,2005-12-1,FonoLibro
+968,The Da Vinci Code (Robert Langdon  #2),Dan Brown,3.84,489,2006-3-28,Anchor
+969,The Da Vinci Code,Dan Brown,3.84,467,2006-3-28,Broadway Books
+972,Da Vinci Code (Robert Langdon  #2),Dan Brown,3.84,744,2005-5-3,Pocket
+975,Deception Point,Dan Brown,3.71,736,2006-4-1,Pocket Books
+977,Deception Point,Dan Brown,3.71,585,2004-5-1,Corgi Books
+980,Deception Point,Dan Brown,3.71,448,2005-8-1,Bantam Press
+987,A Killing Rain (Louis Kincaid  #6),P.J. Parrish,4.04,383,2005-2-1,Pinnacle
+998,The Millionaire Next Door: The Surprising Secrets of America's Wealthy,Thomas J. Stanley,4.03,258,1998-10-1,Gallery Books
+1005,Think and Grow Rich: The Landmark Bestseller Now Revised and Updated for the 21st Century,Napoleon Hill,4.18,320,2005-9-1,Tarcherperigee
+1007,Think and Grow Rich,Napoleon Hill,4.18,368,2004-8-7,High Roads Media
+1014,Pragmatic Version Control: Using Subversion (The Pragmatic Starter Kit Series),Mike   Mason,3.58,256,2006-6-7,Pragmatic Bookshelf
+1022,Read My Lips: Sexual Subversion and the End of Gender,Riki Anne Wilchins,3.95,288,2005-6-1,Firebrand Books
+1032,Trump: The Art of the Deal,Donald J. Trump,3.66,384,2004-12-28,Ballantine Books
+1052,The Richest Man in Babylon,George S. Clason,4.26,194,2008-2-1,Berkley Books
+1053,The Richest Man in Babylon,George S. Clason,4.26,4,2005-6-17,Recorded Books  Inc.
+1059,Shibumi,Trevanian,4.21,480,2005-5-10,Broadway Books
+1067,1776,David McCullough,4.07,386,2006-7-4,Simon  Schuster
+1068,1776,Peter  Stone,4.22,192,1976-11-18,Penguin Books
+1073,The Crescent Obscured: The United States and the Muslim World  1776-1815,Robert J. Allison,3.62,284,2000-7-15,University of Chicago Press
+1078,The Good Earth (House of Earth  #1),Pearl S. Buck,3.98,418,2009-3-4,Howard Publishing Co
+1090,Purpose Driven Life - For Commuters: What on Earth Am I Here For?,Rick Warren,3.93,5,2005-3-15,Zondervan
+1097,Fast Food Nation: The Dark Side of the All-American Meal,Eric Schlosser,3.74,399,2005-7-5,Harper Perennial
+1099,Fast Food Nation: What The All-American Meal is Doing to the World,Eric Schlosser,3.74,384,2002-4-4,Penguin Books
+1103,Snow Flower and the Secret Fan,Lisa See,4.07,269,2006-2-21,Random House
+1110,The Broker,John Grisham,3.78,422,2006-9-26,Delta
+1111,The Power Broker: Robert Moses and the Fall of New York,Robert A. Caro,4.51,1344,1975-7-12,Vintage
+1117,The Power Broker: A Novel (Christian Gillette  #3),Stephen W. Frey,3.75,320,2006-7-25,Ballantine Books
+1120,Body For Life: 12 Weeks to Mental and Physical Strength,Bill Phillips,3.74,201,1999-6-10,HarperCollins Publishers  Inc.
+1121,Body for Life for Women: A Woman's Plan for Physical and Mental Transformation,Pamela Peeke,3.65,288,2005-4-1,Rodale Books
+1123,Eating for Life: Your Guide to Great Health  Fat Loss and Increased Energy!,Bill Phillips,3.95,405,2003-11-26,High Point Media
+1130,The Warren Buffett Way,Robert G. Hagstrom,4.13,245,2005-10-1,John Wiley & Sons
+1138,The Warren Buffett CEO: Secrets from the Berkshire Hathaway Managers,Robert P. Miles,4.07,432,2003-4-18,Wiley
+1164,Monkey Business: True Story of the Scopes Trial,Marvin N. Olasky,3.15,368,2005-5-15,B Books
+1167,Junie B. Jones and a Little Monkey Business (Junie B. Jones  #2),Barbara Park,3.99,68,1993-2-16,Random House Books for Young Readers
+1169,Monkey Business,Sarah Mlynowski,3.67,392,2004-9-24,Red Dress Ink
+1171,Liar's Poker,Michael   Lewis,4.15,256,1990-10-1,Penguin Books
+1177,Liar's Poker: A Harry Garnish Mystery,Frank McConnell,3.31,214,1993-6-1,Walker & Company
+1188,Risotto: 30 Simply Delicious Vegetarian Recipes from an Italian Kitchen,Ursula Ferrigno,4.08,64,2001-3-1,Ryland Peters & Small
+1191,Giada's Family Dinners,Giada De Laurentiis,3.96,256,2006-4-4,Clarkson Potter
+1192,Everyday Italian: 125 Simple and Delicious Recipes,Giada De Laurentiis,3.95,256,2005-2-22,Clarkson Potter
+1193,Everyday Pasta,Giada De Laurentiis,4.09,240,2007-4-3,Clarkson Potter
+1196,Tyler's Ultimate: Brilliant Simple Food to Make Any Time,Tyler Florence,4.09,256,2006-9-26,Clarkson Potter
+1197,Tyler Florence's Real Kitchen: An Indespensible Guide for Anybody Who Likes to Cook,Tyler Florence,4.06,304,2003-3-25,Clarkson Potter Publishers
+1198,Eat This Book: Cooking with Global Fresh Flavors,Tyler Florence,3.92,287,2004-10-1,Clarkson Potter Publishers
+1202,Freakonomics: A Rogue Economist Explores the Hidden Side of Everything,Steven D. Levitt,3.97,320,2006-10-17,William Morrow
+1204,Freakonomics: Un economista políticamente incorrecto explora el lado oculto de lo que nos afecta,Steven D. Levitt,3.97,250,2006-8-1,Ediciones B
+1206,Freakonomics: A Rogue Economist Explores the Hidden Side of Everything,Steven D. Levitt,3.97,496,2006-12-8,Harper
+1218,The Last Assassin (John Rain  #5),Barry Eisler,4.27,338,2006-6-1,Putnam Publishing Group
+1226,Life of Pi,Yann Martel,3.91,401,2004-5-3,Mariner Books / Harvest Books
+1230,L'Histoire de Pi,Yann Martel,3.91,448,2005-11-24,Gallimard
+1234,Shadows and Wind: A View of Modern Vietnam,Robert Templer,3.49,400,1999-9-1,Penguin Books
+1241,A Million Little Pieces,James Frey,3.65,515,2005-9-22,Anchor Books
+1242,A Million Little Pieces of Feces,Python Bonkers,3.56,256,2006-2-10,Lulu.com
+1243,A Million Little Lies,James Pinocchio,3.41,191,2006-3-28,William Morrow Paperbacks
+1246,The Leadership Challenge,James M. Kouzes,4.05,458,2003-8-7,Jossey-Bass
+1252,Lincoln on Leadership: Executive Strategies for Tough Times,Donald T. Phillips,4.14,193,1993-2-1,Business Plus
+1255,Leadership in Organizations,Gary Yukl,3.68,542,2005-7-7,Prentice Hall
+1265,Leadership,Rudolph W. Giuliani,3.72,397,2002-10-1,Little  Brown
+1274,Men Are from Mars  Women Are from Venus,John Gray,3.55,368,2012-4-3,Harper Paperbacks
+1276,Mars and Venus Book of Days: 365 Inspriations to Enrich Your Relationships,John Gray,3.62,368,1998-10-21,Harper
+1281,Men Are from Mars  Women Are from Venus,John Gray,3.55,2,2007-4-3,HarperAudio
+1290,How to Succeed with Women,Ron  Louis,3.76,320,1998-10-29,Prentice Hall Press
+1295,The Clan of the Cave Bear (Earth's Children  #1),Jean M. Auel,4.05,512,2002-6-25,Bantam
+1296,The Clan of the Cave Bear (Earth's Children  #1),Jean M. Auel,4.05,468,1980-5-4,Crown Publishing Group
+1301,Moneyball: The Art of Winning an Unfair Game,Michael   Lewis,4.26,317,2004-3-17,W. W. Norton  Company
+1302,Juiced Official Strategy Guide,Doug Walsh,0.00,112,2005-6-1,BradyGames
+1303,The 48 Laws of Power,Robert Greene,4.18,452,2000-9-1,Penguin (Business)
+1305,Gates of Fire,Steven Pressfield,4.42,392,2005-9-27,Bantam
+1307,Fire Sea (The Death Gate Cycle  #3),Margaret Weis,4.07,414,1992-3-1,Spectra Books
+1312,The Gate of Fire (Oath Of Empire Book Two),Thomas Harlan,3.58,721,2001-6-18,Tor Classics
+1315,The Afghan Campaign,Steven Pressfield,3.96,354,2006-7-1,Doubleday Books
+1317,Tides of War,Steven Pressfield,3.90,448,2001-8-28,Bantam
+1318,Last of the Amazons,Steven Pressfield,3.76,400,2003-7-1,Bantam
+1319,The War of Art: Break Through the Blocks & Win Your Inner Creative Battles,Steven Pressfield,4.00,168,2003-4-1,Warner Books
+1320,Gita on the Green,Stephen J. Rosen,3.78,176,2002-5-30,Continuum
+1322,Blood Stripes: The Grunt's View of the War in Iraq,David J. Danelo,3.91,340,2006-4-24,Stackpole Books
+1326,Phaedrus and Letters VII and VIII,Plato,4.10,160,1973-1-30,Penguin Classics
+1327,Phaedrus,Plato,3.92,128,2003-1-16,Oxford University Press  USA
+1328,Phaedrus,Plato,3.92,176,2005-8-25,Penguin Classics
+1334,Lysis/Phaedrus/Symposium: Plato on Homosexuality,Plato,4.47,157,1991-12-1,Prometheus Books
+1337,Enthusiasm and Divine Madness,Josef Pieper,4.50,125,2019-2-11,St. Augustines Press
+1338,On Love: Lysis/Symposium/Phaedrus/Alcibiades/Selections from Republic & Laws,Plato,4.06,272,2006-6-15,Hackett Publishing Company  Inc.
+1342,Gorgias/Phaedrus (Agora),Plato,4.35,233,1998-9-1,Cornell University Press
+1351,Statesman,Plato,3.85,128,1999-3-15,Hackett Publishing Company  Inc.
+1354,Gorgias,Plato,3.95,208,2004-1-29,Penguin Classics
+1362,The Histories,Herodotus,3.99,716,2003-1-30,Penguin Books
+1363,The Histories,Herodotus,3.99,622,1954-9-1,Penguin Classics
+1364,The History (Great Minds),Herodotus,3.99,613,1992-11-1,Prometheus Books
+1365,The Histories,Herodotus,3.99,772,1998-11-19,Oxford University Press
+1366,The Histories,Herodotus,3.99,653,1970-8-30,Penguin Classics
+1367,The Histories,Herodotus,3.99,464,1992-1-17,W.W. Norton & Company
+1368,The Histories,Herodotus,3.99,816,1997-3-25,Everyman's Library 234
+1369,The History,Herodotus,3.99,710,1987-3-14,University of Chicago Press
+1371,The Iliad,Homer,3.86,683,1999-4-29,Penguin Classics
+1373,Iliad,Homer,3.86,574,1997-3-12,Hackett Publishing Company  Inc.
+1374,The Iliad,Homer,3.86,588,2004-4-3,Farrar  Straus and Giroux
+1375,The Iliad/The Odyssey,Homer,4.04,1556,1999-11-1,Penguin Classics
+1376,The Iliad,Homer,3.86,462,2003-1-30,Penguin Classics
+1377,The Iliad,Homer,3.86,312,1999-8-1,Signet Classics
+1378,The Essential Iliad,Homer,3.86,216,2000-9-15,Hackett Publishing Company  Inc.
+1381,The Odyssey,Homer,3.76,541,2006-11-30,Penguin Classics
+1382,The Odyssey,Homer,3.76,515,1998-11-5,Farrar  Straus and Giroux
+1383,The Odyssey,Homer,3.76,374,1999-6-1,Harper Perennial
+1384,The Odyssey,Homer,3.76,324,2003-1-30,Penguin Classics
+1387,The Odyssey,Homer,3.76,304,1999-8-1,Signet Classics
+1391,Aeneid: Selections from Books 1  2  4  6  10  12,Virgil,4.35,161,2001-1-1,Bolchazy-Carducci Publishers
+1402,Eclogues. Georgics. Aeneid: Books 1-6,Virgil,4.22,607,1999-10-1,Harvard University Press
+1403,City Eclogue,Ed Roberson,4.13,136,2006-1-30,Atelos Press
+1405,The Eclogues and The Georgics,Virgil,3.80,180,1999-9-2,Oxford University Press
+1408,Paul Kirk's Championship Barbecue Sauces: 175 Make-Your-Own Sauces  Marinades  Dry Rubs  Wet Rubs  Mops and Salsas,Paul  Kirk,3.94,272,1997-12-3,Harvard Common Press
+1417,The Complete Pelican Shakespeare,William Shakespeare,4.50,1808,2002-11-7,Viking
+1419,The Complete Works,William Shakespeare,4.50,1248,1991-10-13,Gramercy
+1420,Hamlet,William Shakespeare,4.02,289,2005-8-1,Cambridge University Press
+1423,The Compleat Works of Wllm Shkspr (abridged),Reduced Shakespeare Company,4.44,137,1994-2-1,Applause Books
+1424,The Pilgrimage: A Contemporary Quest for Ancient Wisdom,Paulo Coelho,3.64,272,1995-5-1,HarperOne
+1425,The Valkyries,Paulo Coelho,3.31,212,1996-9-28,HarperOne
+1426,Warrior of the Light,Paulo Coelho,3.70,142,2004-3-30,HarperOne
+1427,The Zahir,Paulo Coelho,3.57,336,2006-7-3,HarperOne
+1428,By the River Piedra I Sat Down and Wept,Paulo Coelho,3.57,208,2006-5-23,HarperOne
+1429,The Fifth Mountain,Paulo Coelho,3.62,256,2000-4-26,HarperOne
+1431,Veronika Decides to Die,Paulo Coelho,3.70,210,2006-6-1,Harper Perennial
+1433,Hamlet,William Shakespeare,4.02,148,2001-12-1,Penguin Books
+1437,Cliffs Notes on Shakespeare's Hamlet,Carla Lynn Stockton,3.69,129,2000-5-30,Cliffs Notes
+1438,Shakespeare's Hamlet,William Shakespeare,4.02,240,2000-5-29,Cliffs Notes
+1439,Hamlet's Mill: An Essay Investigating the Origins of Human Knowledge and Its Transmission Through Myth,Giorgio De Santillana,4.29,450,2015-3-24,Nonpareil Books
+1440,History of the Peloponnesian War: Bk. 1-2,Thucydides,4.32,496,1919-1-1,Harvard University Press
+1441,On Justice  Power and Human Nature: Selections from The History of the Peloponnesian War,Thucydides,3.72,172,1993-10-1,Hackett Publishing Company  Inc.
+1444,History of the Peloponnesian War: Bk. 5-6,Thucydides,4.35,400,1921-1-1,Harvard University Press
+1445,The Peloponnesian War,Thucydides,3.90,530,1998-6-1,Hackett Publishing Company  Inc.
+1449,The Peloponnesian War: A New Translation  Backgrounds  Interpretations,Thucydides,3.90,554,1998-7-17,W. W. Norton & Company
+1459,History of the Peloponnesian War  Bk. 7-8,Thucydides,4.29,480,1923-1-1,Harvard University Press
+1461,Thucydides  Book 6 Commentary,Cynthia W. Shelmerdine,4.50,34,1989-1-30,Bryn Mawr Commentaries
+1462,Euripides I: Alcestis / The Medea / The Heracleidae / Hippolytus,Euripides,4.03,221,1955-2-15,University of Chicago Press
+1463,Euripides V: Electra / The Phoenician Women / The Bacchae,Euripides,4.21,228,1969-1-15,University of Chicago Press
+1465,Euripides IV: Rhesus / The Suppliant Women / Orestes / Iphigenia in Aulis,Euripides,4.21,307,1968-11-15,University of Chicago Press
+1466,Grief Lessons: Four Plays by Euripides,Anne Carson,4.40,312,2006-8-1,New York Review of Books
+1467,Ten Plays,Euripides,4.17,432,1990-8-1,Bantam Classics
+1468,Euripides III: Hecuba / Andromache / The Trojan Women / Ion (Complete Greek Tragedies  #7),Euripides,4.00,255,1992-1-15,University of Chicago Press
+1470,Euripides II: The Cyclops / Heracles / Iphigenia in Tauris / Helen,Euripides,4.31,264,2002-4-15,University of Chicago Press
+1473,Medea and Other Plays,Euripides,4.03,206,2003-3-27,Penguin Books
+1474,Cyclops / Alcestis / Medea,Euripides,4.23,432,1994-1-1,Loeb Classical Library
+1475,Medea,Euripides,3.87,431,2002-9-16,Cambridge University Press
+1476,The Bacchae and Other Plays,Euripides,4.14,360,2006-1-26,Penguin Classics
+1479,Bakkhai,Euripides,3.88,160,2001-2-22,Oxford University Press  USA
+1480,Plays 1: Medea/The Phoenician Women/Bacchae,Euripides,3.78,192,2000-11-9,Bloomsbury Methuen Drama
+1486,The Trojan Women and Hippolytus,Euripides,3.63,64,2002-7-17,Dover Publications
+1488,The Bacchae of Euripides: A Communion Rite,Wole Soyinka,3.86,128,2004-7-17,W. W. Norton  Company
+1489,Orestes and Other Plays,Euripides,4.10,282,2001-12-20,Oxford University Press
+1491,Children of Heracles / Hippolytus / Andromache / Hecuba,Euripides,4.26,528,1995-2-15,Loeb Classical Library
+1494,Alcestis,Euripides,3.83,142,1990-2-1,Oxford University Press  USA
+1495,Suppliant Women / Electra / Heracles,Euripides,4.47,464,1998-9-1,Loeb Classical Library
+1499,Medea,Euripides,3.87,116,2006-8-10,Oxford University Press  USA
+1504,Euripides: Medea,William Allan,4.04,160,2002-10-31,Bristol Classical Press
+1506,CliffsNotes on Euripides' Medea and Electra,Robert J. Milch,4.20,69,1965-9-13,Cliffs Notes
+1509,Trojan Women / Iphigenia Among the Taurians / Ion,Euripides,4.03,528,1999-12-1,Loeb Classical Library
+1510,Helen / Phoenician Women / Orestes,Euripides,4.07,605,2002-6-15,Loeb Classical Library
+1511,Euripides: Iphigenia at Aulis (Companions to Greek & Roman Tragedy),Euripides,4.03,144,2006-3-9,Bristol Classical Press
+1515,The Complete Greek Tragedies  Volume 3: Euripides,Euripides,4.43,672,1992-8-1,University of Chicago Press
+1516,Aeschylus I: Oresteia (Agamemnon  The Libation Bearers  The Eumenides),Aeschylus,4.02,171,1969-5-15,University of Chicago Press
+1517,Aeschylus II: The Suppliant Maidens  The Persians  Seven against Thebes  and Prometheus Bound (The Complete Greek Tragedies),Aeschylus,4.10,188,1992-2-1,University of Chicago Press
+1518,The Oresteia,Aeschylus,4.02,304,2004-10-7,Oxford University Press  USA
+1519,The Oresteia: Agamemnon  The Libation Bearers  The Eumenides,Aeschylus,4.02,335,1984-2-7,Penguin Classics
+1521,Oresteia,Aeschylus,4.02,224,1998-9-15,Hackett Publishing Company  Inc.
+1523,Prometheus Bound and Other Plays,Aeschylus,4.10,160,1961-8-30,Penguin Books
+1525,The Oresteia,Aeschylus,4.02,208,2004-9-4,Farrar  Straus and Giroux
+1526,Aeschylus  1: The Oresteia: Agamemnon/The Libation Bearers/The Eumenides,Aeschylus,4.02,178,1997-11-1,University of Pennsylvania Press
+1527,The Complete Greek Tragedies  Volume 1: Aeschylus,Aeschylus,4.10,358,1992-8-1,University of Chicago Press
+1529,Aeschylus: The Oresteia (A Student Guide: Landmarks of World Literature),Simon Goldhill,4.03,95,2004-1-22,Cambridge University Press
+1530,The Oresteia: Agamemnon  Choephoroe & Eumenides (Everyman's Library  No. 260),Aeschylus,4.02,127,2004-1-20,Everyman's Library
+1531,Aeschylus 2: The Persians/Seven Against Thebes/The Suppliants/Prometheus Bound,Aeschylus,4.10,232,1998-1-1,University of Pennsylvania Press
+1532,The Oresteia Trilogy: Agamemnon/The Libation-Bearers/The Furies,Aeschylus,4.02,151,1996-9-24,Dover Publications
+1533,The Suppliant Maidens/The Persians/Seven against Thebes/Prometheus Bound,Aeschylus,4.10,208,2004-6-17,Kessinger Publishing
+1536,Sophocles II: Ajax/Women of Trachis/Electra/Philoctetes (Complete Greek Tragedies 4),Sophocles,4.14,254,1969-5-15,University of Chicago Press
+1537,The Oedipus Plays of Sophocles: Oedipus the King; Oedipus at Colonus; Antigone,Sophocles,3.97,288,1996-5-1,Plume
+1538,The Complete Plays,Sophocles,4.27,420,2001-3-1,New American Library
+1540,The Oedipus Cycle: Oedipus Rex  Oedipus at Colonus  Antigone,Sophocles,3.97,259,2002-11-1,Mariner Books
+1542,The Three Theban Plays: Antigone  Oedipus the King  Oedipus at Colonus,Sophocles,3.97,430,2000-1-3,Penguin Books
+1546,Theban Plays,Sophocles,3.97,304,2003-3-15,Hackett Publishing Company  Inc.
+1547,The Theban Plays (Everyman's Library  #93),Sophocles,3.97,223,1994-10-18,Alfred A. Knopf
+1548,Electra and Other Plays,Sophocles,4.14,218,1953-4-30,Penguin
+1549,Antigone; Oedipus the Kingn; Electra,Sophocles,3.94,178,1998-9-17,Oxford University Press
+1554,Oedipus Rex  (The Theban Plays  #1),Sophocles,3.70,75,2006-6-22,Prestwick House - (Literary Touchstone Classic)
+1555,The Oedipus Plays of Sophocles,Sophocles,3.97,390,1958-9-1,Signet Books (NY)
+1558,Oedipus Rex (Greek and Latin Classics),Sophocles,3.70,214,2006-8-1,Cambridge University Press
+1559,Oedipus the King,Sophocles,3.70,144,2005-7-1,Simon  Schuster
+1560,Four Plays: The Clouds/The Birds/Lysistrata/The Frogs,Aristophanes,4.06,624,1984-11-1,Plume
+1561,Three Plays by Aristophanes: Lysistrata/Women at the Thesmophoria/Assemblywomen,Aristophanes,3.94,256,1996-8-27,Routledge
+1562,The Complete Plays,Aristophanes,4.21,577,1984-3-1,Bantam Classics
+1563,Aristophanes 1: The Acharnians/Peace/Celebrating Ladies/Wealth,Aristophanes,3.83,336,1998-1-29,University of Pennsylvania Press

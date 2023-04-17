@@ -1,0 +1,21 @@
+SET firstKey "My First Key"
+GET firstKey
+SET expireKey "This will expire in 2 seconds" EX 2
+GET expireKey
+SET counter 0
+get counter
+INCR counter
+DECR counter
+INCRBY 2
+INCRBY counter 2
+DECRBY counter 1
+EXISTS counter
+EXISTS firstKey
+EXISTS expireKey
+KEYS 'c'
+KEYS c
+KEYS *
+DEL firstKey
+KEYS *
+RENAME counter new_counter
+KEYS *

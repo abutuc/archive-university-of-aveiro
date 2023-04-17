@@ -1,0 +1,158 @@
+Para o ex2 é preciso colocar em três ficheiros separados:
+- Criação das tabelas e as keyspaces
+- Criação para popular a base de dados com Inserts
+- Colocar as queries num ficheiro com a identificação C-1...D-1, D-2, ETC.
+
+
+Sistema de partilha de vídeos
+
+User:
+- id int
+- username text
+- name text
+- email text
+- registered_on timeuuid
+
+Video:
+- autor_id int -- Id of user
+- name text
+- description text
+- tags_list<text>
+- shared_on timeuuid
+- followers_list<int> -- List of users that follow the video and will be notified when comments are made about it
+- ratings_list<int> -- List of ratings introduced by users but doesn't need their id
+
+Comment:
+- id int
+- video_id int
+- user_id int
+- made_on timeuuid
+
+Event:
+- video_id int
+- user_id int
+- type text // play, pause or stop
+- occured_on timeuuid
+- video_timestamp int -- seconds
+
+
+Queries:
+Q1 - Permitir a pesquisa de todos os vídeos de determinado autor; [ Partition key: autor_id (Tabela vídeo) ]
+Q2 - Permitir a pesquisa de comentários por utilizador, ordenado inversamento pela data; [Nova Tabela comments_by_user com Parition key user_id e clustering key made_on]
+Q3 - Permitir a pesquisa de comentários por vídeos, ordenado inversamente pela data; [Nova Tabela comments_by_video com Parition key video_id e clustering key made_on]
+Q4 - Permitir a pesquisa do rating médio de um vídeo e quantas vezes foi votado; -- https://docs.datastax.com/en/cql-oss/3.3/cql/cql_reference/cqlCreateAggregate.html, avg & count built-in aggregate function
+Q5 - Os últimos 3 comentários introduzidos para um vídeo;
+Q6 - Lista das tags de determinado vídeo;
+Q7 - Todos os vídeos com a tag Aveiro; [Nova Tabela videos_by_tag com Partition key tags_list]
+Q8 - Os últimos 5 eventos de determinado vídeo realizados por um utilizador; [Nova Tabela events_video_user com Partition key video_id e user_id e Clustering key occured_on]
+Q9 - Vídeos partilhados por determinado utilizador num determinado período de tempo -- this will require the shared_on attribute to be a clustering attribute
+Q10 - Os últimos 10 vídeos, ordenado inversamente pela data de partilha -- shared_on clustering key in videos table
+Q11 - Todos os seguidores (followers de determinado video)
+Q12 - Todos os comentários (dos vídeos) que determinado utilizador está a seguir;
+Q13 - Os 5 vídeos com maior rating;
+Q14 - Uma query que retorne todos os vídeos e que mostre claramente a forma pela qual estão ordenados;
+Q15 - Lista com as Tags existents e o número de vídeos catalogados com cada uma delas;
+Q16 - Lista com numero de followers de cada vídeo
+Q17 - Lista os nomes dos utilizadores por ordem alfabética
+
+
+
+Tabelas:
+
+// A tabela users será somente utilizada para armazenar a informação dos Utilizadores, não estando otimizada para pesquisas (partition key é referente a um valor único)
+* users DONE
+    - user_id int
+    - username text
+    - name  text
+    - email text
+    - registered_on timestamp
+    PRIMARY KEY(user_id, name)
+
+// A tabela videos será somente utilizada para armazenar a informação dos Vídeos, não estando otimizada para pesquisas (partition key é referente a um valor único)
+* videos DONE
+    - video_id int
+    - author_id int
+    - name text
+    - description text
+    - tags list<int>
+    - shared_on timestamp
+    - ratings list<int>
+    - rating double
+    PRIMARY KEY(video_id, (shared_on, rating))
+
+
+// A tabela comments será somente utilizada para armazenar a informação dos Comments, não estando otimizada para pesquisas (partition key é referente a um valor único)
+* comments DONE
+    - comment_id int
+    - video_id int
+    - user_id int
+    - content text
+    - made_on timestamp
+    PRIMARY KEY(comment_id)
+
+
+// A tabela comments será somente utilizada para armazenar a informação dos Comments, não estando otimizada para pesquisas (partition key é referente a um valor único)
+* events DONE
+    - event_id int
+    - video_id int
+    - type text
+    - occured_on timestamp
+    - on_video_seconds int
+    PRIMARY KEY(event_id)
+
+// A tabela videos_followers é uma tabela criada para otimizar o armazenamento dos followers de um vídeo, assim como para otimizar a query Q11.
+* videos_followers DONE
+    - video_id int
+    - user_id int
+    - username text
+    PRIMARY KEY(video_id)
+
+
+// A tabela videos_by_author é uma tabela criada para otimizar a query Q1 e Q9.
+* videos_by_author DONE
+    - author_id int
+    - shared_on timestemp
+    - video_id int
+    - name text
+    - description text
+    - tags list<int>
+    - ratings list<int>
+    PRIMARY KEY(author_id, shared_on)
+
+// A tabela comments_by_user é uma tabela criada para otimizar a query Q2
+* comments_by_user DONE
+    - user_id int
+    - made_on timestamp
+    - comment_id int
+    - video_id int
+    - content text
+    PRIMARY KEY(user_id, made_on)
+
+
+// A tabela comments_by_video é uma tabela criada para otimizar a query Q3
+* comments_by_video DONE
+    - video_id int
+    - made_on timestamp
+    - user_id int
+    - comment_id int
+    - content text
+    PRIMARY KEY(video_id, made_on)
+
+
+// A tabela events_by_video_user é uma tabela criada para otimizar a query Q8
+* events_by_video_user DONE
+    - video_id int
+    - user_id int
+    - occured_on timestamp
+    - event_id int
+    - type text
+    - on_video_seconds int 
+    PRIMARY KEY((video_id, user_id), occured_on)
+
+
+// A tabela tags é uma tabela criada para otimizar a query Q7 e Q15
+* tags DONE
+    - tag_id int
+    - name text
+    - videos_ids list<int>
+    PRIMARY KEY(tag_id)

@@ -1,0 +1,4 @@
+Chaves:
+- USERS_SET_KEY, Set que guarda o nome dos utilizadores;
+- user + "Followers" (concatenação do nome do utilizador com a string "Followers"), Set que guarda os nomes dos utilizadores que seguem o "user";
+- user + "MessageLog" (concatenação do nome do utilizador com a string "MessageLog"), Lista que guarda as mensagens do "user";

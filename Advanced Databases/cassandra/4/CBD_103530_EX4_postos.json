@@ -1,0 +1,9 @@
+
+ [json]
+---------------------------------------------------------
+   {"id": 1, "local": "Secção Jardim", "nome": "Polo A"}
+     {"id": 2, "local": "Secção Hall", "nome": "Polo B"}
+ {"id": 4, "local": "Secção Gabinete", "nome": "Polo D"}
+   {"id": 3, "local": "Secção Portão", "nome": "Polo C"}
+
+(4 rows)

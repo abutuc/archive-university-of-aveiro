@@ -1,0 +1,277 @@
+Dataset de jogadores de Pokemon que têm a sua própria pokedex
+A coleção foi populada através do método populatePokemonCollection presente no ficheiro App.java do projeto Maven "pokemon".
+
+Exemplo da Estrutura de um documento:
+
+{
+    "name": "Ash",
+    "age": 21,
+    "nationality": "Japanese",
+    "trainer_level": 50,
+    "strengths": [
+        {"strength": "Modesty"},
+        {"strength": "Focussness"},
+        {"strength": "Readiness"}
+    ],
+    "weaknesses": [
+        {"weakness": "Vengeful"},
+        {"weakness": "Cold-hearted"},
+        {"weakness": "Love"}
+    ],
+    "enemy": "Paul",
+    "pokedex": [
+        {
+            "pokemon_id": 1, 
+            "pokemon_name": "Bulbasaur",
+            "pokemon_type": [
+                {"type" : "Grass"},
+                {"type" : "Poison"}
+            ],
+            "height": 0.7,
+            "weight": 6.9,
+            "wins": 45,
+            "loses": 5,
+            "evolution": 100,
+            "acquired_date": ISODate("2012-03-07T00:00:00Z"")
+        }, 
+            ...
+    ]
+}
+
+
+Alínea c) Crie 6 queries expressivas do seu domínio de conhecimento utilizando o
+operador find({...}, {...}).
+
+As queries foram criadas a partir do terminal "mongo".
+
+[Query 1] Apresente os 10 mais nivelados jogadores portugueses da coleção: 
+
+> db.pokemon.find({"nationality": "Portuguese"}, {"_id": 0, "name": 1, "nationality": 1,"level": 1}).sort({"level": -1}).limit(10).pretty()~
+
+[Resultado Query 1]:
+{ "name" : "lauraine", "nationality" : "Portuguese", "level" : 49 }
+{ "name" : "thomasin", "nationality" : "Portuguese", "level" : 47 }
+{ "name" : "keriann", "nationality" : "Portuguese", "level" : 47 }
+{ "name" : "tomasine", "nationality" : "Portuguese", "level" : 45 }
+{ "name" : "annalee", "nationality" : "Portuguese", "level" : 44 }
+{ "name" : "jaclin", "nationality" : "Portuguese", "level" : 42 }
+{ "name" : "ernaline", "nationality" : "Portuguese", "level" : 39 }
+{ "name" : "quintilla", "nationality" : "Portuguese", "level" : 38 }
+{ "name" : "shandy", "nationality" : "Portuguese", "level" : 38 }
+{ "name" : "codie", "nationality" : "Portuguese", "level" : 36 }
+
+
+[Query 2] Apresente os jogadores cujo nome começa com "as", apresenta um nível superior 50 e tem pelo menos um pokemon com evolução superior a 50:
+
+> db.pokemon.find({"name": {$regex: "^as"}, "level": {$gt : 40}, "pokedex.evolution":{$gt : 50}}, {_id: 0, "name": 1}).pretty()
+
+[Resultado Query 2]:
+{ "name" : "ashlan" }
+{ "name" : "ashla" }
+
+
+[Query 3] Apresente os jogadores que apresentam pelo menos um pokemon vitorioso (pokemon que apresente mais vítorias do que derrotas): 
+
+> db.pokemon.find({ $expr :{$gt :["$pokedex.wins", "$pokedex.losses"]}}, {_id: 0, "name": 1}).pretty()
+
+
+[Resultado Query 3]:
+
+{ "name" : "isidora" }
+{ "name" : "dulce" }
+{ "name" : "lenore" }
+{ "name" : "babette" }
+{ "name" : "cariotta" }
+{ "name" : "angy" }
+{ "name" : "sissy" }
+{ "name" : "rebbecca" }
+{ "name" : "thomasine" }
+{ "name" : "glynis" }
+{ "name" : "carmen" }
+{ "name" : "gusella" }
+{ "name" : "breena" }
+{ "name" : "isobel" }
+{ "name" : "minnnie" }
+{ "name" : "janela" }
+{ "name" : "kimberlee" }
+{ "name" : "arlana" }
+{ "name" : "alfreda" }
+{ "name" : "ronni" }
+                
+... (more documents)
+
+
+[Query 4] Apresente os jogadores que tenham um bulbasaur na sua coleção com uma evolução superior a 50:
+
+> db.pokemon.find({"pokedex": {$elemMatch: {"pokemon_name" : "bulbasaur", "evolution" : {$gt : 50}}}}, {_id: 0, "name": 1}).pretty()
+
+
+[Resultado Query 4]:
+{ "name" : "carrie" }
+{ "name" : "lorrayne" }
+{ "name" : "corena" }
+{ "name" : "dore" }
+{ "name" : "tatum" }
+{ "name" : "cathe" }
+
+[Query 5] Apresente os jogadores que são portugueses ou americanos que tenham a sua pokedex completa (6 pokemons):
+
+> db.pokemon.find({"nationality" : {$in : ["Portuguese", "American"]}, "pokedex": {$size : 6}}, {_id: 0, "name": 1})
+
+[Resultado Query 5]:
+{ "name" : "quintilla" }
+{ "name" : "ardis" }
+{ "name" : "ilysa" }
+{ "name" : "starla" }
+{ "name" : "marrilee" }
+{ "name" : "nora" }
+{ "name" : "dredi" }
+{ "name" : "codie" }
+
+[Query 6] Apresente os jogadores que têm como primeiro pokemon da pokedex um pikachu.
+
+> db.pokemon.find({"pokedex.0.pokemon_name" : "pikachu"}, {_id: 0, "name": 1})
+
+[Resultado Query 6]:
+{ "name" : "hanna" }
+{ "name" : "mariette" }
+{ "name" : "kacy" }
+{ "name" : "farand" }
+
+
+
+Alínea d) Crie 6 queries expressivas do seu domínio de conhecimento utilizando o
+operador aggregate ($group, $project, $unwind, $match, etc).
+
+[Query 1] Apresente o número de jogadores de cada nacionalidade, presentes na coleção:
+
+> db.pokemon.aggregate([{"$group": {"_id": "$nationality", "players" : {"$sum": 1}}}, {$sort: {"players" : -1}}]).pretty()
+
+
+[Resultado Query 1]:
+{ "_id" : "Malawian", "players" : 40 }
+{ "_id" : "Argentinean", "players" : 39 }
+{ "_id" : "Bosnian", "players" : 37 }
+{ "_id" : "Batswana", "players" : 36 }
+{ "_id" : "Barbudans", "players" : 36 }
+{ "_id" : "Zimbabwean", "players" : 36 }
+{ "_id" : "Maltese", "players" : 35 }
+{ "_id" : "Malian", "players" : 35 }
+{ "_id" : "Djibouti", "players" : 35 }
+{ "_id" : "Indonesian", "players" : 35 }
+{ "_id" : "Nepalese", "players" : 34 }
+{ "_id" : "Thai", "players" : 33 }
+{ "_id" : "Somali", "players" : 33 }
+{ "_id" : "Uzbekistani", "players" : 33 }
+{ "_id" : "Togolese", "players" : 32 }
+{ "_id" : "Rwandan", "players" : 32 }
+{ "_id" : "Micronesian", "players" : 32 }
+{ "_id" : "Samoan", "players" : 32 }
+{ "_id" : "Kazakhstani", "players" : 32 }
+{ "_id" : "Congolese", "players" : 32 }
+
+... (more documents)
+
+[Query 2] Apresente os 10 jogadores que apresentam a maior média de evolução dos seus pokemons:
+
+> db.pokemon.aggregate( [ {$project : {"_id" : 0, "name" : "$name", evolutionAverage : {$avg : "$pokedex.evolution"}} }, {$sort: {"evolutionAverage": -1}}, {$limit: 10}])
+
+[Resultado Query 2]:
+{ "name" : "beverlie", "evolutionAverage" : 99 }
+{ "name" : "karoline", "evolutionAverage" : 99 }
+{ "name" : "gabriell", "evolutionAverage" : 99 }
+{ "name" : "morgana", "evolutionAverage" : 99 }
+{ "name" : "lizette", "evolutionAverage" : 99 }
+{ "name" : "marillin", "evolutionAverage" : 99 }
+{ "name" : "blinny", "evolutionAverage" : 99 }
+{ "name" : "aubrey", "evolutionAverage" : 98.5 }
+{ "name" : "fernandina", "evolutionAverage" : 98 }
+{ "name" : "goldarina", "evolutionAverage" : 98 }
+
+
+[Query 3] Apresente o número de jogadores que são maiores que 18 e que têm mais de 97 vitórias com o primeiro pokemon da pokedex.
+
+> db.pokemon.aggregate( [ {$project : {"_id" : 0, "name" : "$name", "age" : "$age", "first_pokemon" : { $slice : ["$pokedex", 1] }}}, {$match : {"age" : {$gt : 18}, "first_pokemon.wins" : {$gt : 97}}}, {$count : "totalPlayers"}]).pretty()
+
+[Resultado Query 3]:
+
+{ "totalPlayers" : 90 }
+
+[Query 4] Apresente a distribuição das idades dos jogadores da coleção:
+
+[Resultado Query 4]:
+
+> db.pokemon.aggregate([{"$group": {"_id": "$age", "players" : {"$sum": 1}}}, {$sort: {"players" : -1}}]).pretty()
+{ "_id" : 107, "players" : 66 }
+{ "_id" : 23, "players" : 63 }
+{ "_id" : 78, "players" : 62 }
+{ "_id" : 30, "players" : 62 }
+{ "_id" : 94, "players" : 61 }
+{ "_id" : 73, "players" : 60 }
+{ "_id" : 56, "players" : 60 }
+{ "_id" : 21, "players" : 60 }
+{ "_id" : 102, "players" : 59 }
+{ "_id" : 40, "players" : 59 }
+{ "_id" : 44, "players" : 59 }
+{ "_id" : 76, "players" : 58 }
+{ "_id" : 103, "players" : 58 }
+{ "_id" : 53, "players" : 58 }
+{ "_id" : 49, "players" : 58 }
+{ "_id" : 22, "players" : 58 }
+{ "_id" : 54, "players" : 57 }
+{ "_id" : 50, "players" : 57 }
+{ "_id" : 79, "players" : 57 }
+{ "_id" : 75, "players" : 56 }
+
+... (more documents)
+
+
+[Query 5] Apresente a distribuição dos nomes dos jogadores da coleção:
+
+> db.pokemon.aggregate([{"$group": {"_id": "$name", "players" : {"$sum": 1}}}, {$sort: {"players" : -1}}]).pretty()
+
+[Resultado Query 5]:
+
+{ "_id" : "rhodie", "players" : 6 }
+{ "_id" : "rachelle", "players" : 5 }
+{ "_id" : "carlie", "players" : 5 }
+{ "_id" : "candis", "players" : 5 }
+{ "_id" : "winona", "players" : 5 }
+{ "_id" : "gerti", "players" : 5 }
+{ "_id" : "glynis", "players" : 5 }
+{ "_id" : "reyna", "players" : 5 }
+{ "_id" : "idelle", "players" : 5 }
+{ "_id" : "modesta", "players" : 5 }
+{ "_id" : "arlana", "players" : 5 }
+{ "_id" : "harrietta", "players" : 5 }
+{ "_id" : "linnell", "players" : 5 }
+{ "_id" : "chelsie", "players" : 5 }
+{ "_id" : "celestyna", "players" : 5 }
+{ "_id" : "nelle", "players" : 5 }
+{ "_id" : "michal", "players" : 5 }
+{ "_id" : "raquela", "players" : 5 }
+{ "_id" : "bryn", "players" : 5 }
+{ "_id" : "tory", "players" : 5 }
+
+... (more documents)
+
+[Query 6] Apresente o top 10 de jogadores mais vitoriosos:
+
+> db.pokemon.aggregate([{$project: {"_id": 0, "name": 1, "wins_per_pokemon": "$pokedex.wins", "total_wins" : {$sum : "$pokedex.wins"}}},{$sort : {"total_wins" : -1}}, {$limit: 10}])
+
+
+[Resultado Query 6]:
+
+{ "name" : "dorena", "wins_per_pokemon" : [ 99, 98, 71, 85, 83, 76 ], "total_wins" : 512 }
+{ "name" : "teresa", "wins_per_pokemon" : [ 93, 81, 85, 64, 91, 94 ], "total_wins" : 508 }
+{ "name" : "cecilla", "wins_per_pokemon" : [ 55, 88, 87, 93, 84, 97 ], "total_wins" : 504 }
+{ "name" : "yetty", "wins_per_pokemon" : [ 58, 90, 90, 90, 96, 68 ], "total_wins" : 492 }
+{ "name" : "claudie", "wins_per_pokemon" : [ 86, 98, 95, 44, 67, 85 ], "total_wins" : 475 }
+{ "name" : "teddie", "wins_per_pokemon" : [ 33, 94, 98, 86, 75, 85 ], "total_wins" : 471 }
+{ "name" : "jacquelyn", "wins_per_pokemon" : [ 92, 92, 68, 91, 60, 63 ], "total_wins" : 466 }
+{ "name" : "lotty", "wins_per_pokemon" : [ 68, 49, 90, 83, 95, 79 ], "total_wins" : 464 }
+{ "name" : "nancey", "wins_per_pokemon" : [ 94, 85, 83, 95, 23, 83 ], "total_wins" : 463 }
+{ "name" : "norene", "wins_per_pokemon" : [ 99, 92, 88, 8, 88, 86 ], "total_wins" : 461 }
+
+
+(Nota: a criatividade foi pouca nas últimas queries apresentadas)

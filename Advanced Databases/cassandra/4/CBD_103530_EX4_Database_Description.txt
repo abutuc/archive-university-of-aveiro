@@ -1,0 +1,58 @@
+A temática que escolhi para este exercício foi uma base de dados que modela um sistema de logs de uma empresa de vigilância.
+
+As principais entidades são:
+- Seguranças
+- Postos de Observação
+- Cameras
+- Eventos
+
+Definição das entidades:
+O Segurança tem como atributos o seu id, nome, idade, cargo (supervisor, junior, trainee, senior), horario (mapa<text, text>) e fraquezas (list<text>). Para além disso, o Segurança está sujeito ao registo das suas entradas e saídas dos postos.
+O Posto (de Observação) tem como atributos o seu id, nome, local.
+A Camera tem como atributos o seu id, local e o seu estado (ligada, manutencao, desligada, estragada), configurações (set<text>, 480p, 720p, 1080p, 30 fps, 60fps)
+O evento está associado a uma câmera, tendo como atributos o seu id, id da camera, timestamp, tipo (normal, suspeito, alerta)
+
+
+Relação entre as entidades:
+Cada Posto tem Seguranças associado a si.
+Cada Posto tem Camaras associadas a si.
+Cada Camara tem Eventos associados a si.
+
+a) Número de tabelas: 10;
+b) Média de registos por tabela: 172/10 ~= 17 registos;
+c) utilizado o mapa no horário do segurança, a lista nas fraquezas do segurança e o conjunto nas configurações da camara
+d) 4 índices:
+- Indíce "segname" na tabela seguranças para permitir queries pelo nome do segurança;
+- Índíce "segcargo" na tabela seguranças para permitir queries pelo cargo do seguranca;
+- Indíce "camlocal" na tabela cameras para permitir queries pelo local em que se encontra a camera;
+- Indíce "pcestado" na tabela posto_camaras para permitir queries pelo estado da camara;
+
+
+e)  Updates: 12, Deletes: 5
+
+
+f):
+
+Q1: Listar as cameras ligadas;
+Q2: Listar os últimos 5 eventos registados pela camera com id igual a 3;
+Q3: Listar o log de entradas e saidas do segurança com id igual a 2;
+Q4: Listar os seguranças que trabalham no posto Polo A (id = 1) ordenados pelos ids dos seguranças;
+Q5: Listar os horários do seguranca que tem como nome Alfredo Linguini;
+Q6: Listar o instante correspondente à ultima entrada do segurança que tem como id 3;
+Q7: Listar a lista de configuracoes das camaras que se encontram no local 'Jardim';
+Q8: Listar os eventos suspeitos captados pela camara com id igual a 3;
+Q9: Listar as camaras que se encontram desligadas no posto com id=3;
+Q10: Listar todos supervisores;
+
+
+Comandos para retirar os ficheiros json:
+cqlsh -e 'SELECT JSON * FROM cbd_103530_ex4.segurancas;' > CBD_103530_EX4_segurancas.json
+cqlsh -e 'SELECT JSON * FROM cbd_103530_ex4.segurancas_log;' > CBD_103530_EX4_segurancas_log.json
+cqlsh -e 'SELECT JSON * FROM cbd_103530_ex4.camara_eventos;' > CBD_103530_EX4_camara_eventos.json
+cqlsh -e 'SELECT JSON * FROM cbd_103530_ex4.camara_por_estado;' > CBD_103530_EX4_camara_por_estado.json
+cqlsh -e 'SELECT JSON * FROM cbd_103530_ex4.posto_segurancas;' > CBD_103530_EX4_posto_segurancas.json
+cqlsh -e 'SELECT JSON * FROM cbd_103530_ex4.camara_eventos_por_timestp;' > CBD_103530_EX4_camara_eventos_por_timestp.json
+cqlsh -e 'SELECT JSON * FROM cbd_103530_ex4.camaras;' > CBD_103530_EX4_camaras.json
+cqlsh -e 'SELECT JSON * FROM cbd_103530_ex4.postos;' > CBD_103530_EX4_postos.json
+cqlsh -e 'SELECT JSON * FROM cbd_103530_ex4.camara_eventos_por_tipo;' > CBD_103530_EX4_camara_eventos_por_tipo.json
+cqlsh -e 'SELECT JSON * FROM cbd_103530_ex4.posto_camaras;' > CBD_103530_EX4_posto_camaras.json

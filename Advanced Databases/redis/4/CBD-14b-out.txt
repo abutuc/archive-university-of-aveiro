@@ -1,0 +1,32 @@
+Search for (Enter 'quit' to quit): Maria
+Maria
+Mariana
+Mariam
+Mariama
+Mariano
+Mariah
+Mariame
+MariaLuísa
+Marianna
+Search for (Enter 'quit' to quit): Andre
+Andreia
+Andrei
+Andreea
+Andreína
+Andressa
+Andres
+Andrew
+Andrey
+Andre
+Andrea
+Search for (Enter 'quit' to quit): Steve
+Steven
+Steveandra
+Search for (Enter 'quit' to quit): Jon
+Jonathan
+Jonas
+Jonatã
+Jonata
+Jonathas
+Jon
+Search for (Enter 'quit' to quit): quit

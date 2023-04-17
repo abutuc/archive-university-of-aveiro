@@ -1,0 +1,23 @@
+
+ [json]
+-----------------------------------------------------------------------------------------
+      {"posto_id": 1, "camara_id": 1, "camara_estado": "ligada", "posto_name": "Polo A"}
+      {"posto_id": 1, "camara_id": 2, "camara_estado": "ligada", "posto_name": "Polo A"}
+   {"posto_id": 1, "camara_id": 3, "camara_estado": "desligada", "posto_name": "Polo A"}
+  {"posto_id": 1, "camara_id": 4, "camara_estado": "manutenção", "posto_name": "Polo A"}
+   {"posto_id": 1, "camara_id": 5, "camara_estado": "estragada", "posto_name": "Polo A"}
+      {"posto_id": 2, "camara_id": 6, "camara_estado": "ligada", "posto_name": "Polo B"}
+      {"posto_id": 2, "camara_id": 7, "camara_estado": "ligada", "posto_name": "Polo B"}
+      {"posto_id": 2, "camara_id": 8, "camara_estado": "ligada", "posto_name": "Polo B"}
+  {"posto_id": 2, "camara_id": 9, "camara_estado": "manutenção", "posto_name": "Polo B"}
+  {"posto_id": 4, "camara_id": 13, "camara_estado": "estragada", "posto_name": "Polo D"}
+     {"posto_id": 4, "camara_id": 14, "camara_estado": "ligada", "posto_name": "Polo D"}
+     {"posto_id": 4, "camara_id": 15, "camara_estado": "ligada", "posto_name": "Polo D"}
+  {"posto_id": 4, "camara_id": 16, "camara_estado": "desligada", "posto_name": "Polo D"}
+ {"posto_id": 4, "camara_id": 17, "camara_estado": "manutenção", "posto_name": "Polo D"}
+  {"posto_id": 4, "camara_id": 18, "camara_estado": "estragada", "posto_name": "Polo D"}
+     {"posto_id": 3, "camara_id": 10, "camara_estado": "ligada", "posto_name": "Polo C"}
+  {"posto_id": 3, "camara_id": 11, "camara_estado": "desligada", "posto_name": "Polo C"}
+  {"posto_id": 3, "camara_id": 12, "camara_estado": "estragada", "posto_name": "Polo C"}
+
+(18 rows)

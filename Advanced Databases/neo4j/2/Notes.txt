@@ -1,0 +1,23 @@
+Base de Dados "movie-graph" disponível no neo4j
+
+Os nós que existem na base de dados são:
+* Person
+    - "born"
+    - "name"
+    
+* Movie
+    - "released"
+    - "tagline"
+    - "title"
+
+As relações existentes são:
+* ACTED_IN (Person -> Movie)
+    - "roles"
+* DIRECTED (Person -> Movie)
+* PRODUCTED (Person -> Movie)
+* WROTE (Person -> Movie)
+* REVIEWED (Person -> Movie)
+    - "summary"
+    - "rating"
+* FOLLOWS (Person -> Person)
+

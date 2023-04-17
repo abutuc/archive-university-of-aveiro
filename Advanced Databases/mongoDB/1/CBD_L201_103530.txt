@@ -1,0 +1,162 @@
+**O que é o MongoDB?**
+
+O MongoDB é uma base de dados do tipo JSON document. Algumas características incluem ser open source, ter uma alta disponibilidade, consistência eventual, distribuição automática de "shards", ter uma replicação do tipo master-slave, tem um failover automático, indíces secundários, entre outras.
+
+A sua estrutura é baseada em instâncias, bases de dados, coleções e documentos, sendo cada um inter-relacionado, ou seja, uma base de dados é um conjunto de coleções, uma coleção é um conjunto de documentos e um documento é um objeto JSON. Cada documento pertence exatamente a uma coleção e tem um identificador único.
+
+No Data Model do MongoDB:
+	- o _id é reservado para a primary key.
+	- pode existir encadeamento de documentos, ou seja, embedded documents que facilitam a capacidade de leitura/escrita dos dados através uma só operação.
+	- através de identificadores "$<nome_identificador>" é possível obter algo semelhante às chaves estrangeiras das bases de dados relacionais que permite a referenciação entre os documentos. Esta referenciação é adequada para relações many-to-many. 
+	
+Relativamente â Query Language podemos ter comandos JavaScript que avaliam exatamente uma coleção e retornam cursores que nos permitem iterar sobre os documentos selecionados.
+
+Os padrões das Queries podem ser divididos em dois, nomeadamente, operações básicas CRUD e agregações: MapReduce, pipelines e grouping.
+
+Para criar uma base de dados devemos fazer:
+> use {nome_base_de_dados}
+
+Para saber qual base de dados está selecionada:
+> db
+
+Para eliminar uma base de dados devemos:
+> db.dropDatabase()
+
+Para criar uma coleção podemos fazê-lo de forma explícita:
+> db.createCollection(<name_of_collection>
+
+Ou podemos criar a coleção de forma implícita através da operação insert:
+> db.<name_of_collection>.insert<One/Many>(...)
+
+Para eliminar uma collection devemos executar o comando:
+> db.<collection_name>.drop()
+
+Para saber quais as collections que temos na nossa base de dados devemos fazer:
+> show collections
+
+Para ler uma coleção da base de dados:
+> db.collection.find()
+
+Exemplo: db.<collection_name>.find({}) é equivalente ao SELECT * FROM <collection_name> do MySQL.
+
+Para atualizar um documento executamos o seguinte comando:
+> db.<collection_name>.update(SELECTION_CRITERIA, UPDATED_DATA)
+
+O operador SELECT do MySQL traduz-se no operador find() em MongoDB, tendo como alguns operadores:
+- Comparação:
+	* $eq, $ne
+		Testam o valor quanto à igualdade/desigualdade
+	* $lt, $lte, $gte, $gt
+		Menos que, menos ou igual que, maior ou igual que, maior que
+	* $in
+		Igual a pelo menos um dos valores fornecidos
+	* $nin 
+		Negação do $in
+
+- Lógicos:
+	* $and, $or
+	* $nor
+		Retorna todos os documentos que falham em verificar ambas as cláusulas
+	* $not
+	
+
+- Operadores Element:
+	* $exists
+		Verifica se um certo campo existe ou não existe
+	* $text
+		Faz uma pesquisa de texto.
+		
+
+- Operadores de Array query:
+	* $all
+		Corresponde todos os arrays que contêm os elementos especificados na query.
+	* $elemMatch
+		Seleciona os documentos se um elemento do campo array corresponde a todas as condições específicadas no $elemMatch.
+	* $size
+		Seleciona os documentos se o campo do array tem o tamanho especificado.
+		
+
+A projeção em MongoDB utiliza o mesmo operador da Seleção, mas com um argumento adicional. Este argumento é como se fosse um dicionário boolean com diversas flags que correspondem aos campos da coleção. Se campo estiver mapeado a 1, o resultado da projeção terá esse campo, caso contrário, se estiver mapeado a 0 náo irá aparecer. Por default, a primary key está sempre mapeada a 1 e os restantes campos a 0.
+
+
+Código inserido no terminal durante o estudo do primeiro exercício do guião:
+> show dbs
+admin   0.000GB
+config  0.000GB
+local   0.000GB
+
+> db
+test
+
+> use cbd
+switched to db cbd
+
+> db
+cbd
+
+> show dbs
+admin   0.000GB
+config  0.000GB
+local   0.000GB
+
+> db.fruits.insertOne({_id: 1, name: "banana", color: "yellow"}) 
+{ "acknowledged" : true, "insertedId" : 1 }
+
+> show dbs
+admin   0.000GB
+cbd     0.000GB
+config  0.000GB
+local   0.000GB
+
+> db.fruits.find({})
+{ "_id" : 1, "name" : "banana", "color" : "yellow" }
+
+
+
+db.fruits.insertMany([
+... {_id: 2, name: "apple", color: "red"}
+... ,
+... {_id: 3, name: "pear", color: "green"},
+... {_id: 4, name: "grape", color: "purple"}
+... ]);
+{ "acknowledged" : true, "insertedIds" : [ 2, 3, 4 ] }
+
+
+> db.fruits.find({})
+{ "_id" : 1, "name" : "banana", "color" : "yellow" }
+{ "_id" : 2, "name" : "apple", "color" : "red" }
+{ "_id" : 3, "name" : "pear", "color" : "green" }
+{ "_id" : 4, "name" : "grape", "color" : "purple" }
+
+> db.fruits.update({"name": "grape"}, {$set: {"color":"blue"}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+
+> db.fruits.find()
+{ "_id" : 1, "name" : "banana", "color" : "yellow" }
+{ "_id" : 2, "name" : "apple", "color" : "red" }
+{ "_id" : 3, "name" : "pear", "color" : "green" }
+{ "_id" : 4, "name" : "grape", "color" : "blue" }
+
+> db.fruits.find({name: "apple"})
+{ "_id" : 2, "name" : "apple", "color" : "red" }
+
+
+> db.fruits.find( { _id: { $lt: 2 } } )
+{ "_id" : 1, "name" : "banana", "color" : "yellow" }
+
+> db.fruits.find( { _id: { $lt: 3 } } )
+{ "_id" : 1, "name" : "banana", "color" : "yellow" }
+{ "_id" : 2, "name" : "apple", "color" : "red" }
+
+> db.fruits.find({}, {_id:0, name: 1, color: 1})
+{ "name" : "banana", "color" : "yellow" }
+{ "name" : "apple", "color" : "red" }
+{ "name" : "pear", "color" : "green" }
+{ "name" : "grape", "color" : "blue" }
+
+> db.fruits.find({}, {_id:0, name: 1, color: 1}).sort({color: 1})
+{ "name" : "grape", "color" : "blue" }
+{ "name" : "pear", "color" : "green" }
+{ "name" : "apple", "color" : "red" }
+{ "name" : "banana", "color" : "yellow" }
+

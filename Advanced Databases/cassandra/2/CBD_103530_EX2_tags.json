@@ -1,0 +1,26 @@
+
+ [0;1;35m[json][0m
+-----------------------------------------------------
+      [0;1;33m{"name": "Comedy", "video_id": 1, "tag_id": 1}[0m
+      [0;1;33m{"name": "Comedy", "video_id": 4, "tag_id": 1}[0m
+      [0;1;33m{"name": "Comedy", "video_id": 5, "tag_id": 1}[0m
+     [0;1;33m{"name": "Gaming", "video_id": 4, "tag_id": 10}[0m
+     [0;1;33m{"name": "Gaming", "video_id": 5, "tag_id": 10}[0m
+      [0;1;33m{"name": "Aveiro", "video_id": 8, "tag_id": 2}[0m
+      [0;1;33m{"name": "Aveiro", "video_id": 9, "tag_id": 2}[0m
+     [0;1;33m{"name": "Aveiro", "video_id": 10, "tag_id": 2}[0m
+      [0;1;33m{"name": "Sports", "video_id": 2, "tag_id": 6}[0m
+      [0;1;33m{"name": "Sports", "video_id": 3, "tag_id": 6}[0m
+       [0;1;33m{"name": "Music", "video_id": 6, "tag_id": 8}[0m
+       [0;1;33m{"name": "Music", "video_id": 7, "tag_id": 8}[0m
+       [0;1;33m{"name": "Dance", "video_id": 6, "tag_id": 9}[0m
+ [0;1;33m{"name": "Documentary", "video_id": 2, "tag_id": 7}[0m
+    [0;1;33m{"name": "Children", "video_id": 4, "tag_id": 4}[0m
+    [0;1;33m{"name": "Children", "video_id": 5, "tag_id": 4}[0m
+    [0;1;33m{"name": "Animated", "video_id": 1, "tag_id": 3}[0m
+   [0;1;33m{"name": "Adventure", "video_id": 1, "tag_id": 5}[0m
+   [0;1;33m{"name": "Adventure", "video_id": 8, "tag_id": 5}[0m
+   [0;1;33m{"name": "Adventure", "video_id": 9, "tag_id": 5}[0m
+  [0;1;33m{"name": "Adventure", "video_id": 10, "tag_id": 5}[0m
+
+(21 rows)

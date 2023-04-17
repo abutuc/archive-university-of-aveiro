@@ -1,0 +1,15 @@
+
+ [0;1;35m[json][0m
+-------------------------------------------------------------
+ [0;1;33m{"video_id": 4, "user_id": 3, "username": "WinterIsComing"}[0m
+      [0;1;33m{"video_id": 4, "user_id": 5, "username": "cleopatra"}[0m
+          [0;1;33m{"video_id": 4, "user_id": 7, "username": "pewds"}[0m
+            [0;1;33m{"video_id": 4, "user_id": 8, "username": "CR7"}[0m
+            [0;1;33m{"video_id": 4, "user_id": 9, "username": "L10"}[0m
+   [0;1;33m{"video_id": 7, "user_id": 1, "username": "steve4videos"}[0m
+   [0;1;33m{"video_id": 7, "user_id": 2, "username": "mariachi1234"}[0m
+ [0;1;33m{"video_id": 7, "user_id": 3, "username": "WinterIsComing"}[0m
+          [0;1;33m{"video_id": 7, "user_id": 4, "username": "smith"}[0m
+      [0;1;33m{"video_id": 7, "user_id": 5, "username": "cleopatra"}[0m
+
+(10 rows)

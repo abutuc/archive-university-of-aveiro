@@ -1,0 +1,296 @@
+-- Notes on exercise 1 from the third practical pdf about Cassandra
+
+-- Creating first keyspace
+CREATE KEYSPACE IF NOT EXISTS my_first_keyspace WITH replication = {'class': 'SimpleStrategy', 'replication_factor' : 3};
+
+-- Using first keyspace
+USE my_first_keyspace;
+
+-- List existing keyspaces
+DESC KEYSPACES;
+
+
+CREATE KEYSPACE my_second_keyspace WITH replication = {'class':'SimpleStrategy', 'replication_factor': 1};
+DESC KEYSPACES;
+
+/*
+my_first_keyspace   system_auth         system_traces        
+my_second_keyspace  system_distributed  system_views         
+system              system_schema       system_virtual_schema
+*/
+
+-- Command to drop keyspace
+
+DROP KEYSPACE "my_second_keyspace";
+DESC KEYSPACES;
+
+/*
+my_first_keyspace  system_auth         system_schema  system_views         
+system             system_distributed  system_traces  system_virtual_schema
+*/
+
+-- Command to alter keyspace
+
+ALTER KEYSPACE my_first_keyspace WITH replication={'class': 'SimpleStrategy', 'replication_factor': 2};
+
+-- Command to create table with partition key groupname and clustering key username
+CREATE TABLE groups(
+                     ... groupname text,
+                     ... username text,
+                     ... email text,
+                     ... age int,
+                     ... PRIMARY KEY (groupname, username)
+                     ... );
+
+-- Command to insert into table
+
+INSERT INTO groups(groupname, username, email,age) VALUES ('A', 'andre', 'andrebutuc@ua.pt', 20);
+INSERT INTO groups(groupname, username, email,age) VALUES ('A', 'bruno', 'bruno@ua.pt', 19);
+INSERT INTO groups(groupname, username, email,age) VALUES ('B', 'carlos', 'carlos@ua.pt', 21);
+INSERT INTO groups(groupname, username, email,age) VALUES ('C', 'david', 'david@ua.pt', 22);
+
+
+-- Command to select all columns
+SELECT * FROM groups;
+
+/*
+ groupname | username | age | email
+-----------+----------+-----+------------------
+         C |    david |  22 |      david@ua.pt
+         B |   carlos |  21 |     carlos@ua.pt
+         A |    andre |  20 | andrebutuc@ua.pt
+         A |    bruno |  19 |      bruno@ua.pt
+*/
+
+-- Using COUNT command
+SELECT COUNT(*) FROM groups;
+
+/*
+ count
+-------
+     4
+*/
+
+-- Using LIMIT command
+SELECT * FROM groups LIMIT 2;
+
+/*
+ groupname | username | age | email
+-----------+----------+-----+--------------
+         C |    david |  22 |  david@ua.pt
+         B |   carlos |  21 | carlos@ua.pt
+*/
+
+
+-- Using DISTINCT <partition_key> command
+SELECT DISTINCT groupname FROM groups;
+
+/*
+ groupname
+-----------
+         C
+         B
+         A
+*/
+
+-- Using select with specific return columns
+SELECT username,age FROM groups ;
+
+/*
+ username | age
+----------+-----
+    david |  22
+   carlos |  21
+    andre |  20
+    bruno |  19
+*/
+
+-- Using select with WHERE <partition_key> '=' value
+SELECT username,age FROM groups WHERE groupname='A';
+
+/*
+ username | age
+----------+-----
+    andre |  20
+    bruno |  19
+*/
+
+-- If we try the previous statement with other keys beside the partition key an error occurs.
+SELECT username,age FROM groups WHERE username='andre';
+
+/*
+InvalidRequest: Error from server: code=2200 [Invalid query] message="Cannot execute this query as it might involve data filtering and thus may have unpredictable performance. If you want to execute this query despite the performance unpredictability, use ALLOW FILTERING"
+*/
+
+-- If we want to force such selection criteria, we must add the flag ALLOW FILTERING
+
+SELECT username,age FROM groups WHERE username='andre' ALLOW FILTERING;
+
+/*
+ username | age
+----------+-----
+    andre |  20
+*/
+
+-- The same error happens if we add an AND operator and excluding the clustering key:
+SELECT username,age FROM groups WHERE groupname = 'A' AND age=19;
+
+/*
+InvalidRequest: Error from server: code=2200 [Invalid query] message="Cannot execute this query as it might involve data filtering and thus may have unpredictable performance. If you want to execute this query despite the performance unpredictability, use ALLOW FILTERING"
+*/
+
+
+-- The error is solved by adding ALLOW FILTERING
+SELECT username,age FROM groups WHERE groupname = 'A' AND age=19 ALLOW FILTERING;
+
+/*
+ username | age
+----------+-----
+    bruno |  19
+*/
+
+-- If we want to run it without the ALLOW FILTERING, we must follow the key hierarchy and only test the value of the clustering key
+SELECT username,age FROM groups WHERE groupname = 'A' AND username='bruno';
+
+/*
+ username | age
+----------+-----
+    bruno |  19
+*/
+
+-- If we really want to select rows without having to add the ALLOW FILTERING we must create an index on that attribute field
+CREATE INDEX ON groups(age);
+
+SELECT * FROM groups WHERE age=20;
+
+/*
+ groupname | username | age | email
+-----------+----------+-----+------------------
+         A |    andre |  20 | andrebutuc@ua.pt
+*/
+
+INSERT INTO groups(groupname, username, email,age) VALUES ('C', 'helder', 'helder@ua.pt', 20);
+SELECT * FROM groups WHERE age=20;
+
+/*
+ groupname | username | age | email
+-----------+----------+-----+------------------
+         C |   helder |  20 |     helder@ua.pt
+         A |    andre |  20 | andrebutuc@ua.pt
+
+*/
+
+-- Update column value
+UPDATE groups SET age=23 WHERE groupname = 'C' and username='helder';
+SELECT * FROM groups WHERE age=20;
+
+/*
+ groupname | username | age | email
+-----------+----------+-----+------------------
+         A |    andre |  20 | andrebutuc@ua.pt
+
+*/
+
+SELECT * FROM groups;
+
+/*
+ groupname | username | age | email
+-----------+----------+-----+------------------
+         C |    david |  22 |      david@ua.pt
+         C |   helder |  23 |     helder@ua.pt
+         B |   carlos |  21 |     carlos@ua.pt
+         A |    andre |  20 | andrebutuc@ua.pt
+         A |    bruno |  19 |      bruno@ua.pt
+
+*/
+
+-- Delete row from table
+DELETE FROM groups WHERE groupname='C' and username = 'helder';
+SELECT * FROM groups;
+
+/*
+ groupname | username | age | email
+-----------+----------+-----+------------------
+         C |    david |  22 |      david@ua.pt
+         B |   carlos |  21 |     carlos@ua.pt
+         A |    andre |  20 | andrebutuc@ua.pt
+         A |    bruno |  19 |      bruno@ua.pt
+*/
+
+
+-- Alter table command to add new column
+ALTER TABLE groups ADD grades list<int>;
+SELECT * FROM groups;
+
+/*
+ groupname | username | age | email            | grades
+-----------+----------+-----+------------------+--------
+         C |    david |  22 |      david@ua.pt |   null
+         B |   carlos |  21 |     carlos@ua.pt |   null
+         A |    andre |  20 | andrebutuc@ua.pt |   null
+         A |    bruno |  19 |      bruno@ua.pt |   null
+
+*/
+
+-- Adding a collection of grades to a table row
+UPDATE groups SET grades=[17,19,18,20] WHERE groupname = 'A' and username='andre';
+SELECT * FROM groups;
+
+/*
+ groupname | username | age | email            | grades
+-----------+----------+-----+------------------+------------------
+         C |    david |  22 |      david@ua.pt |             null
+         B |   carlos |  21 |     carlos@ua.pt |             null
+         A |    andre |  20 | andrebutuc@ua.pt | [17, 19, 18, 20]
+         A |    bruno |  19 |      bruno@ua.pt |             null
+
+*/
+
+-- Using the TTL on a group's row
+INSERT INTO groups(groupname, username, email,age) VALUES ('C', 'helder', 'helder@ua.pt', 20) USING TTL 60;
+SELECT * FROM groups;
+
+/*
+ groupname | username | age | email            | grades
+-----------+----------+-----+------------------+------------------
+         C |    david |  22 |      david@ua.pt |             null
+         C |   helder |  20 |     helder@ua.pt |             null
+         B |   carlos |  21 |     carlos@ua.pt |             null
+         A |    andre |  20 | andrebutuc@ua.pt | [17, 19, 18, 20]
+         A |    bruno |  19 |      bruno@ua.pt |             null
+(5 rows)
+*/
+
+
+SELECT * FROM groups ;
+
+-- After 60 seconds
+
+/*
+ groupname | username | age | email            | grades
+-----------+----------+-----+------------------+------------------
+         C |    david |  22 |      david@ua.pt |             null
+         B |   carlos |  21 |     carlos@ua.pt |             null
+         A |    andre |  20 | andrebutuc@ua.pt | [17, 19, 18, 20]
+         A |    bruno |  19 |      bruno@ua.pt |             null
+
+*/
+
+-- Messing with timestamps
+
+ALTER TABLE groups ADD last_mod TIMEUUID ;
+UPDATE groups SET last_mod=now() where groupname='A' and username='helder';
+SELECT * FROM groups ;
+
+/*
+ groupname | username | age  | email            | grades           | last_mod
+-----------+----------+------+------------------+------------------+--------------------------------------
+         C |    david |   22 |      david@ua.pt |             null |                                 null
+         B |   carlos |   21 |     carlos@ua.pt |             null |                                 null
+         A |    andre |   20 | andrebutuc@ua.pt | [17, 19, 18, 20] |                                 null
+         A |    bruno |   19 |      bruno@ua.pt |             null |                                 null
+         A |   helder | null |             null |             null | 307bcf60-60de-11ed-9a31-6d2e6fdb8536
+
+(5 rows)
+
+*/

@@ -1,0 +1,25 @@
+
+ [json]
+----------------------------------------------------------------------------------------------
+    {"camara_id": 1, "evento_id": 1, "timestp": "2022-11-21 09:15:13.000Z", "tipo": "normal"}
+    {"camara_id": 1, "evento_id": 2, "timestp": "2022-11-21 09:35:42.000Z", "tipo": "normal"}
+    {"camara_id": 1, "evento_id": 3, "timestp": "2022-11-21 10:25:57.000Z", "tipo": "normal"}
+  {"camara_id": 1, "evento_id": 4, "timestp": "2022-11-21 11:45:05.000Z", "tipo": "suspeito"}
+    {"camara_id": 1, "evento_id": 5, "timestp": "2022-11-21 14:01:11.000Z", "tipo": "normal"}
+    {"camara_id": 1, "evento_id": 6, "timestp": "2022-11-21 16:07:08.000Z", "tipo": "normal"}
+  {"camara_id": 1, "evento_id": 7, "timestp": "2022-11-21 19:33:48.000Z", "tipo": "suspeito"}
+    {"camara_id": 1, "evento_id": 8, "timestp": "2022-11-21 09:33:59.000Z", "tipo": "alerta"}
+  {"camara_id": 2, "evento_id": 9, "timestp": "2022-11-21 08:10:13.000Z", "tipo": "suspeito"}
+   {"camara_id": 2, "evento_id": 10, "timestp": "2022-11-21 08:30:21.000Z", "tipo": "normal"}
+   {"camara_id": 2, "evento_id": 11, "timestp": "2022-11-21 08:45:32.000Z", "tipo": "normal"}
+   {"camara_id": 2, "evento_id": 12, "timestp": "2022-11-21 09:03:13.000Z", "tipo": "alerta"}
+   {"camara_id": 2, "evento_id": 13, "timestp": "2022-11-21 09:15:23.000Z", "tipo": "alerta"}
+   {"camara_id": 2, "evento_id": 14, "timestp": "2022-11-21 10:25:34.000Z", "tipo": "normal"}
+ {"camara_id": 2, "evento_id": 15, "timestp": "2022-11-21 11:15:43.000Z", "tipo": "suspeito"}
+ {"camara_id": 2, "evento_id": 16, "timestp": "2022-11-21 12:04:04.000Z", "tipo": "suspeito"}
+   {"camara_id": 2, "evento_id": 17, "timestp": "2022-11-21 13:13:55.000Z", "tipo": "normal"}
+ {"camara_id": 2, "evento_id": 18, "timestp": "2022-11-21 16:44:44.000Z", "tipo": "suspeito"}
+   {"camara_id": 2, "evento_id": 19, "timestp": "2022-11-21 18:22:22.000Z", "tipo": "normal"}
+   {"camara_id": 2, "evento_id": 20, "timestp": "2022-11-21 19:22:22.000Z", "tipo": "normal"}
+
+(20 rows)

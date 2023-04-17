@@ -1,0 +1,75 @@
+SET firstKey "My First Key"
+GET firstKey
+SET expireKey "This will expire in 2 seconds" EX 2
+GET expireKey
+SET counter 0
+get counter
+INCR counter
+DECR counter
+INCRBY 2
+INCRBY counter 2
+DECRBY counter 1
+EXISTS counter
+EXISTS firstKey
+EXISTS expireKey
+KEYS 'c'
+KEYS c
+KEYS *
+DEL firstKey
+KEYS *
+RENAME counter new_counter
+KEYS *
+TYPE new_counter
+TTL new_counter
+LPUSH myFirstList hey
+LPUSH myFirstList hello
+LPUSH myFirstList ciao
+KEYS *
+LRANGE myFirstList 0 2
+RPUSH myFirstList I'm now first in line
+RPUSH myFirstList "I'm now first in line"
+LRANGE myFirstList 0 3
+LPUSH myFirstList "I'm now first in line - version 2"
+LRANGE myFirstList 0 4
+LPOP myFirstList
+RPOP myFirstList
+LINDEX myFirstList 1
+KEYS *
+FLUSHDB
+KEYS *
+SADD first_set 3
+SADD first_set 4
+SRANGE first_set 0 1
+SMEMBERS first_set
+SREM first_set 3
+SMEMBERS first_set
+SISMEMBER first_set 4
+SADD second_set 5
+SUNION first_set second_set
+SINTER first_set second_set
+KEYS *
+HSET hashset first "Hello" field2 "World"
+HGET hashset first
+HGET hashset field2
+HKEYS hashset
+KEYS *
+DEL second_set
+DEL hashset
+DEL first_set
+KEYS *
+ZADD mySortedSet 1 "one"
+ZADD mySortedSet 1 "uno"
+ZADD mySortedSet 2 "two"
+ZRANGE myzset 0 -1
+ZRANGE mySortedSet 0 -
+ZSCORE mySortedSet one
+ZINCRBY mySortedSet  2 one
+ZSCORE mySortedSet one
+ZCARD key
+ZCARD mySortedSet
+KEYS *
+DEL mySortedSet
+KEYS *
+GEOADD Sicily 13.361389 38.115556 "Palermo" 15.087269 37.502669 "Catania"
+GEODIST Sicily Palermo Catania
+BGSAVE

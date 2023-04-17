@@ -1,0 +1,17 @@
+
+ [json]
+-----------------------------------------------------------------------------------------
+    {"posto_id": 1, "seg_id": 1, "posto_name": "Polo A", "seg_nome": "Alfredo Linguini"}
+           {"posto_id": 1, "seg_id": 2, "posto_name": "Polo A", "seg_nome": "Tom Hardy"}
+ {"posto_id": 1, "seg_id": 3, "posto_name": "Polo A", "seg_nome": "Samantha Hargreeves"}
+    {"posto_id": 2, "seg_id": 4, "posto_name": "Polo B", "seg_nome": "Christopher Jack"}
+       {"posto_id": 2, "seg_id": 5, "posto_name": "Polo B", "seg_nome": "Merlin Beards"}
+        {"posto_id": 2, "seg_id": 6, "posto_name": "Polo B", "seg_nome": "Steve Harlow"}
+         {"posto_id": 4, "seg_id": 10, "posto_name": "Polo D", "seg_nome": "Kris Jewel"}
+       {"posto_id": 4, "seg_id": 11, "posto_name": "Polo D", "seg_nome": "Sarah Watson"}
+      {"posto_id": 4, "seg_id": 12, "posto_name": "Polo D", "seg_nome": "Catherin Hugh"}
+       {"posto_id": 3, "seg_id": 7, "posto_name": "Polo C", "seg_nome": "Hailey Bailey"}
+          {"posto_id": 3, "seg_id": 8, "posto_name": "Polo C", "seg_nome": "Allan Pool"}
+          {"posto_id": 3, "seg_id": 9, "posto_name": "Polo C", "seg_nome": "Kit Harrig"}
+
+(12 rows)

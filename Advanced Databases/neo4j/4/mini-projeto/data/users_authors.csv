@@ -1,0 +1,503 @@
+userId,user,author_name
+2,Dodi,David        James
+2,Dodi,Rob Humphreys
+2,Dodi,Marvin N. Olasky
+2,Dodi,Steven Pressfield
+2,Dodi,Tara MacCarthy
+2,Dodi,Trevanian
+2,Dodi,Giada De Laurentiis
+2,Dodi,Bernard Malamud
+2,Dodi,Josef Pieper
+2,Dodi,Margaret Johnson
+3,Robenia,Napoleon Hill
+3,Robenia,David        James
+3,Robenia,Paulo Coelho
+4,Clark,Mineko Iwasaki
+4,Clark,Mark Smylie
+4,Clark,Neil Strauss
+4,Clark,Abraham Lincoln
+4,Clark,Dave Shea
+5,Gwenny,Ewan McGregor
+5,Gwenny,Henry James
+5,Gwenny,Robert A. Caro
+5,Gwenny,Peter  Stone
+6,Huey,Terry Jones
+6,Huey,Stephen Leeb
+6,Huey,Trevanian
+6,Huey,Stephen J. Rosen
+7,Jodie,George S. Clason
+7,Jodie,John Banville
+7,Jodie,Tara MacCarthy
+7,Jodie,David J. Danelo
+7,Jodie,Douglas Adams
+7,Jodie,Dr. Seuss
+7,Jodie,Deidre S. Laiken
+8,Elbert,Stephen J. Rosen
+8,Elbert,Donna Ickes
+8,Elbert,Margaret Johnson
+9,Marcel,Robert J. Milch
+9,Marcel,Gary Colombo
+9,Marcel,Mike   Mason
+9,Marcel,Chuck Klosterman
+9,Marcel,Charles Todd
+9,Marcel,Thomas Pynchon
+11,Garfinkel,Heidi Boyd
+11,Garfinkel,Julie Elizabeth Leto
+11,Garfinkel,Plato
+11,Garfinkel,Marvin N. Olasky
+11,Garfinkel,Thomas J. Stanley
+11,Garfinkel,Joy Harjo
+13,Warden,Johanna Spyri
+13,Warden,Adam Ginsberg
+13,Warden,Giada De Laurentiis
+13,Warden,Cynthia Harrod-Eagles
+13,Warden,Dale Peck
+13,Warden,Hiromu Arakawa
+13,Warden,David J. Danelo
+13,Warden,Alice Sebold
+13,Warden,P.J. Parrish
+13,Warden,Heidi Hayes Jacobs
+14,Shepperd,David J. Danelo
+14,Shepperd,Alex C. Jones
+14,Shepperd,Colin  Wells
+14,Shepperd,Bill Phillips
+14,Shepperd,Gary Chapman
+14,Shepperd,Aristophanes
+14,Shepperd,Rob Orsini
+14,Shepperd,Marianne Sturman
+15,Wye,Debbie Raleigh
+15,Wye,Heidi Hayes Jacobs
+15,Wye,Robert J. Milch
+15,Wye,Don DeLillo
+15,Wye,Robert Templer
+15,Wye,Vasant Moon
+15,Wye,Charles Todd
+15,Wye,Heidi Baker
+15,Wye,Eliot Ness
+15,Wye,Bill Bryson
+16,Nelie,Robert P. Miles
+17,Rod,Bryce Courtenay
+17,Rod,Neal Stephenson
+17,Rod,Henry Miller
+17,Rod,Lisa See
+17,Rod,George Smoot
+17,Rod,Rick Warren
+17,Rod,Jon   Stewart
+18,Ingunna,John Gray
+18,Ingunna,Reduced Shakespeare Company
+18,Ingunna,Donald T. Phillips
+18,Ingunna,Edward Bulwer-Lytton
+18,Ingunna,Chris   Smith
+18,Ingunna,Paulo Coelho
+18,Ingunna,Tyler Florence
+18,Ingunna,Stephen Leeb
+18,Ingunna,Edward Lear
+18,Ingunna,Richard Fariña
+19,Demetri,Tom Wolfe
+19,Demetri,Steven D. Levitt
+19,Demetri,Joan Didion
+19,Demetri,Thomas Harlan
+19,Demetri,Angela Knight
+19,Demetri,Dave Lakhani
+19,Demetri,Robert Templer
+19,Demetri,Steven D. Levitt
+19,Demetri,Margaret Johnson
+19,Demetri,H.G. Bissinger
+20,Crystie,Adam Ginsberg
+20,Crystie,William Shakespeare
+21,Kenny,Tara MacCarthy
+22,Laurens,Frank McConnell
+22,Laurens,George Smoot
+24,Kyrstin,Adam Ginsberg
+24,Kyrstin,Peter Moon
+24,Kyrstin,Gary Yukl
+24,Kyrstin,John Steinbeck
+24,Kyrstin,Bryce Courtenay
+24,Kyrstin,Simon Goldhill
+24,Kyrstin,Joseph A. Tainter
+24,Kyrstin,Vasant Moon
+25,Jordon,Heidi Baker
+25,Jordon,Daniel Abraham
+27,Thorny,Marvin N. Olasky
+27,Thorny,William Golding
+27,Thorny,Robert M. Pirsig
+27,Thorny,Robert J. Allison
+28,Vern,Mike   Mason
+28,Vern,Robert Templer
+28,Vern,Madeleine L'Engle
+28,Vern,Robert Templer
+28,Vern,James Frey
+28,Vern,Ursula Ferrigno
+29,Wyatan,Thomas Pynchon
+29,Wyatan,Homer
+29,Wyatan,Charles Todd
+29,Wyatan,Anne Tyler
+29,Wyatan,James M. Kouzes
+29,Wyatan,Heidi Murkoff
+29,Wyatan,Chuck Klosterman
+29,Wyatan,Sarah Mlynowski
+29,Wyatan,Anne Tyler
+29,Wyatan,Molly Hatchet
+30,Marchelle,Donald T. Phillips
+30,Marchelle,H.G. Bissinger
+30,Marchelle,Robert A. Heinlein
+30,Marchelle,Robert P. Miles
+31,Stacia,Brian Greene
+31,Stacia,Rolland Baker
+31,Stacia,Dale Peck
+32,Aimee,Michael   Lewis
+32,Aimee,J. Torres
+32,Aimee,Jon   Stewart
+32,Aimee,Rudolph W. Giuliani
+32,Aimee,Rolland Baker
+32,Aimee,Jon   Stewart
+34,Ree,John Gray
+34,Ree,Mark Smylie
+34,Ree,John Grisham
+34,Ree,Dave Lakhani
+34,Ree,Thomas E. Skidmore
+34,Ree,Kate Horsley
+35,Damien,Homer
+35,Damien,Ursula Ferrigno
+35,Damien,David McCullough
+35,Damien,Peter  Stone
+35,Damien,Jared Diamond
+36,Florry,Anthony Thorlby
+36,Florry,Michael Ochs
+36,Florry,Adam Ginsberg
+36,Florry,Carol Dommermuth-Costa
+36,Florry,Ruby Ann Boxcar
+36,Florry,P.J. Parrish
+36,Florry,Gabriel García Márquez
+36,Florry,George Smoot
+36,Florry,Lucas Carlson
+37,Grata,Jane Feather
+37,Grata,Rob Humphreys
+37,Grata,Aristophanes
+37,Grata,Philippa Carr
+37,Grata,Barry Eisler
+37,Grata,Jared Diamond
+37,Grata,Ronald L. DiSanto
+37,Grata,John McPhee
+37,Grata,Ayn Rand
+38,Gustie,Reduced Shakespeare Company
+38,Gustie,Pearl S. Buck
+38,Gustie,Lisa See
+38,Gustie,Ron  Louis
+38,Gustie,Philip Roth
+38,Gustie,Ursula Ferrigno
+39,Marcille,Zilpha Keatley Snyder
+39,Marcille,Robert Templer
+40,Jud,Nick Flynn
+40,Jud,David J. Danelo
+40,Jud,William Allan
+40,Jud,Rob Humphreys
+40,Jud,Wole Soyinka
+40,Jud,Carla Lynn Stockton
+41,Brea,Robert M. Pirsig
+41,Brea,Marianne Sturman
+41,Brea,Ayn Rand
+41,Brea,Ephraim Sevela
+41,Brea,Dave Lakhani
+41,Brea,Gary Chapman
+41,Brea,Donna Ickes
+42,Renato,Doug Walsh
+42,Renato,Marvin N. Olasky
+42,Renato,Anthony Thorlby
+43,Bartholomew,William Golding
+43,Bartholomew,P.J. Parrish
+43,Bartholomew,Kahlil Gibran
+43,Bartholomew,Catharine M. Fishel
+43,Bartholomew,Garry Wills
+43,Bartholomew,Chris   Smith
+43,Bartholomew,Anne Carson
+43,Bartholomew,Sharyn McCrumb
+43,Bartholomew,Elizabeth Castro
+44,Ike,Thomas E. Skidmore
+45,Marj,Ruby Ann Boxcar
+45,Marj,Nick Flynn
+45,Marj,Euripides
+45,Marj,Carol Dommermuth-Costa
+45,Marj,Charles Willeford
+45,Marj,Python Bonkers
+45,Marj,Michael   Lewis
+45,Marj,Robert A. Heinlein
+45,Marj,Hiromu Arakawa
+45,Marj,W. Frederick Zimmerman
+46,Stormi,H.G. Bissinger
+46,Stormi,Robert G. Hagstrom
+46,Stormi,Gary Russell
+46,Stormi,Eliot Ness
+47,Norene,Mark Smylie
+47,Norene,Donald A. Norman
+47,Norene,Rudolph W. Giuliani
+47,Norene,Abraham Lincoln
+47,Norene,Mineko Iwasaki
+47,Norene,J.K. Rowling
+47,Norene,Debbie Raleigh
+47,Norene,Debbie Raleigh
+47,Norene,Robert J. Allison
+47,Norene,Tyler Florence
+48,Rem,Robert Greene
+48,Rem,J.K. Rowling
+48,Rem,Douglas Adams
+48,Rem,Mulk Raj Anand
+48,Rem,David        James
+48,Rem,George Smoot
+49,Jessika,Virgil
+49,Jessika,Barry R. Cournoyer
+50,Prissie,Daniel Abraham
+50,Prissie,Jude Fisher
+51,Johannah,Ephraim Sevela
+51,Johannah,Peter  Stone
+51,Johannah,Alex C. Jones
+51,Johannah,Zilpha Keatley Snyder
+51,Johannah,Robert A. Heinlein
+51,Johannah,Alice Sebold
+51,Johannah,George Smoot
+52,Marylin,Giorgio De Santillana
+52,Marylin,Garry Wills
+52,Marylin,Cynthia W. Shelmerdine
+52,Marylin,Billy Collins
+52,Marylin,Ellen Raskin
+52,Marylin,Gary Paulsen
+52,Marylin,J.R.R. Tolkien
+52,Marylin,James Frey
+52,Marylin,James Frey
+53,Reyna,Jean Gibran
+53,Reyna,Rob Humphreys
+53,Reyna,Dave Shea
+54,Audre,Barry Eisler
+54,Audre,Garry Wills
+54,Audre,Rick Warren
+54,Audre,Peter  Stone
+56,Amandy,Jean M. Auel
+56,Amandy,Stephen J. Rosen
+56,Amandy,Julia Wilkinson
+56,Amandy,Edward Lear
+56,Amandy,David        James
+56,Amandy,Molly Hatchet
+56,Amandy,Richard Fariña
+57,Blanche,Mulk Raj Anand
+57,Blanche,Barry R. Cournoyer
+57,Blanche,Billy Collins
+57,Blanche,Frank McConnell
+57,Blanche,Barbara Park
+57,Blanche,Aristophanes
+57,Blanche,Margaret Johnson
+58,Lynnea,Donald A. Norman
+58,Lynnea,John Banville
+58,Lynnea,Margaret Weis
+58,Lynnea,Henry Miller
+58,Lynnea,Philip Roth
+58,Lynnea,Bill Bryson
+58,Lynnea,Yann Martel
+58,Lynnea,Madeleine L'Engle
+59,Ronen,Delia Sherman
+59,Ronen,Marvin N. Olasky
+59,Ronen,J.K. Rowling
+59,Ronen,Ephraim Sevela
+59,Ronen,Margaret Johnson
+59,Ronen,Rolland Baker
+59,Ronen,Ewan McGregor
+59,Ronen,Rudolph W. Giuliani
+60,Megan,Robert Templer
+60,Megan,Anne Tyler
+60,Megan,Frank McConnell
+61,Gwenneth,James M. Kouzes
+61,Gwenneth,Louis E. Catron
+61,Gwenneth,Dave Lakhani
+61,Gwenneth,Cynthia Harrod-Eagles
+61,Gwenneth,Carla Lynn Stockton
+62,Yolane,Dave Shea
+62,Yolane,Upasika Kee Nanayon
+62,Yolane,Sarah Mlynowski
+64,Jordana,Arthur Golden
+64,Jordana,John Steinbeck
+65,Kass,Gabriel García Márquez
+65,Kass,Zilpha Keatley Snyder
+66,Petronella,Robert J. Allison
+67,Jenilee,Alex C. Jones
+67,Jenilee,Bryce Courtenay
+67,Jenilee,Yann Martel
+67,Jenilee,Jared Diamond
+67,Jenilee,Susan Nanus
+67,Jenilee,Ruby Ann Boxcar
+67,Jenilee,John Grisham
+67,Jenilee,Yann Martel
+67,Jenilee,Adam Ginsberg
+68,Aldrich,Dan Harrington
+68,Aldrich,Sarah Mlynowski
+68,Aldrich,Gary Yukl
+68,Aldrich,Molly Hatchet
+69,Berna,Barry R. Cournoyer
+69,Berna,John McPhee
+69,Berna,Rick Warren
+69,Berna,Susan Nanus
+69,Berna,Donna Ickes
+69,Berna,Gabriel García Márquez
+70,Honor,Thomas Harlan
+70,Honor,Dan Harrington
+70,Honor,David        James
+70,Honor,Kevin Trudeau
+70,Honor,Tara MacCarthy
+70,Honor,Virgil
+70,Honor,Gary Russell
+70,Honor,Maureen Kelly
+71,Theda,Nikola Tesla
+71,Theda,Ursula Ferrigno
+72,Solomon,Molly Hatchet
+72,Solomon,Edward Bulwer-Lytton
+72,Solomon,Gabriel García Márquez
+72,Solomon,Eric Schlosser
+72,Solomon,Christopher Caswell
+72,Solomon,Robert M. Pirsig
+73,Tabbitha,Frank McConnell
+73,Tabbitha,Josef Pieper
+74,Sibylle,Mark Smylie
+74,Sibylle,Chuck Klosterman
+74,Sibylle,Ralph Ginzburg
+75,Celisse,Wendy Wasserstein
+75,Celisse,Zilpha Keatley Snyder
+75,Celisse,Patricia A. McKillip
+75,Celisse,Angela Knight
+75,Celisse,Maureen Kelly
+75,Celisse,Anne Tyler
+76,Eve,Jean M. Auel
+76,Eve,Terry Jones
+76,Eve,Napoleon Hill
+76,Eve,William Shakespeare
+76,Eve,Gary Chapman
+76,Eve,Douglas Adams
+77,Stavros,Ed Roberson
+77,Stavros,Yann Martel
+77,Stavros,Tyler Florence
+77,Stavros,Rick Warren
+77,Stavros,Bryce Courtenay
+77,Stavros,Robert Louis Stevenson
+77,Stavros,Maureen Kelly
+77,Stavros,Catharine M. Fishel
+77,Stavros,Ronald L. DiSanto
+77,Stavros,Robert D. Putnam
+78,Rodney,W. Frederick Zimmerman
+78,Rodney,Ronald L. DiSanto
+78,Rodney,John McPhee
+78,Rodney,Virgil
+78,Rodney,Marc J.  Seifer
+78,Rodney,Thucydides
+78,Rodney,Wendy Wasserstein
+79,Deva,Maureen Kelly
+79,Deva,Paulo Coelho
+79,Deva,Dave Thomas
+79,Deva,Catharine M. Fishel
+79,Deva,Donald T. Phillips
+79,Deva,Josef Pieper
+79,Deva,Tara MacCarthy
+79,Deva,Chris   Smith
+79,Deva,John Steinbeck
+79,Deva,Nikola Tesla
+80,Tailor,Bill Phillips
+80,Tailor,Thomas Harlan
+82,Toni,Ronald L. DiSanto
+82,Toni,J. Torres
+82,Toni,Gary Paulsen
+82,Toni,J.J. Isler
+82,Toni,W. Frederick Zimmerman
+82,Toni,Mike   Mason
+82,Toni,Herodotus
+82,Toni,Carla Lynn Stockton
+84,Algernon,Eliot Ness
+84,Algernon,J. Torres
+84,Algernon,Zilpha Keatley Snyder
+84,Algernon,Susan Nanus
+84,Algernon,Donald T. Phillips
+84,Algernon,Louis E. Catron
+85,Harriett,Bernard Malamud
+85,Harriett,Reduced Shakespeare Company
+85,Harriett,Margaret Johnson
+85,Harriett,Frank McConnell
+85,Harriett,Herodotus
+85,Harriett,Don DeLillo
+86,Doralynn,Joy Harjo
+86,Doralynn,Giada De Laurentiis
+86,Doralynn,John McPhee
+86,Doralynn,Daniel Abraham
+86,Doralynn,Eric Schlosser
+87,Glenine,Jon   Stewart
+87,Glenine,Molly Hatchet
+87,Glenine,Robert A. Caro
+88,Rob,James M. Kouzes
+88,Rob,Herodotus
+88,Rob,Henry Miller
+88,Rob,Edward Lear
+88,Rob,Euripides
+88,Rob,Steven Pressfield
+88,Rob,Julie Elizabeth Leto
+88,Rob,Herodotus
+88,Rob,Philip Roth
+89,Meredith,Johanna Spyri
+90,Marris,Mark Smylie
+90,Marris,Barbara Park
+90,Marris,Gary Russell
+91,Jordanna,Bill Phillips
+91,Jordanna,Euripides
+91,Jordanna,Heidi Baker
+91,Jordanna,Thomas E. Skidmore
+91,Jordanna,Donna Ickes
+92,Lee,Angela Knight
+92,Lee,Bill Phillips
+92,Lee,Kevin Trudeau
+92,Lee,W. Frederick Zimmerman
+92,Lee,Johanna Spyri
+93,Merv,Chris Malta
+93,Merv,Rudolph W. Giuliani
+93,Merv,Elizabeth Castro
+93,Merv,Cynthia Harrod-Eagles
+93,Merv,Satyajit Das
+93,Merv,Rolland Baker
+93,Merv,Abraham Lincoln
+93,Merv,J.K. Rowling
+93,Merv,Ewan McGregor
+93,Merv,Joseph A. Tainter
+94,Adriena,Steven D. Levitt
+94,Adriena,Rick Warren
+94,Adriena,John Banville
+94,Adriena,Anthony Thorlby
+94,Adriena,Marsha Collier
+94,Adriena,Madeleine L'Engle
+94,Adriena,Garry Wills
+94,Adriena,Homer
+95,Danika,Dave Shea
+95,Danika,Tom Wolfe
+95,Danika,David McCullough
+95,Danika,J.J. Isler
+95,Danika,Douglas Adams
+95,Danika,Delia Sherman
+95,Danika,Louis E. Catron
+95,Danika,Arthur Golden
+96,Hally,Jean Gibran
+96,Hally,Julie Elizabeth Leto
+96,Hally,Delia Sherman
+96,Hally,William Shakespeare
+96,Hally,Ralph Ginzburg
+96,Hally,Gary Russell
+96,Hally,Brian Greene
+96,Hally,Neil Strauss
+96,Hally,Debbie Raleigh
+97,Mala,Gary Colombo
+97,Mala,Ron  Louis
+97,Mala,Susan Nanus
+97,Mala,Hiromu Arakawa
+98,Bambi,Ronald L. DiSanto
+98,Bambi,Nick  Webb
+98,Bambi,William Allan
+98,Bambi,Douglas Adams
+98,Bambi,Joan Didion
+99,Loria,J.J. Isler
+99,Loria,Tyler Florence
+99,Loria,Herodotus
+99,Loria,Douglas Adams
+99,Loria,Sharyn McCrumb
+99,Loria,Edward Bulwer-Lytton
+99,Loria,Mineko Iwasaki
+99,Loria,Ewan McGregor

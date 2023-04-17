@@ -1,0 +1,12 @@
+// Running Cassandra on docker container
+
+docker exec -it cassandra-server cqlsh -e 'SELECT JSON * FROM cbd_103530_ex2.users;' > users.json
+docker exec -it cassandra-server cqlsh -e 'SELECT JSON * FROM cbd_103530_ex2.videos;' > videos.json
+docker exec -it cassandra-server cqlsh -e 'SELECT JSON * FROM cbd_103530_ex2.tags;' > tags.json
+docker exec -it cassandra-server cqlsh -e 'SELECT JSON * FROM cbd_103530_ex2.comments;' > comments.json
+docker exec -it cassandra-server cqlsh -e 'SELECT JSON * FROM cbd_103530_ex2.videos_followers;' > videos_followers.json
+docker exec -it cassandra-server cqlsh -e 'SELECT JSON * FROM cbd_103530_ex2.videos_by_author;' > videos_by_author.json
+docker exec -it cassandra-server cqlsh -e 'SELECT JSON * FROM cbd_103530_ex2.comments_by_user;' > comments_by_user.json
+docker exec -it cassandra-server cqlsh -e 'SELECT JSON * FROM cbd_103530_ex2.comments_by_video;' > comments_by_video.json
+docker exec -it cassandra-server cqlsh -e 'SELECT JSON * FROM cbd_103530_ex2.events_by_video_user;' > events_by_video_user.json
+

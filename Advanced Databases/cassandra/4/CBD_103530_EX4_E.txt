@@ -1,0 +1,28 @@
+-- Use created keyspace:
+USE cbd_103530_ex4;
+
+-- Mapa
+UPDATE segurancas SET horario['Terça-Feira']='4-5-6' WHERE id=1;
+UPDATE segurancas SET horario = horario + {'Sábado': '13-14'} WHERE id=1;
+DELETE horario['Sábado'] FROM segurancas WHERE id=1;
+UPDATE segurancas SET horario = horario + {'Sábado': '13-14'} WHERE id=1;
+UPDATE segurancas SET horario = horario - {'Sábado'} WHERE id=1;
+UPDATE segurancas SET horario['Terça-Feira']='' WHERE id=1;
+
+-- Lista
+UPDATE segurancas SET fraquezas = fraquezas + ['bad cook'] WHERE id=1;
+UPDATE segurancas SET fraquezas = fraquezas - ['bad cook'] WHERE id=1;
+UPDATE segurancas SET fraquezas = fraquezas + ['bad cook'] WHERE id=1;
+DELETE fraquezas[2] FROM segurancas WHERE id=1;
+
+
+-- Conjunto
+UPDATE camaras SET configuracoes = configuracoes + {'4k'} WHERE id=1;
+UPDATE camara_por_estado SET configuracoes = configuracoes + {'4k'} WHERE estado='ligada' and id=1;
+UPDATE camaras SET configuracoes = configuracoes - {'4k'} WHERE id=1;
+UPDATE camara_por_estado SET configuracoes = configuracoes - {'4k'} WHERE estado='ligada' and id=1;
+
+
+DELETE fraquezas[1] FROM segurancas WHERE id=10;
+DELETE fraquezas[0] FROM segurancas WHERE id=7;
+DELETE fraquezas[0] FROM segurancas WHERE id=4;

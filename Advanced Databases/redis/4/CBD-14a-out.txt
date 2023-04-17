@@ -1,0 +1,29 @@
+Search for (Enter 'quit' to quit): susann
+susann
+susanna
+susannah
+susanne
+Search for (Enter 'quit' to quit): zora
+zora
+zorah
+zorana
+Search for (Enter 'quit' to quit): andre
+andrea
+andreana
+andree
+andrei
+Search for (Enter 'quit' to quit): gabriel
+gabriel
+gabriela
+gabriell
+gabriella
+gabrielle
+gabriellia
+Search for (Enter 'quit' to quit): butuc
+Search for (Enter 'quit' to quit): john
+johna
+johnath
+johnette
+johnna
+Search for (Enter 'quit' to quit): joao
+Search for (Enter 'quit' to quit): quit

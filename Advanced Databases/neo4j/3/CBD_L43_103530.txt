@@ -1,0 +1,50 @@
+Exercício 4.3
+
+a)
+User
+    - svn_id
+    - real_name
+
+Project
+    - project_name
+
+Organization
+    - organization
+
+
+Relationships:
+
+WORKS_ON (User -> Project)
+    - role_on_project
+
+BELONGS_TO (User -> Organization)
+
+b)
+LOAD CSV WITH HEADERS FROM 'file:///git_selection.csv' AS row
+MERGE(u:User {userId: row.svn_id, name: row.real_name})
+MERGE (p:Project {name:toUpper(rtrim(row.project_name))})
+MERGE (o:Organization {name: toUpper(rtrim(row.organization))})
+MERGE (u)-[w:WORKS_ON {role:row.role_on_project}]-> (p)
+MERGE (u)-[b:BELONG_TO]->(o);
+
+
+c) 
+
+#1
+match (u:User) return u
+#2
+match (u:User) return u.name
+#3
+match (u:User)-[:WORKS_ON]->(p:Project) with p, count(u) as nusers where nusers > 0  return p
+#4
+match (u:User)-[:WORKS_ON]->(p:Project) with u, count(p) as projects return u, projects
+#5
+match (u:User)-[:WORKS_ON]->(p:Project) with u, count(p) as projects return u, projects order by projects desc
+#6
+match (u:User)-[:WORKS_ON]->(p:Project) with p, count(u) as members return p, members
+#7
+match (u:User)-[:WORKS_ON {role: "Committer"} ]->(p:Project) with p, count(u) as members return p, members
+#8
+match (atm:User {userId: "atm"})-[:WORKS_ON]->(p:Project)<-[:WORKS_ON]-(u2:User) return atm.name, u2.name, p.name
+#9
+match (atm:User {userId: "atm"})-[:WORKS_ON {role: "PMC"}]->(p:Project)<-[:WORKS_ON {role: "Committer"}]-(u2:User) return u2

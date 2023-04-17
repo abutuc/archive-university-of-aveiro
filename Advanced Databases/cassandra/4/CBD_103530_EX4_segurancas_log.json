@@ -1,0 +1,35 @@
+
+ [json]
+--------------------------------------------------------------------------------------
+  {"id_seg": 1, "evento": "entrada", "instante": "2022-11-21 09:00:19.000Z", "id": 1}
+  {"id_seg": 1, "evento": "entrada", "instante": "2022-11-23 13:58:34.000Z", "id": 3}
+  {"id_seg": 1, "evento": "entrada", "instante": "2022-11-24 09:00:34.000Z", "id": 5}
+  {"id_seg": 1, "evento": "entrada", "instante": "2022-11-24 14:01:44.000Z", "id": 7}
+ {"id_seg": 1, "evento": "entrada", "instante": "2022-11-25 21:00:00.000Z", "id": 21}
+    {"id_seg": 1, "evento": "saida", "instante": "2022-11-21 12:01:22.000Z", "id": 2}
+    {"id_seg": 1, "evento": "saida", "instante": "2022-11-23 17:00:52.000Z", "id": 4}
+    {"id_seg": 1, "evento": "saida", "instante": "2022-11-24 12:02:03.000Z", "id": 6}
+    {"id_seg": 1, "evento": "saida", "instante": "2022-11-24 17:12:32.000Z", "id": 8}
+   {"id_seg": 1, "evento": "saida", "instante": "2022-11-25 23:01:00.000Z", "id": 22}
+  {"id_seg": 2, "evento": "entrada", "instante": "2022-11-23 17:58:27.000Z", "id": 9}
+ {"id_seg": 2, "evento": "entrada", "instante": "2022-11-25 18:00:14.000Z", "id": 11}
+   {"id_seg": 2, "evento": "saida", "instante": "2022-11-23 00:02:03.000Z", "id": 10}
+   {"id_seg": 2, "evento": "saida", "instante": "2022-11-24 00:00:39.000Z", "id": 12}
+ {"id_seg": 4, "evento": "entrada", "instante": "2022-11-21 13:00:01.000Z", "id": 23}
+ {"id_seg": 4, "evento": "entrada", "instante": "2022-11-22 11:01:00.000Z", "id": 25}
+ {"id_seg": 4, "evento": "entrada", "instante": "2022-11-23 17:01:02.000Z", "id": 27}
+ {"id_seg": 4, "evento": "entrada", "instante": "2022-11-24 17:00:18.000Z", "id": 29}
+   {"id_seg": 4, "evento": "saida", "instante": "2022-11-21 16:01:11.000Z", "id": 24}
+   {"id_seg": 4, "evento": "saida", "instante": "2022-11-21 19:02:00.000Z", "id": 30}
+   {"id_seg": 4, "evento": "saida", "instante": "2022-11-22 13:02:12.000Z", "id": 26}
+   {"id_seg": 4, "evento": "saida", "instante": "2022-11-23 19:10:27.000Z", "id": 28}
+ {"id_seg": 3, "evento": "entrada", "instante": "2022-11-21 09:00:57.000Z", "id": 13}
+ {"id_seg": 3, "evento": "entrada", "instante": "2022-11-22 09:01:07.000Z", "id": 15}
+ {"id_seg": 3, "evento": "entrada", "instante": "2022-11-24 08:58:33.000Z", "id": 17}
+ {"id_seg": 3, "evento": "entrada", "instante": "2022-11-25 09:10:05.000Z", "id": 19}
+   {"id_seg": 3, "evento": "saida", "instante": "2022-11-21 12:01:00.000Z", "id": 14}
+   {"id_seg": 3, "evento": "saida", "instante": "2022-11-22 12:00:10.000Z", "id": 16}
+   {"id_seg": 3, "evento": "saida", "instante": "2022-11-24 11:59:12.000Z", "id": 18}
+   {"id_seg": 3, "evento": "saida", "instante": "2022-11-25 12:15:46.000Z", "id": 20}
+
+(30 rows)

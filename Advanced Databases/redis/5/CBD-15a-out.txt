@@ -1,0 +1,31 @@
+MESSAGE EXCHANGE SYSTEM
+
+----------TESTING ADDING USERS -------
+
+André is alive!
+Gabriel is alive!
+
+----------TESTING FOLLOWING USERS -------
+
+André is now following Gabriel! 
+
+----------TESTING SENDING MESSAGE USERS -------
+
+Gabriel to André: Hi followers!
+
+----------BASIC INFO -------
+
+Gabriel isn't following Gabriel
+
+Gabriel' Messages
+Message 01: Hi followers!
+
+
+Gabriel is now following André! 
+André' Messages
+Message 01: Nobody will see this.
+Message 11: Nobody will see this v2.
+
+
+Gabriel unfollowed André!
+System is exiting.

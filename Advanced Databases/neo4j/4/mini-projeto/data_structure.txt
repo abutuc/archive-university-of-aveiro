@@ -1,0 +1,34 @@
+For this exercise I chose as theme for my database a social network for people that love books.
+
+Entities:
+
+- User
+    * id
+    * name
+
+- Book
+    * title
+    * rating
+    * num_pages
+    * publish_date
+
+- Author
+    * name
+
+- Publisher
+    * name
+
+
+Relationships:
+
+- User -> User: FOLLOWS
+
+- User -> Book: LIKES
+
+- User -> Author: LIKES
+
+- Author -> Book: WROTE
+
+- Publisher -> Book: PUBLISHED
+
+
