@@ -1,0 +1,15 @@
+<li *ngIf="user && user.is_authenticated; else default">
+  <a routerLink="/profile">
+    Hello <strong>{{ user.username }}</strong> !
+    <img [src]="image">
+  </a>
+</li>
+
+<ng-template #default>
+  <li>
+    <a routerLink="/login">
+      Log In
+      <img src="assets/images/profile-default.jpg">
+    </a>
+  </li>
+</ng-template>
