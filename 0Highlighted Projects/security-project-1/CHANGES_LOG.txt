@@ -1,0 +1,20 @@
+This text file will enumerate the changes between the original version and the improved version of the second practical assignment submission.
+
+Report Changes:
+- Added on each CWE chapter a "CVSS Estimado" section where I assign a CVSS estimate of the CWE, show the combination of parameters which led me to the estimate and provide a brief explanation of the choice of parameters;
+- Re-interpreted the CWE-598 and CWE-200, therefore I added two new chapters, CWE-598 (chapter 6) and CWE-200 (chapter 7), and removed the old chapter CWE-598 + CWE-200 (chapter 6).
+- Improved the chapter of CWE-434 (chapter 10), namely the section "10.2 Resolução da Vulnerabilidade".
+
+Secure App Code Changes in app.py functions:
+- edit_profile_details;
+- doctor_dashboard_patient_info;
+- doctor_dashboard_appointment_info;
+- doctor_dashboard_exam_info;
+- doctor_dashboard_prescription_info;
+
+Secure App HTML templates:
+- doctor-dashboard-patients.html;
+- doctor-dashboard-appointments.html;
+- doctor-dashboard-exams.html;
+- doctor-dashboard-prescription.html;
+- doctor-dashboard.html;
