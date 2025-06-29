@@ -1,0 +1,1 @@
+Exercises B and C were done in the folder lab4_1.

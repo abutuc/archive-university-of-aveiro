@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Air Quality - Forecast</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+</head>
+
+<body>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">TQS - HW1</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="/now">Now</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/forecast">Forecast</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+<div class="container mt-3">
+  <h1 class="text-center">Air Quality Forecast</h1>
+  <div class="form-group row mt-5">
+    <label for="location-input" class="col-sm-2 col-form-label">Location</label>
+    <div class="col-sm-6">
+      <input type="text" class="form-control" id="location-input" placeholder="Enter location">
+    </div>
+    <div class="col-sm-4">
+      <button id="search-button" class="btn btn-primary">Search</button>
+    </div>
+  </div>
+  <div id="result-table" class="mt-5"></div>
+</div>
+
+<!-- Bootstrap JS and jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $('#search-button').click(function () {
+      let location = $('#location-input').val();
+      if (location === ""){
+        return;
+      }
+      const url = 'http://localhost:8080/air_quality/forecast?location=' + location;
+      $.get(url, function (data) {
+        let resultTable = '<table class="table">';
+        resultTable += '<tr><th>Location</th><td>' + data[0].location + '</td></tr>';
+        resultTable += '<tr><th>Latitude</th><td>' + data[0].coordinates.lat + '</td></tr>';
+        resultTable += '<tr><th>Longitude</th><td>' + data[0].coordinates.lon + '</td></tr>';
+        for (let i = 0; i < data.length; i++) {
+          resultTable += '<tr style="background-color: #444; height: 1px; padding: 0;"><td colspan="2""></td></tr>';
+          resultTable += '<tr><th>Date</th><td>' + data[i].date + '</td></tr>'
+          resultTable += '<tr><th>Quality Index</th><td>' + data[i].qualityIndex + '</td></tr>';
+          resultTable += '<tr><th>Components Concentration</th><td><ul>';
+          for (const component in data[i].componentsConcentration) {
+            resultTable += '<li>' + component + ': ' + data[i].componentsConcentration[component] + '</li>';
+          }
+          resultTable += '</ul></td></tr>';
+        }
+        resultTable += '</table>';
+        $('#result-table').html(resultTable);
+      });
+    });
+  });
+
+</script>
+</body>
+</html>

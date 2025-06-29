@@ -1,0 +1,270 @@
+{
+  "id": "1fede026-0624-4f6c-b695-704720450578",
+  "version": "2.0",
+  "name": "hw1",
+  "url": "http://localhost:8080",
+  "tests": [{
+    "id": "de9efaf1-03b4-494c-b85c-f980c9c4ac6a",
+    "name": "AirQualityNow",
+    "commands": [{
+      "id": "425e1b42-abbf-488c-aa18-61b4a3bdb152",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "25daf5b8-f7bc-412b-b12e-0ae373914c23",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x877",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f673637c-f929-4117-8c7f-60c907eb1e4f",
+      "comment": "",
+      "command": "click",
+      "target": "id=location-input",
+      "targets": [
+        ["id=location-input", "id"],
+        ["css=#location-input", "css:finder"],
+        ["xpath=//input[@id='location-input']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "26d8f667-389d-4c5f-92e4-29036ef9b6b2",
+      "comment": "",
+      "command": "type",
+      "target": "id=location-input",
+      "targets": [
+        ["id=location-input", "id"],
+        ["css=#location-input", "css:finder"],
+        ["xpath=//input[@id='location-input']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Aveiro"
+    }, {
+      "id": "f965d5a5-da44-4f50-8f80-25ed5b8150ca",
+      "comment": "",
+      "command": "click",
+      "target": "id=search-button",
+      "targets": [
+        ["id=search-button", "id"],
+        ["css=#search-button", "css:finder"],
+        ["xpath=//button[@id='search-button']", "xpath:attributes"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Search')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a023d6e9-20bc-472a-911f-211916a35feb",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Air Quality",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1493e819-6d7b-416e-a52b-8007c2dfb085",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.text-center",
+      "targets": [
+        ["css=.text-center", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Air Quality Now')]", "xpath:innerText"]
+      ],
+      "value": "Air Quality Now"
+    }, {
+      "id": "4736678f-5d80-4ae1-97d5-c61e2f1d1fa9",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(1) > td",
+      "targets": [
+        ["css=tr:nth-child(1) > td", "css:finder"],
+        ["xpath=//div[@id='result-table']/table/tbody/tr/td", "xpath:idRelative"],
+        ["xpath=//td", "xpath:position"],
+        ["xpath=//td[contains(.,'Aveiro, PT')]", "xpath:innerText"]
+      ],
+      "value": "Aveiro, PT"
+    }, {
+      "id": "445f3c67-76b8-48c7-b81b-22d85e558fd7",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(2) > td",
+      "targets": [
+        ["css=tr:nth-child(2) > td", "css:finder"],
+        ["xpath=//div[@id='result-table']/table/tbody/tr[2]/td", "xpath:idRelative"],
+        ["xpath=//tr[2]/td", "xpath:position"],
+        ["xpath=//td[contains(.,'40.640496')]", "xpath:innerText"]
+      ],
+      "value": "40.640496"
+    }, {
+      "id": "e54e8df3-f70b-4406-85d0-b25d87df78d2",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(3) > td",
+      "targets": [
+        ["css=tr:nth-child(3) > td", "css:finder"],
+        ["xpath=//div[@id='result-table']/table/tbody/tr[3]/td", "xpath:idRelative"],
+        ["xpath=//tr[3]/td", "xpath:position"],
+        ["xpath=//td[contains(.,'-8.6537841')]", "xpath:innerText"]
+      ],
+      "value": "-8.6537841"
+    }]
+  }, {
+    "id": "9dd5767c-6699-488d-8d6d-3235c9f56af7",
+    "name": "AirQualityForecast",
+    "commands": [{
+      "id": "ac2d41ad-e7bd-4670-b581-1ea05719c8f0",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "02941cb1-9030-4653-a7dc-27aabf356a7b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x877",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1d13820b-d1dd-41ed-b069-0ccf40a91ffd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Forecast",
+      "targets": [
+        ["linkText=Forecast", "linkText"],
+        ["css=.nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Forecast')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNav']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/forecast')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Forecast')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "717770c7-23ee-4bc5-b909-4c640c4b4104",
+      "comment": "",
+      "command": "click",
+      "target": "id=location-input",
+      "targets": [
+        ["id=location-input", "id"],
+        ["css=#location-input", "css:finder"],
+        ["xpath=//input[@id='location-input']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d6b85e9-b36b-4252-85ab-c2aaf4d617c9",
+      "comment": "",
+      "command": "type",
+      "target": "id=location-input",
+      "targets": [
+        ["id=location-input", "id"],
+        ["css=#location-input", "css:finder"],
+        ["xpath=//input[@id='location-input']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Aveiro"
+    }, {
+      "id": "3d8fb4a5-9731-43cd-b37b-215ee236fed6",
+      "comment": "",
+      "command": "click",
+      "target": "id=search-button",
+      "targets": [
+        ["id=search-button", "id"],
+        ["css=#search-button", "css:finder"],
+        ["xpath=//button[@id='search-button']", "xpath:attributes"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Search')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca538581-d39e-4e8d-aafe-081289a15842",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Air Quality - Forecast",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "46e6896f-77fd-4bed-8be9-a0ff1e1a1394",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.text-center",
+      "targets": [
+        ["css=.text-center", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Air Quality Forecast')]", "xpath:innerText"]
+      ],
+      "value": "Air Quality Forecast"
+    }, {
+      "id": "b946e9f7-4fed-4cda-bffd-e8a5d58f6290",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(5) > th",
+      "targets": [
+        ["css=tr:nth-child(5) > th", "css:finder"],
+        ["xpath=//div[@id='result-table']/table/tbody/tr[5]/th", "xpath:idRelative"],
+        ["xpath=//tr[5]/th", "xpath:position"],
+        ["xpath=//th[contains(.,'Date')]", "xpath:innerText"]
+      ],
+      "value": "Date"
+    }, {
+      "id": "371dcfbf-65ba-4878-ac1c-8066f84994cb",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(9) > th",
+      "targets": [
+        ["css=tr:nth-child(9) > th", "css:finder"],
+        ["xpath=//div[@id='result-table']/table/tbody/tr[9]/th", "xpath:idRelative"],
+        ["xpath=//tr[9]/th", "xpath:position"]
+      ],
+      "value": "Date"
+    }, {
+      "id": "2f836d6f-f818-4156-a0bb-ba4021e680b0",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(13) > th",
+      "targets": [
+        ["css=tr:nth-child(13) > th", "css:finder"],
+        ["xpath=//div[@id='result-table']/table/tbody/tr[13]/th", "xpath:idRelative"],
+        ["xpath=//tr[13]/th", "xpath:position"]
+      ],
+      "value": "Date"
+    }, {
+      "id": "0d4dd397-8ae3-4645-a362-c5478bb5bcfa",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(17) > th",
+      "targets": [
+        ["css=tr:nth-child(17) > th", "css:finder"],
+        ["xpath=//div[@id='result-table']/table/tbody/tr[17]/th", "xpath:idRelative"],
+        ["xpath=//tr[17]/th", "xpath:position"]
+      ],
+      "value": "Date"
+    }, {
+      "id": "fca365e8-7420-4d6b-b65e-941d161e4fb8",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(21) > th",
+      "targets": [
+        ["css=tr:nth-child(21) > th", "css:finder"],
+        ["xpath=//div[@id='result-table']/table/tbody/tr[21]/th", "xpath:idRelative"],
+        ["xpath=//tr[21]/th", "xpath:position"]
+      ],
+      "value": "Date"
+    }]
+  }],
+  "suites": [{
+    "id": "54a3a13a-b9ef-4d83-a5a3-cd2f28cc6b66",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["de9efaf1-03b4-494c-b85c-f980c9c4ac6a"]
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": []
+}
