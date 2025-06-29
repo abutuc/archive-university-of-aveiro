@@ -1,0 +1,82 @@
+services:
+
+  app:
+    container_name: growmate
+    restart: always
+    build:
+        context: ./backend/Growmate_API
+        dockerfile: Dockerfile
+    ports:
+      - '8080:8080'
+    depends_on:
+      - postgresql
+      - rabbitmq3
+      #- influxdb
+      - redis
+    networks:
+      - net
+
+  postgresql:
+    container_name: postgresql
+    image: 'postgres:13.1-alpine'
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: db
+    ports:
+      - '5432:5432'
+    volumes:
+      #copy the sql script to create tables
+      - ./database/dump.sql:/docker-entrypoint-initdb.d/01_dump.sql
+      #copy the sql script to create triggers
+      - ./database/triggers.sql:/docker-entrypoint-initdb.d/02_triggers.sql
+      #copy the sql script to fill tables
+      - ./database/fill_tables.sql:/docker-entrypoint-initdb.d/03_fill_tables.sql
+
+    networks:
+      - net
+
+  rabbitmq3:
+    container_name: rabbitmq
+    build:
+        context: ./backend/rabbitmq_config
+        dockerfile: Dockerfile
+    environment:
+      - RABBITMQ_DEFAULT_USER=growmate
+      - RABBITMQ_DEFAULT_PASS=growmate
+    ports:
+      - '5672:5672'
+      - '15672:15672'
+      - '1883:1883'
+    networks:
+      - net
+
+  #influxdb:
+  #  image: influxdb:1.8-alpine
+  #  container_name: influxdb
+  #  restart: always
+  #  environment:
+  #    - INFLUXDB_DB=influx
+  #    - INFLUXDB_ADMIN_USER=admin
+  #    - INFLUXDB_ADMIN_PASSWORD=admin
+  #  ports:
+  #    - '8086:8086'
+  #  networks:
+  #    - net
+
+  redis:
+    container_name: redis
+    image: redis:6.2-alpine
+    restart: always
+    ports:
+      - '6379:6379'
+    environment:
+      REDIS_USER: user
+      REDIS_PASSWORD: secret
+    networks:
+      - net
+
+networks:
+  net:
+    name: net

@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="img/logotipo.ico">
+
+    
+    <title>GrowMate Documentation</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="css/base.min.css" rel="stylesheet">
+    <link href="css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body class="homepage" >
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href=".">GrowMate</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://sensing-my-home.github.io/Project-Website/">
+                            <i class="fa fa-leaf"></i> Project Website
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Sensing-My-Home/">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#about-our-project">About our project</a></li>
+        <li class="first-level "><a href="#functional-requirements-business-rules">Functional Requirements Business Rules</a></li>
+            <li class="second-level"><a href="#unregistered-users">Unregistered users</a></li>
+                
+            <li class="second-level"><a href="#registered-users">Registered users</a></li>
+                
+                <li class="third-level"><a href="#non-premium-account"> Non-premium account </a></li>
+                <li class="third-level"><a href="#premium-account"> Premium account </a></li>
+            <li class="second-level"><a href="#other-requirements">Other requirements</a></li>
+                
+                <li class="third-level"><a href="#administrative-functions">Administrative Functions</a></li>
+                <li class="third-level"><a href="#authentication-and-authorization-levels">Authentication and Authorization Levels</a></li>
+                <li class="third-level"><a href="#historical-data">Historical Data</a></li>
+        <li class="first-level "><a href="#actors">Actors</a></li>
+        <li class="first-level "><a href="#use-cases">Use Cases</a></li>
+        <li class="first-level "><a href="#non-functional-requirements">Non-Functional Requirements</a></li>
+        <li class="first-level "><a href="#system-architecture">System Architecture</a></li>
+            <li class="second-level"><a href="#domain-model">Domain Model</a></li>
+                
+            <li class="second-level"><a href="#deployment-diagram">Deployment Diagram</a></li>
+                
+                <li class="third-level"><a href="#frontend">Frontend</a></li>
+                <li class="third-level"><a href="#backend">Backend</a></li>
+                <li class="third-level"><a href="#storage">Storage</a></li>
+                <li class="third-level"><a href="#sensors-architecture">Sensors Architecture</a></li>
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1> <img src = "img/logotipo2.png" width=50></img> Project Documentation <small>GrowMate</small> </h1>
+
+<h2 id="about-our-project">About our project<a class="headerlink" href="#about-our-project" title="Permanent link">&para;</a></h2>
+<p>GrowMate is an application where we allow users of different types to create and manage an inventory of plants they can manage. The application should provide tasks in order to keep the plants healthy, as well as offer tips about how users should care for them.</p>
+<p>This will hopefully allow users to have a better sucess rate in growing different types of plants, in an environment where people's daily worries makes them forget about the tasks they should perform.</p>
+<p>With this project we intend to aid experienced and non-experienced users to care for their plants and become sucessfull in raising them. We plan to implement sensors in certain division and plants as well (premium user) in order to better calculate what a certain plant needs to continue healthy.</p>
+<h2 id="functional-requirements-business-rules">Functional Requirements <small>Business Rules</small><a class="headerlink" href="#functional-requirements-business-rules" title="Permanent link">&para;</a></h2>
+<h3 id="unregistered-users">Unregistered users<a class="headerlink" href="#unregistered-users" title="Permanent link">&para;</a></h3>
+<div class="bs-callout bs-callout-success">
+  <h4> Full catalogue of database's available plants</h4>
+
+   - Information about the species, ideal conditions for growth​. </br>
+   - Comments made by users with tips about their experience with the plants​. </br>
+   - Reputation system to influence which users' tips appear, based on their experience​. </br>
+</div>
+
+<h3 id="registered-users">Registered users<a class="headerlink" href="#registered-users" title="Permanent link">&para;</a></h3>
+<p>Registered users have <b>access to all of unregistered users functionalities</b> and other functionalities based on the type of account. </p>
+<h4 id="non-premium-account"></b> Non-premium account </b><a class="headerlink" href="#non-premium-account" title="Permanent link">&para;</a></h4>
+<div class="bs-callout bs-callout-success">
+  <h4> House Plants Inventory and Management</h4>
+
+   - Identify and monitor each individual plant </br>
+   - Journalling system </br>
+
+</div>
+
+<div class="bs-callout bs-callout-success">
+  <h4> Suggestion of optimal conditions for each plant​</h4>
+
+   - Optimal temperature, humidity, luminosity and water frequency​. </br>
+   - Ideal soil mix, pot size and recommendations of additional nutrients and fertilizers​. </br>
+   - Expected color, size and condition </br>
+   - Tips on detection of pests and disease symptoms​</br>
+</div>
+
+<div class="bs-callout bs-callout-success">
+  <h4> Scheduling of tasks for plant maintenance​​</h4>
+
+   - With the implementation of notifications and reminders </br>
+
+</div>
+
+<div class="bs-callout bs-callout-success">
+  <h4> Suggestion of new plants to grow​​​</h4>
+
+   - Considers the similarity with plants in the inventory of the user, as well as difficulty​ </br>
+   - Takes into account the climate​ </br>
+
+</div>
+
+<div class="bs-callout bs-callout-success">
+  <h4> Acclimatization guide for newly bought plants, when necessary​​​</h4>
+</div>
+
+<div class="bs-callout bs-callout-success">
+  <h4> Potential intergration with weather API​</h4>
+</div>
+
+<h4 id="premium-account"></b> Premium account </b><a class="headerlink" href="#premium-account" title="Permanent link">&para;</a></h4>
+<p><b> Besides previous requiremets </b>, premium account users also have access to the following requirements.</p>
+<div class="bs-callout bs-callout-success">
+  <h4> Integration with measurements provided by sensors​​</h4>
+
+  - Sensors that measure the individual characteristics of a plant – soil moisture.​​ </br>
+  - Sensors that measures shared characteristics of all plants in a division – air temperature and humidity.​ </br>
+
+</div>
+
+<div class="bs-callout bs-callout-success">
+  <h4> Plant condition presented in a traffic light system​​​</h4>
+
+  - Comparison between measured conditions and optimal conditions​. </br>
+
+</div>
+
+<h3 id="other-requirements">Other requirements<a class="headerlink" href="#other-requirements" title="Permanent link">&para;</a></h3>
+<h4 id="administrative-functions">Administrative Functions<a class="headerlink" href="#administrative-functions" title="Permanent link">&para;</a></h4>
+<div class="bs-callout bs-callout-success">
+  <h4> Web Dashboard for database administrator​​​</h4>
+
+  - Admin can do CRUD operations over the database​. </br>
+  - Admin can see relevant statistics related to the users. ​</br>
+
+</div>
+
+<h4 id="authentication-and-authorization-levels">Authentication and Authorization Levels<a class="headerlink" href="#authentication-and-authorization-levels" title="Permanent link">&para;</a></h4>
+<div class="bs-callout bs-callout-success">
+  <h4> Separation of functionalities according to the type of account​.​</h4>
+
+</div>
+
+<h4 id="historical-data">Historical Data<a class="headerlink" href="#historical-data" title="Permanent link">&para;</a></h4>
+<div class="bs-callout bs-callout-success">
+  <h4> History of a user’s actions and history of sensors measurement for each plant​.​</h4>
+
+</div>
+
+<h2 id="actors">Actors<a class="headerlink" href="#actors" title="Permanent link">&para;</a></h2>
+<p>Our platform will support four types of actors:</p>
+<ul>
+<li>System Administrator</li>
+<li>User without account</li>
+<li>User with account</li>
+<li>User with premium account</li>
+</ul>
+<h2 id="use-cases">Use Cases<a class="headerlink" href="#use-cases" title="Permanent link">&para;</a></h2>
+<p>Our use cases can be described through the following diagram: </p>
+<p></p>
+<p></br></p>
+<p><img src="diagrams/usecases.png" width=600></img> </p>
+<p></p>
+<p></br></p>
+<h2 id="non-functional-requirements">Non-Functional Requirements<a class="headerlink" href="#non-functional-requirements" title="Permanent link">&para;</a></h2>
+<h3> Usability </h3>
+
+<p>The application should be developed bearing in mind that the target audience is comprised of people from all age groups and with varied technological backgrounds. Thus, and considering the app will be developed for mobile devices, its interface should be easy to learn and intuitive, and be validated with usability tests with users representing this varied background.  </p>
+<h3> Reliability </h3>
+
+<p>The different subsystems of the architecture should be well connected and reliable. </p>
+<p>When system errors happen, the application should be responsive, so the user realizes what is happening and doesn’t abandon the system. </p>
+<h3> Scalability </h3>
+
+<p>The user should be able to connect new sensors to their account whenever needed and associate these sensors with different divisions and plants. Thus, the architecture of the message broker should be implemented with this in mind. </p>
+<p>The app should be able to accommodate multiple users connecting at the same time. </p>
+<h3> Security </h3>
+
+<p>Given that the application won’t deal with sensitive data from its users, the focus on our project will be on the protection of the login information of the users. This will be dealt not only with password encryption and the development of an authentication and authorization system, but also with the implementation of token-based authentication and security methods on the API itself. </p>
+<h3> Interoperability </h3>
+
+<p>The mobile application is required to connect with different sensors used to monitor the plants belonging to the user (temperature and humidity sensors, as well as soil moisture sensors). In the context of the development during this project, the connection will be made via middleware installed on a Raspberry Pi. </p>
+<h3> Efficiency </h3>
+
+<p>Given that mobile devices have limited storage and battery resources, the development of the mobile app should be made in an efficient manner in order to optimize the system.  The Android guidelines for application optimization should be followed. </p>
+<h2 id="system-architecture">System Architecture<a class="headerlink" href="#system-architecture" title="Permanent link">&para;</a></h2>
+<h3 id="domain-model">Domain Model<a class="headerlink" href="#domain-model" title="Permanent link">&para;</a></h3>
+<p></p>
+<p></br></p>
+<p><img src = "diagrams/Domain Model.png"></p>
+<div class="bs-callout bs-callout-success">
+  <h4> Users </h4>
+
+  The Users of the application can either be premium, with access to the features of the app relating to the integration of sensors, or non-premium. 
+
+  Either way, internally, all Users will have a <b>rating</b> that will be used to measure their experience with the app and their experience growing plants. This rating will be employed as part of the reputation system that will be implemented for the user suggestions forum for each plant in the app catalogue. 
+
+  Users will also be able to register in their account all the plants they want to monitor in their house.
+
+</div>
+
+<div class="bs-callout bs-callout-success">
+  <h4> Plants </h4>
+
+  The association between User and Plant is one-to-many, to represent the inventory of plants of each user, since a user can have several plants in their inventory.
+
+  Each plant will have a set of information related to the details described by the User, such as the plantation date or the size of the pot used. Besides, all plants will belong to one of the Plant Species catalogued in the system database.
+
+  The stats about the plants, as well as their optimal conditions, will be used to determine each Plants estimated plant condition. This will be implemented using a “traffic lights” system which will allow the User to glance at first sight which plants in their inventory currently need attention - with red signaling the need for immediate attention, green signalling that the plant is in a healthy state, and yellow signaling an intermediate state between both. 
+
+  The estimation of the plant condition can be better measured by the association of sensors to each plant, in the case of Premium Users. 
+
+</div>
+
+<div class="bs-callout bs-callout-success">
+<h4> Plant Species </h4>
+
+Each plant species will have their ideal conditions for growth registered, and also include their optimal temperature, optimal luminosity, optimal humidity and watering frequency.
+
+They will be evaluated according to a scale suggested by the University of Georgia:
+
+<table class="table table-striped">
+  <thead>
+      <tr>
+        <th>Condition</th>
+        <th>Levels in Scale</th>
+        <th>Scale Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td scope="row">Light</td>
+        <th>4</th>
+        <td>
+      1 -  Sunny light areas: At least 4 hours of direct sun </br>
+      2 – High-light area: Over 200 ft-c, but not direct sun </br>
+      3 – Medium-light areas: 75 ft-c to 200 ft-c </br>
+      4 - Low-light areas: 25 ft-c to 75 ft-c
+      </td>
+      </tr>
+        <td scope="row">Temperature</td>
+        <th>3</th>
+        <td>
+        1 – Cool: 10ºC at night; 18 ºC at day </br>
+        2 – Average:  18ºC at night; 25 ºC at day </br>
+        3 – Warm: 25ºC at night; 30 ºC at day 
+      </td>
+      </tr>
+      <tr>
+        <td scope="row">Relative Humidity</td>
+        <th>3</th>
+        <td>
+        1 – High: 50% or higher </br>
+        2 – Average: 25% to 49% </br>
+        3 – Low: 5% to 24% 
+      </td>
+      </tr>
+    <tr>
+        <td scope="row">Watering</td>
+        <th>3</th>
+        <td>
+        1 – Keep soil mix moist </br>
+        2 – Surface of soil mix should dry before re-watering </br>
+        3 – Soil mix can become moderately dry before re-watering 
+      </td>
+      </tr>
+  </tbody>
+</table>
+
+</div>
+
+<div class="bs-callout bs-callout-success">
+
+  <h4> Divisions </h4>
+
+  For each Plant, the user can register in which Division of their house the pot is located. As such, it will be possible to measure the different air humidity and temperature values through sensors in those divisions.
+
+</div>
+
+<div class="bs-callout bs-callout-success">
+  <h4> Species Family</h4>
+
+  Each species belongs to a Species Family, which determines their ideal soil mix
+
+  * Flowering House Plants 
+  * Foliage Plants
+  * Bromeliads 
+  * Orchids 
+  * Succulents and Cacti 
+  * Ferns 
+  * African Violets and other Gesneriads 
+
+</div>
+
+<div class="bs-callout bs-callout-success">
+  <h4> Tasks </h4>
+
+  The tasks related to the care for each plant will have a status associated to them (<i>to be completed</i> or <i>done</i>) and will also be used to determine the current condition of a plant. 
+
+</div>
+
+<div class="bs-callout bs-callout-success">
+  <h4> Sensors </h4>
+
+  Premium Users will be able to associate two types of Sensors to their account: either <b>Plant Sensors</b>, that measure a parameter that varies from individual plant to individual plant (i.e., their soil moisture), or <b>Division Sensors</b>, which monitor parameters that don’t vary from plant to plant but that are actually dependent on environmental conditions (i.e., the air humidity and temperature). 
+
+  A record for all the measurements will be kept and sensors will also produce notifications in case a measure has worrying values. 
+
+</div>
+
+<h3 id="deployment-diagram">Deployment Diagram<a class="headerlink" href="#deployment-diagram" title="Permanent link">&para;</a></h3>
+<p>The architecture of the solution will be divided into 4 main modules: the Frontend, the Backend, the Storage and the Sensors Architecture. </p>
+<p><img src = "diagrams/system_architecture.png"></img></p>
+<h4 id="frontend"><p class="text-success"><b>Frontend</b></p><a class="headerlink" href="#frontend" title="Permanent link">&para;</a></h4>
+<p>The frontend of the system will consist of a mobile application, developed using the <b>React Native framework</b>, for the Android OS, and a web dashboard, developed using <b>React</b>. </p>
+<p>The <b>mobile app</b> will be the user’s interface with our service, while the <b>web dashboard</b> will be used by system administrators to manage the plant catalogue in the database.  </p>
+<p>The choice of the React frameworks for the implementation of this module is due to its <b>component-based development</b> and the ease with which we can use additional libraries for routing and client-side functionality. </p>
+<p>These characteristics make the React framework ideal to implement a well-designed and usable responsive interface for the users in a relatively simple and fast manner, while keeping the code easy to test, to read and to maintain. </p>
+<h4 id="backend"><p class="text-success"><b>Backend</b></p><a class="headerlink" href="#backend" title="Permanent link">&para;</a></h4>
+<p>The backend of the system will consist of a REST API, that will serve has an interface both the Frontend and the Storage layers while processing business logic, and the <b>Rabbit MQ</b> message queue, which will be used has a broker to receive the measurements data from the sensors and exchange this information with the storage module. </p>
+<p>The REST API will be developed on the <b>Spring Framework</b>, which also allows the easy implementation of a data modelling and processing layer, using <b>Spring Data</b>, as well has the addition of authorization and authentication mechanisms for the API protection using <b>Spring Security</b>. </p>
+<h4 id="storage"><p class="text-success"><b>Storage</b></p><a class="headerlink" href="#storage" title="Permanent link">&para;</a></h4>
+<p>For the storage module, we will use two databases: Postgres SQL will be used for the implementation of a relational database that will hold the information about the users, their profiles, their inventory of plants, the tasks related to their inventory, etc, as well as the catalogue of the different species supported by the platform, as well as the information characterizing these different species. </p>
+<p>We decided to use relational databases to model this part of the architecture, since they ensure ACID properties, have high query processing speed and keep data transactions secure. </p>
+<h4 id="sensors-architecture"><p class="text-success"><b>Sensors Architecture</b></p><a class="headerlink" href="#sensors-architecture" title="Permanent link">&para;</a></h4>
+<p>We will use <b>influxDB</b>, a timeseries database, to hold the records of the measurements made by sensors, as we feel like the relational model is not appropriate to model this sort of data. </p>
+<p><b>Redis</b> will be used to store session information, and to cache some queries for the relational database. </p>
+<p>We will also use <b>Nginx</b> as a reverse proxy web server, that will receive network traffic and control access to the application, serving as caching and load balancer that will allows us to decrease the loading time of the pages and to avoid congestions on the network traffic, thus increasing the performance, availability and scalability of the service. </p></div>
+        
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+          
+            <hr>
+            <p>
+            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+            </p>
+          
+
+          
+          
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "."</script>
+    
+    <script src="js/base.js"></script>
+    <script src="search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>
+
+<!--
+MkDocs version : 1.4.2
+Build Date UTC : 2023-03-30 09:13:13.655160+00:00
+-->

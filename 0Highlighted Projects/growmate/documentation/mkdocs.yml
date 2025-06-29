@@ -1,0 +1,18 @@
+site_name: GrowMate
+repo_url: "https://github.com/Sensing-My-Home/Documentation/"
+edit_url: "https://github.com/Sensing-My-Home/"
+api_url: "https://documenter.getpostman.com/view/24060738/2s93m8xKtK"
+
+theme:
+  name: null
+  custom_dir: growmate
+  colorscheme: github
+  highlightjs: true
+
+nav:
+  - Home: index.md
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
