@@ -1,0 +1,41 @@
+services:
+
+  # Spring Boot API
+  api:
+    build:
+      context: ./DropMate_Backend
+      dockerfile: Dockerfile
+    ports: 
+      - "8080:8080"
+    depends_on:
+      - database
+    restart: unless-stopped
+    environment: # Pass environment variables to the service
+      SPRING_DATASOURCE_URL: jdbc:mysql://database:3306/DropMate?allowPublicKeyRetrieval=true&useSSL=false
+      SPRING_DATASOURCE_USERNAME: springuser
+      SPRING_DATASOURCE_PASSWORD: password 
+    networks:
+      - backend
+
+
+  # Database
+  database:
+    container_name: database
+    image: mysql
+    ports:
+      - "3306:3306"
+    restart: always
+    environment:
+      MYSQL_DATABASE: DropMate
+      MYSQL_USER: springuser
+      MYSQL_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: root
+    volumes:
+      - ./database:/docker-entrypoint-initdb.d/:ro
+      - ./database/dbdata:/var/lib/mysql
+    networks:
+      - backend
+
+      
+networks:
+  backend: 
