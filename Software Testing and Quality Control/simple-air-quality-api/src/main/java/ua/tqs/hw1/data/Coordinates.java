@@ -1,0 +1,51 @@
+package ua.tqs.hw1.data;
+
+import java.util.Objects;
+
+public class Coordinates {
+    private Double lat;
+    private Double lon;
+
+    public Coordinates(Double lat, Double lon){
+        this.lat = lat;
+        this.lon = lon;
+    }
+
+
+    public Double getLat() {
+        return lat;
+    }
+
+    public void setLat(Double lat) {
+        this.lat = lat;
+    }
+
+    public Double getLon() {
+        return lon;
+    }
+
+    public void setLon(Double lon) {
+        this.lon = lon;
+    }
+
+    @Override
+    public String toString() {
+        return "{" +
+                "lat=" + lat +
+                ", lon=" + lon +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Coordinates that = (Coordinates) o;
+        return Objects.equals(lat, that.lat) && Objects.equals(lon, that.lon);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(lat, lon);
+    }
+}
